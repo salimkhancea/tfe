@@ -2,10 +2,22 @@
   "version": "2026-06-25",
   "speakers": [
     {
+    "id": "virginia-cha",
+    "name": "Virginia Cha",
+    "title": "Adjunct Professor, National University of Singapore",
+    "bio": "Dr. Virginia Cha is an Adjunct Professor at the National University of Singapore, with a joint appointment at NUS Business School. She is an educator and practitioner in innovation and entrepreneurship, supporting founders, executives and organisations navigating technology-led growth and transformation."
+    },
+    {
+    "id": "kanchana-gupta",
+    "name": "Kanchana Gupta",
+    "title": "Founder & CEO, vLookUp",
+    "bio": "Kanchana Gupta is Founder and CEO of vLookUp, a technology-enabled mentoring platform connecting women professionals and leaders with mentors across countries. Drawing on extensive corporate leadership experience, she focuses on mentorship, future-of-work readiness, community building, and expanding access to professional guidance."
+    },
+    {
       "id": "su-yen-wong",
       "name": "Su-Yen Wong",
       "title": "Chairperson, James Cook University Singapore & Independent Director",
-      "bio": "Su-Yen Wong is Chairperson of James Cook University in Singapore and an Independent Director of SGX-listed City Developments Limited, First Resources, and CSE Global. A Certified Speaking Professional and President of Asia Professional Speakers Singapore, she has built a portfolio career spanning board leadership, executive advisory, speaking, and academia. In 2021, she founded the Remarkable Reinventors Community to support seasoned professionals navigating career pivots, portfolio careers, and new ventures."
+      "bio": "Su-Yen Wong is Chairperson of James Cook University in Singapore and an Independent Director of SGX-listed City Developments Limited, First Resources, and CSE Global. A Certified Speaking Professional and President of Asia Professional Speakers Singapore, she has built a portfolio career across board leadership, executive advisory, speaking, and academia. She also founded the Remarkable Reinventors Community."
     },
     {
       "id": "maria-bianca-t",
