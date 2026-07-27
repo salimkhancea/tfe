@@ -1,0 +1,117 @@
+{
+  "version": "2026-06-25",
+  "speakers": [
+    {
+  "id": "priya-rao",
+  "name": "Priya Rao",
+  "title": "Chief Operating Officer, Bridge Et Al",
+  "bio": "Priya Rao is Chief Operating Officer at Board Match-Up and Bridge Et Al. Her expertise spans talent strategy, leadership development, organisational development, employee engagement, HR business partnering, and talent acquisition. She currently supports global clients in building leadership capability, strengthening high-performance cultures, and aligning talent strategy with business growth."
+},
+    {
+    "id": "virginia-cha",
+    "name": "Virginia Cha",
+    "title": "Adjunct Professor, National University of Singapore",
+    "bio": "Dr. Virginia Cha is an Adjunct Professor at the National University of Singapore, with a joint appointment at NUS Business School. She is an educator and practitioner in innovation and entrepreneurship, supporting founders, executives and organisations navigating technology-led growth and transformation."
+    },
+    {
+    "id": "kanchana-gupta",
+    "name": "Kanchana Gupta",
+    "title": "Founder & CEO, vLookUp",
+    "bio": "Kanchana Gupta is Founder and CEO of vLookUp, a technology-enabled mentoring platform connecting women professionals and leaders with mentors across countries. Drawing on extensive corporate leadership experience, she focuses on mentorship, future-of-work readiness, community building, and expanding access to professional guidance."
+    },
+    {
+      "id": "su-yen-wong",
+      "name": "Su-Yen Wong",
+      "title": "Chairperson, James Cook University Singapore & Independent Director",
+      "bio": "Su-Yen Wong is Chairperson of James Cook University in Singapore and an Independent Director of SGX-listed City Developments Limited, First Resources, and CSE Global. A Certified Speaking Professional and President of Asia Professional Speakers Singapore, she has built a portfolio career across board leadership, executive advisory, speaking, and academia. She also founded the Remarkable Reinventors Community."
+    },
+    {
+      "id": "maria-bianca-t",
+      "name": "Maria Bianca T",
+      "title": "Global CHRO, Barilla Group",
+      "bio": "Maria Bianca Tulimello is Global Chief Human Resources Officer at Barilla Group, with international HR leadership experience across Europe, the US, and Africa. She previously held senior HR roles at General Electric."
+    },
+    {
+      "id": "jacob-duer",
+      "name": "Jacob Duer",
+      "title": "President & CEO, Alliance to End Plastic Waste",
+      "bio": "Jacob Duer is President and CEO of the Alliance to End Plastic Waste and a global leader in sustainability, environmental strategy, and multi-stakeholder initiatives across regions."
+    },
+    {
+      "id": "karunesh-prasad",
+      "name": "Karunesh Prasad",
+      "title": "Founder, Change Et Al / Board Match-Up",
+      "bio": "Karunesh Prasad is a business transformation and future-of-work entrepreneur focused on change, expert talent, leadership ecosystems, and flexible executive models."
+    },
+    {
+      "id": "achal-khanna",
+      "name": "Achal Khanna",
+      "title": "CEO, SHRM APAC & MENA",
+      "bio": "Achal Khanna is CEO of SHRM APAC & MENA, with over 30 years of leadership experience across HR, business, transformation, inclusive workplaces, and future-of-work leadership."
+    },
+    {
+      "id": "nancy-groesch",
+      "name": "Nancy Groesch",
+      "title": "Organisational Psychologist & Executive Coach",
+      "bio": "Nancy Grösch is a business-driven Organisational Psychologist and Executive Coach with 25+ years of global transformation experience, helping organisations unlock measurable business impact."
+    },
+    {
+      "id": "sanjeev-jain",
+      "name": "Sanjeev Jain",
+      "title": "Chief Operating Officer, Wipro",
+      "bio": "Sanjeev Jain is Chief Operating Officer at Wipro and a global business leader known for driving customer value, operational excellence, large-scale transformation, and business performance."
+    },
+    {
+      "id": "ooi-huey-tyng",
+      "name": "Ooi Huey Tyng",
+      "title": "Independent Director",
+      "bio": "Ooi Huey Tyng is an independent director on AIA Asia Pacific Insurance, Maxis Bhd, Raffles Institution, Singapore Institute of Management, and Food from the Heart. She is also ambassador of the Singapore INSEAD International Directors Network."
+    },
+    {
+      "id": "philip-forrest-am",
+      "name": "Philip Forrest AM",
+      "title": "Business Leader & Board Advisor",
+      "bio": "Philip Forrest is a distinguished Australian business leader recognised with the Member of the Order of Australia, the AustCham Singapore President's Medal, and a Lifetime Achievement Award from Australian Alumni Singapore."
+    },
+    {
+      "id": "bassam-salem",
+      "name": "Bassam Salem",
+      "title": "Chairman, Finance & Banking Council, SwissChamHK",
+      "bio": "Bassam Salem is an award-winning CEO, former CEO of Citi Private Bank in Asia, former Senior Advisor at McKinsey & Company, and founding partner of EFG Bank in Zurich. He brings deep expertise in wealth management, organisational transformation, governance, digital innovation, and M&A execution."
+    },
+    {
+      "id": "frank-koo",
+      "name": "Frank Koo",
+      "title": "Speaker, Coach & Community Builder",
+      "bio": "Frank Koo is a speaker, coach, and community builder focused on career reinvention and leadership growth. He helps executives design their next chapter using his NEXTPLAY methodology."
+    },
+    {
+      "id": "nitin-jaiswal",
+      "name": "Nitin Jaiswal",
+      "title": "Founder & CEO, The 8th Continent",
+      "bio": "Nitin Jaiswal is Founder & CEO of The 8th Continent, focused on the longevity economy and helping leaders map new opportunities across life, wealth, health, and purpose."
+    },
+    {
+      "id": "probir-das",
+      "name": "Probir Das",
+      "title": "Group CEO, Integris Medtech",
+      "bio": "Probir Das is Group CEO of Integris Medtech, an emerging-market focused medtech group backed by Everstone Capital. A purpose-led business leader with 30+ years in medical technology, he previously led Terumo Asia Pacific and has shaped industry collaboration, policy, and advocacy across APAC."
+    },
+    {
+      "id": "brandon-lee",
+      "name": "Brandon Lee",
+      "title": "Assistant Chief Executive, Workforce Singapore",
+      "bio": "Brandon Lee began his career with the Singapore Armed Forces before moving into national policy, industrial land and manpower policy, private education regulation, SkillsFuture Singapore, and Workforce Singapore, where he served as Assistant Chief Executive of the Transformation Support Group."
+    },
+    {
+      "id": "dn-prasad",
+      "name": "DN Prasad",
+      "title": "Managing Director and Head – Work & Rewards, Singapore, WTW",
+      "bio": "DN Prasad (PCC; IHRP-MP) is Managing Director and Head of Work and Rewards for Singapore at WTW. He brings 27 years of experience across strategic HR, organisation transformation and executive coaching, with leadership roles across India, the US and Singapore. He is an IHRP Master Professional and Immediate Past President of the Singapore Human Resources Institute."
+    },
+    { "id": "soorya-themudu", 
+      "name": "Soorya Themudu",
+      "title": "SVP Global Talent & Development, Sodexo", 
+      "bio": "Soorya Themudu is SVP, Global Talent & Development at Sodexo, leading the Group’s global talent, culture, learning and succession agenda. With more than 25 years of international HR leadership experience, she is recognised for building leadership capability, strengthening high-performance cultures, and enabling enterprise transformation across complex, multi-country environments." }
+  ]
+}
