@@ -1,117 +1,157 @@
 {
-  "version": "2026-06-25",
-  "speakers": [
+  "version": 1,
+  "settings": {
+    "autoplayDelayMs": 4000
+  },
+  "events": [
     {
-  "id": "priya-rao",
-  "name": "Priya Rao",
-  "title": "Chief Operating Officer, Bridge Et Al",
-  "bio": "Priya Rao is Chief Operating Officer at Board Match-Up and Bridge Et Al. Her expertise spans talent strategy, leadership development, organisational development, employee engagement, HR business partnering, and talent acquisition. She currently supports global clients in building leadership capability, strengthening high-performance cultures, and aligning talent strategy with business growth."
-},
-    {
-    "id": "virginia-cha",
-    "name": "Virginia Cha",
-    "title": "Adjunct Professor, National University of Singapore",
-    "bio": "Dr. Virginia Cha is an Adjunct Professor at the National University of Singapore, with a joint appointment at NUS Business School. She is an educator and practitioner in innovation and entrepreneurship, supporting founders, executives and organisations navigating technology-led growth and transformation."
+      "label": "2 July 2026",
+      "title": "2 July Roundtable Singapore",
+      "subtitle": "Conversations, connections and leadership moments from the 2 July Roundtable in Singapore.",
+      "images": [
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_7401.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_3652.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_3662.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_3567.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_7283.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_7424.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_7380.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_7354.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_3619.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_7361.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_3574.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_3636.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_7185.webp"
+      ]
     },
     {
-    "id": "kanchana-gupta",
-    "name": "Kanchana Gupta",
-    "title": "Founder & CEO, vLookUp",
-    "bio": "Kanchana Gupta is Founder and CEO of vLookUp, a technology-enabled mentoring platform connecting women professionals and leaders with mentors across countries. Drawing on extensive corporate leadership experience, she focuses on mentorship, future-of-work readiness, community building, and expanding access to professional guidance."
+      "label": "June 2026 Bangkok",
+      "title": "June 2026 Bangkok",
+      "subtitle": "Board Match-Up conversations and leadership connections from Bangkok in June 2026.",
+      "images": [
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/BMU%20BKK%2001.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/BMU%20BKK%2036.webp"
+      ]
     },
     {
-      "id": "su-yen-wong",
-      "name": "Su-Yen Wong",
-      "title": "Chairperson, James Cook University Singapore & Independent Director",
-      "bio": "Su-Yen Wong is Chairperson of James Cook University in Singapore and an Independent Director of SGX-listed City Developments Limited, First Resources, and CSE Global. A Certified Speaking Professional and President of Asia Professional Speakers Singapore, she has built a portfolio career across board leadership, executive advisory, speaking, and academia. She also founded the Remarkable Reinventors Community."
+      "label": "Oct 2025 Singapore",
+      "title": "October 2025 Singapore",
+      "subtitle": "Highlights from the Board Match-Up think-tank roundtable in Singapore in October 2025.",
+      "images": [
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/29_Oct-2025_BMU-think-tank_roundtable1.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC02267.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC02313.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC02260.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC02297.webp"
+      ]
     },
     {
-      "id": "maria-bianca-t",
-      "name": "Maria Bianca T",
-      "title": "Global CHRO, Barilla Group",
-      "bio": "Maria Bianca Tulimello is Global Chief Human Resources Officer at Barilla Group, with international HR leadership experience across Europe, the US, and Africa. She previously held senior HR roles at General Electric."
+      "label": "Sept 2025 India",
+      "title": "September 2025 India",
+      "subtitle": "Leadership conversations, shared perspectives and community moments from India in September 2025.",
+      "images": [
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20278.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20307.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20264.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20303.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20305.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20390.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20327.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20379.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20321.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20309.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20225.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20200.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20212.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20243.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20244.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20254.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20204.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20255.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20231.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20177.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20196.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20195.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20133.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20121.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20146.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20126.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20190.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20128.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20081.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20089.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20079.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20074.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20095.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20109.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20103.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20082.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20329.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20386.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20333.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20317.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20365.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20351.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20370.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20156.webp"
+      ]
     },
     {
-      "id": "jacob-duer",
-      "name": "Jacob Duer",
-      "title": "President & CEO, Alliance to End Plastic Waste",
-      "bio": "Jacob Duer is President and CEO of the Alliance to End Plastic Waste and a global leader in sustainability, environmental strategy, and multi-stakeholder initiatives across regions."
+      "label": "Feb 2025 Singapore",
+      "title": "February 2025 Singapore",
+      "subtitle": "Board Match-Up conversations and connections from Singapore in February 2025.",
+      "images": [
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/20250211_124526000_iOS%201.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/20250210_112621000_iOS.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/20250211_124636000_iOS.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/20250211_110614000_iOS.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/20250211_120444000_iOS.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/20250210_112730000_iOS.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/20250210_105701000_iOS.webp"
+      ]
     },
     {
-      "id": "karunesh-prasad",
-      "name": "Karunesh Prasad",
-      "title": "Founder, Change Et Al / Board Match-Up",
-      "bio": "Karunesh Prasad is a business transformation and future-of-work entrepreneur focused on change, expert talent, leadership ecosystems, and flexible executive models."
+      "label": "2024 Dubai",
+      "title": "2024 Dubai",
+      "subtitle": "A Board Match-Up community moment from Dubai in 2024.",
+      "images": [
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/BMU_Dubai_group-photo.webp"
+      ]
     },
     {
-      "id": "achal-khanna",
-      "name": "Achal Khanna",
-      "title": "CEO, SHRM APAC & MENA",
-      "bio": "Achal Khanna is CEO of SHRM APAC & MENA, with over 30 years of leadership experience across HR, business, transformation, inclusive workplaces, and future-of-work leadership."
-    },
-    {
-      "id": "nancy-groesch",
-      "name": "Nancy Groesch",
-      "title": "Organisational Psychologist & Executive Coach",
-      "bio": "Nancy Grösch is a business-driven Organisational Psychologist and Executive Coach with 25+ years of global transformation experience, helping organisations unlock measurable business impact."
-    },
-    {
-      "id": "sanjeev-jain",
-      "name": "Sanjeev Jain",
-      "title": "Chief Operating Officer, Wipro",
-      "bio": "Sanjeev Jain is Chief Operating Officer at Wipro and a global business leader known for driving customer value, operational excellence, large-scale transformation, and business performance."
-    },
-    {
-      "id": "ooi-huey-tyng",
-      "name": "Ooi Huey Tyng",
-      "title": "Independent Director",
-      "bio": "Ooi Huey Tyng is an independent director on AIA Asia Pacific Insurance, Maxis Bhd, Raffles Institution, Singapore Institute of Management, and Food from the Heart. She is also ambassador of the Singapore INSEAD International Directors Network."
-    },
-    {
-      "id": "philip-forrest-am",
-      "name": "Philip Forrest AM",
-      "title": "Business Leader & Board Advisor",
-      "bio": "Philip Forrest is a distinguished Australian business leader recognised with the Member of the Order of Australia, the AustCham Singapore President's Medal, and a Lifetime Achievement Award from Australian Alumni Singapore."
-    },
-    {
-      "id": "bassam-salem",
-      "name": "Bassam Salem",
-      "title": "Chairman, Finance & Banking Council, SwissChamHK",
-      "bio": "Bassam Salem is an award-winning CEO, former CEO of Citi Private Bank in Asia, former Senior Advisor at McKinsey & Company, and founding partner of EFG Bank in Zurich. He brings deep expertise in wealth management, organisational transformation, governance, digital innovation, and M&A execution."
-    },
-    {
-      "id": "frank-koo",
-      "name": "Frank Koo",
-      "title": "Speaker, Coach & Community Builder",
-      "bio": "Frank Koo is a speaker, coach, and community builder focused on career reinvention and leadership growth. He helps executives design their next chapter using his NEXTPLAY methodology."
-    },
-    {
-      "id": "nitin-jaiswal",
-      "name": "Nitin Jaiswal",
-      "title": "Founder & CEO, The 8th Continent",
-      "bio": "Nitin Jaiswal is Founder & CEO of The 8th Continent, focused on the longevity economy and helping leaders map new opportunities across life, wealth, health, and purpose."
-    },
-    {
-      "id": "probir-das",
-      "name": "Probir Das",
-      "title": "Group CEO, Integris Medtech",
-      "bio": "Probir Das is Group CEO of Integris Medtech, an emerging-market focused medtech group backed by Everstone Capital. A purpose-led business leader with 30+ years in medical technology, he previously led Terumo Asia Pacific and has shaped industry collaboration, policy, and advocacy across APAC."
-    },
-    {
-      "id": "brandon-lee",
-      "name": "Brandon Lee",
-      "title": "Assistant Chief Executive, Workforce Singapore",
-      "bio": "Brandon Lee began his career with the Singapore Armed Forces before moving into national policy, industrial land and manpower policy, private education regulation, SkillsFuture Singapore, and Workforce Singapore, where he served as Assistant Chief Executive of the Transformation Support Group."
-    },
-    {
-      "id": "dn-prasad",
-      "name": "DN Prasad",
-      "title": "Managing Director and Head – Work & Rewards, Singapore, WTW",
-      "bio": "DN Prasad (PCC; IHRP-MP) is Managing Director and Head of Work and Rewards for Singapore at WTW. He brings 27 years of experience across strategic HR, organisation transformation and executive coaching, with leadership roles across India, the US and Singapore. He is an IHRP Master Professional and Immediate Past President of the Singapore Human Resources Institute."
-    },
-    { "id": "soorya-themudu", 
-      "name": "Soorya Themudu",
-      "title": "SVP Global Talent & Development, Sodexo", 
-      "bio": "Soorya Themudu is SVP, Global Talent & Development at Sodexo, leading the Group’s global talent, culture, learning and succession agenda. With more than 25 years of international HR leadership experience, she is recognised for building leadership capability, strengthening high-performance cultures, and enabling enterprise transformation across complex, multi-country environments." }
+      "label": "2023 Singapore",
+      "title": "2023 Singapore BMU Launch Event",
+      "subtitle": "Highlights from the Board Match-Up launch event in Singapore in 2023.",
+      "images": [
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Group_BMU-event_5-Oct-2023.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1270.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1536.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_0749.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1595.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_5828.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1592.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/BMU%20GROUP1.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1416.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1613%202.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/BMU_Group_1.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1518.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC09829.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1405%202.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1207.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1497.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1564.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1473.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/photo_2023-11-21%2012.15.23.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1522.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1258.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1539.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1530.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1241.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC09824.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1295.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1366.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1310.webp"
+      ]
+    }
   ]
 }
