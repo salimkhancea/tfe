@@ -1,0 +1,19 @@
+{
+  "version": "2026-07-31",
+  "updatedAt": "2026-07-31T22:06:00+05:30",
+  "codes": {
+    "ROUNDTABLE45": {
+      "codeDisplay": "ROUNDTABLE45",
+      "active": true,
+      "validUntil": "2026-08-15T23:59:59+08:00",
+      "title": "Exclusive Offer for Roundtable Attendees",
+      "description": "An exclusive Executive Pass offer...",
+      "discountPercent": 45.5,
+      "FinalValue": 599,
+      "discountLabel": "Exclusive Roundtable Attendee Offer – SGD 599",
+      "eligibilityCheckboxRequired": true,
+      "eligibilityText": "I confirm that I attended the Board Match-Up Roundtable Event.",
+      "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC"
+    }
+  }
+}
