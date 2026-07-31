@@ -1,6 +1,6 @@
 {
   "version": "2026-07-31",
-  "updatedAt": "2026-07-31T22:06:00+05:30",
+  "updatedAt": "2026-07-31T22:47:00+05:30",
   "codes": {
     "FRACTBMU15": {
       "codeDisplay": "FractBMU15",
@@ -52,7 +52,27 @@
       "discountLabel": "Exclusive Speaker Guest Rate – SGD 599",
       "eligibilityCheckboxRequired": true,
       "eligibilityText": "I confirm that I am registering as a guest of a Summit speaker.",
-      "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC"
+      "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC",
+      "aliases": {
+        "PRIYA45": "Priya Rao",
+        "VIRGINIA45": "Virginia Cha",
+        "KANCHANA45": "Kanchana Gupta",
+        "SUYEN45": "Su-Yen Wong",
+        "SOORYA45": "Soorya Themudu",
+        "DNPRASAD45": "DN Prasad",
+        "BRANDON45": "Brandon Lee",
+        "PROBIR45": "Probir Das",
+        "NITIN45": "Nitin Jaiswal",
+        "FRANK45": "Frank Koo",
+        "BASSAM45": "Bassam Salem",
+        "PHILIP45": "Philip Forrest AM",
+        "HUEYTYNG45": "Ooi Huey Tyng",
+        "SANJEEV45": "Sanjeev Jain",
+        "NANCY45": "Nancy Groesch",
+        "ACHAL45": "Achal Khanna",
+        "KARUNESH45": "Karunesh Prasad",
+        "JACOB45": "Jacob Duer"
+      }
     },
     "BMULEADERS45": {
       "codeDisplay": "BMULEADERS45",
