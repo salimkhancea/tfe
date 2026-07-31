@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "settings": {
+    "autoplayDelayMs": 4000
+  },
+  "events": [
+    {
+      "label": "2 July 2026",
+      "title": "2 July Roundtable Singapore",
+      "subtitle": "Conversations, connections and leadership moments from the 2 July Roundtable in Singapore.",
+      "images": [
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_7401.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_3652.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_3662.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_3567.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_7283.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_7424.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_7380.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_7354.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_3619.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_7361.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_3574.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_3636.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC_7185.webp"
+      ]
+    },
+    {
+      "label": "June 2026 Bangkok",
+      "title": "June 2026 Bangkok",
+      "subtitle": "Board Match-Up conversations and leadership connections from Bangkok in June 2026.",
+      "images": [
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/BMU%20BKK%2001.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/BMU%20BKK%2036.webp"
+      ]
+    },
+    {
+      "label": "Oct 2025 Singapore",
+      "title": "October 2025 Singapore",
+      "subtitle": "Highlights from the Board Match-Up think-tank roundtable in Singapore in October 2025.",
+      "images": [
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/29_Oct-2025_BMU-think-tank_roundtable1.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC02267.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC02313.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC02260.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC02297.webp"
+      ]
+    },
+    {
+      "label": "Sept 2025 India",
+      "title": "September 2025 India",
+      "subtitle": "Leadership conversations, shared perspectives and community moments from India in September 2025.",
+      "images": [
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20278.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20307.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20264.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20303.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20305.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20390.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20327.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20379.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20321.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20309.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20225.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20200.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20212.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20243.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20244.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20254.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20204.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20255.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20231.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20177.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20196.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20195.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20133.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20121.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20146.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20126.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20190.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20128.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20081.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20089.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20079.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20074.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20095.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20109.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20103.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20082.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20329.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20386.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20333.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20317.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20365.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20351.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20370.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/R6M20156.webp"
+      ]
+    },
+    {
+      "label": "Feb 2025 Singapore",
+      "title": "February 2025 Singapore",
+      "subtitle": "Board Match-Up conversations and connections from Singapore in February 2025.",
+      "images": [
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/20250211_124526000_iOS%201.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/20250210_112621000_iOS.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/20250211_124636000_iOS.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/20250211_110614000_iOS.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/20250211_120444000_iOS.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/20250210_112730000_iOS.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/20250210_105701000_iOS.webp"
+      ]
+    },
+    {
+      "label": "2024 Dubai",
+      "title": "2024 Dubai",
+      "subtitle": "A Board Match-Up community moment from Dubai in 2024.",
+      "images": [
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/BMU_Dubai_group-photo.webp"
+      ]
+    },
+    {
+      "label": "2023 Singapore",
+      "title": "2023 Singapore BMU Launch Event",
+      "subtitle": "Highlights from the Board Match-Up launch event in Singapore in 2023.",
+      "images": [
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Group_BMU-event_5-Oct-2023.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1270.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1536.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_0749.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1595.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_5828.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1592.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/BMU%20GROUP1.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1416.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1613%202.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/BMU_Group_1.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1518.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC09829.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1405%202.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1207.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1497.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1564.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1473.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/photo_2023-11-21%2012.15.23.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1522.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1258.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1539.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1530.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1241.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DSC09824.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1295.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1366.webp",
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/IMG_1310.webp"
+      ]
+    }
+  ]
+}
