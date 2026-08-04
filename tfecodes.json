@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-31",
-  "updatedAt": "2026-07-31T22:47:00+05:30",
+  "version": "2026-08-04",
+  "updatedAt": "2026-08-04T16:31:00+05:30",
   "codes": {
     "FRACTBMU15": {
       "codeDisplay": "FractBMU15",
@@ -31,7 +31,7 @@
     "ROUNDTABLE45": {
       "codeDisplay": "ROUNDTABLE45",
       "active": true,
-      "validUntil": "2026-08-6T23:59:59+08:00",
+      "validUntil": "2026-08-06T23:59:59+08:00",
       "title": "Exclusive Offer for Roundtable Attendees",
       "description": "An exclusive Executive Pass offer for participants of the Board Match-Up Roundtable Events. Valid until 6 August 2026 or until the allocated seats are fully booked, whichever occurs first.",
       "discountPercent": 45.5,
@@ -79,12 +79,12 @@
       "active": true,
       "validUntil": "2026-08-30T23:59:59+08:00",
       "title": "Exclusive Board Match-Up Leadership Pass",
-      "description": "An exclusive Executive Pass offer available to Guests of Board Match-Up Think Tank members, Engagement Directors. Valid until 30 August 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "An exclusive Executive Pass offer available to guests invited by Board Match-Up Think Tank members, Advisors, and Engagement Directors. Valid until 30 August 2026 or until the allocated seats are fully booked, whichever occurs first.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive Board Match-Up Leadership Rate – SGD 599",
       "eligibilityCheckboxRequired": true,
-      "eligibilityText": "I confirm that I am registering as a guest of Board Match-Up Advisor, Engagement Director.",
+      "eligibilityText": "I confirm that I am registering as a guest of a Board Match-Up Think Tank member, Advisor, or Engagement Director.",
       "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC",
       "aliases": {
         "BMUABHISHEK45": "Abhishek Mathur",
@@ -135,7 +135,7 @@
       "FinalValue": 599,
       "discountLabel": "Exclusive SHRM Member Rate – SGD 599",
       "eligibilityCheckboxRequired": true,
-      "eligibilityText": "I confirm that I am a current member of the SHRM.",
+      "eligibilityText": "I confirm that I am a current member of SHRM.",
       "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC"
     },
     "BMUREGMEM15": {
@@ -151,20 +151,19 @@
       "eligibilityText": "I confirm that I am a registered member of the Board Match-Up Community.",
       "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC"
     },
-
     "IMAABMU45": {
-  "codeDisplay": "IMAABMU45",
-  "active": true,
-  "validUntil": "2026-08-30T23:59:59+08:00",
-  "title": "Exclusive IMAA Member Executive Pass",
-  "description": "An exclusive Executive Pass offer available to IMAA members. Valid until 30 August 2026 or until the allocated seats are fully booked, whichever occurs first.",
-  "discountPercent": 45.5,
-  "FinalValue": 599,
-  "discountLabel": "Exclusive IMAA Member Offer – SGD 599",
-  "eligibilityCheckboxRequired": true,
-  "eligibilityText": "I confirm that I am a current member of IMAA.",
-  "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC"
-},
+      "codeDisplay": "IMAABMU45",
+      "active": true,
+      "validUntil": "2026-08-30T23:59:59+08:00",
+      "title": "Exclusive IMAA Member Executive Pass",
+      "description": "An exclusive Executive Pass offer available to IMAA members. Valid until 30 August 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "discountPercent": 45.5,
+      "FinalValue": 599,
+      "discountLabel": "Exclusive IMAA Member Offer – SGD 599",
+      "eligibilityCheckboxRequired": true,
+      "eligibilityText": "I confirm that I am a current member of IMAA.",
+      "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC"
+    },
     "FLEXSPECIAL08": {
       "codeDisplay": "FLEXSPECIAL08",
       "active": true,
@@ -175,7 +174,7 @@
       "FinalValue": 599,
       "discountLabel": "Special Executive Pass Rate – SGD 599",
       "eligibilityCheckboxRequired": true,
-      "eligibilityText": "I confirm that I have received invitation to use this special offer code.",
+      "eligibilityText": "I confirm that I have received an invitation to use this special offer code.",
       "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC"
     },
     "FROFBMU02": {
