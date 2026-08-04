@@ -139,6 +139,20 @@
       "eligibilityText": "I confirm that I am a registered member of the Board Match-Up Community.",
       "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC"
     },
+
+    "IMAABMU45": {
+  "codeDisplay": "IMAABMU45",
+  "active": true,
+  "validUntil": "2026-08-30T23:59:59+08:00",
+  "title": "Exclusive IMAA Member Executive Pass",
+  "description": "An exclusive Executive Pass offer available to IMAA members. Valid until 30 August 2026 or until the allocated seats are fully booked, whichever occurs first.",
+  "discountPercent": 45.5,
+  "FinalValue": 599,
+  "discountLabel": "Exclusive IMAA Member Offer – SGD 599",
+  "eligibilityCheckboxRequired": true,
+  "eligibilityText": "I confirm that I am a current member of IMAA.",
+  "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC"
+},
     "FLEXSPECIAL08": {
       "codeDisplay": "FLEXSPECIAL08",
       "active": true,
