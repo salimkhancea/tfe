@@ -176,6 +176,12 @@
       "eligibilityCheckboxRequired": true,
       "eligibilityText": "I confirm that I have received an invitation to use this special offer code.",
       "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC"
+      "aliases": {
+        "BMUNJ45": "Niloufer Jamal",
+        "BMUDS45": "Deepti Sahu",
+        "BMUAS45": "Ayesha",
+        "BMUCB45": "Carrie Bharucha"
+      }
     },
     "FROFBMU02": {
       "codeDisplay": "FROFBMU02",
