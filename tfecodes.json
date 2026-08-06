@@ -1,6 +1,6 @@
 {
-  "version": "2026-08-04",
-  "updatedAt": "2026-08-04T16:31:00+05:30",
+  "version": "2026-08-06",
+  "updatedAt": "2026-08-06T10:33:00+05:30",
   "codes": {
     "FRACTBMU15": {
       "codeDisplay": "FractBMU15",
@@ -175,7 +175,7 @@
       "discountLabel": "Special Executive Pass Rate – SGD 599",
       "eligibilityCheckboxRequired": true,
       "eligibilityText": "I confirm that I have received an invitation to use this special offer code.",
-      "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC"
+      "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC",
       "aliases": {
         "BMUNJ45": "Niloufer Jamal",
         "BMUDS45": "Deepti Sahu",
