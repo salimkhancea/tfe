@@ -1,6 +1,19 @@
 {
   "version": "2026-06-25",
   "speakers": [
+
+    {
+      "id": "tanvi-gautam",
+      "name": "Dr. Tanvi Gautam",
+      "title": "Sr. Faculty and Program Director Singapore Management University",
+      "bio": "Dr. Tanvi Gautam is a multi-award-winning keynote speaker, executive coach, author and founder of Leadershift Inc., and Senior Faculty and Program Director at Singapore Management University. She combines corporate execution with academic frameworks and culture transformation, helping global organisations strengthen leadership capability, executive effectiveness and readiness for disruption."
+    },
+    {
+      "id": "shine-ding",
+      "name": "Shine Ding",
+      "title": "Partner, Egon Zehnder Singapore",
+      "bio": "Shine Ding is a Partner at Egon Zehnder Singapore and leads its CHRO Practice in Asia. She advises organisations on executive search, leadership development and transformation, drawing on prior experience with UBS, McKinsey and industry. Her work spans scaling, international expansion, ownership change, organisational effectiveness and senior leadership capability across the region."
+    },
     {
       "id": "priya-rao",
       "name": "Priya Rao",
