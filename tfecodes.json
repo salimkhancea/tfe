@@ -204,7 +204,8 @@
       "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC",
       "aliases": {
         "BMUNJ45": "Niloufer Jamal",
-        "BMUDS45": "Deepti Sahu",
+        "BMUDEEPTI45": "Deepti Sahu",
+        "BMUANTRA45": "Antra",
         "BMUAS45": "Ayesha",
         "BMUCB45": "Carrie Bharucha",
         "BMUPS45": "Priyanka"
@@ -227,7 +228,10 @@
         "BMUGUESTKC": "Khurshid",
         "BMUGUESTNJ": "Niloufer",
         "BMUGUESTAS": "Ayesha",
-        "BMUGUESTKP": "Karunesh"        
+        "BMUGUESTKP": "Karunesh",
+        "DEEPTIGUEST": "Deepti",
+        "ANTRAGUEST": "Antra",
+         "BMUGUESTPS": "Priyanka"
       }
       
     }
