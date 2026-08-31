@@ -1,61 +1,14 @@
 {
   "version": "2026-08-31",
-  "updatedAt": "2026-08-31T15:25:00+05:30",
-
-  "finderOptions": [
-    {
-      "label": "SID - Singapore Institute of Directors Member",
-      "code": "SIDBMU45",
-      "active": true,
-      "sortOrder": 10
-    },
-    {
-      "label": "SHRM - Society for Human Resource Management Member",
-      "code": "SHRMBMU45",
-      "active": true,
-      "sortOrder": 20
-    },
-    {
-      "label": "NHRDN - National HRD Network Member",
-      "code": "NHRDNBMU15",
-      "active": true,
-      "sortOrder": 30
-    },
-    {
-      "label": "B Connected Member",
-      "code": "BConnected45",
-      "active": true,
-      "sortOrder": 40
-    },
-    {
-      "label": "vLookUp Member",
-      "code": "VLOOKUP45",
-      "active": true,
-      "sortOrder": 50
-    },
-    {
-      "label": "NUS - National University of Singapore Member",
-      "code": "NUSBMU45",
-      "active": true,
-      "sortOrder": 60
-    },
-    {
-      "label": "Board Match-Up Community Member",
-      "code": "BMUREGMEM15",
-      "active": true,
-      "sortOrder": 70
-    },
-    {
-      "label": "IMAA Member",
-      "code": "IMAABMU45",
-      "active": true,
-      "sortOrder": 80
-    },
-    {
-      "label": "Rotary Club Member",
-      "code": "BMURotary45",
-      "active": true,
-      "sortOrder": 90
-    }
+  "options": [
+    ["SID Member — Singapore Institute of Directors", "SIDBMU45"],
+    ["SHRM Member — Society for Human Resource Management", "SHRMBMU45"],
+    ["NHRDN Member — National HRD Network", "NHRDNBMU15"],
+    ["B Connected Member", "BConnected45"],
+    ["vLookUp Member", "VLOOKUP45"],
+    ["NUS Member — National University of Singapore", "NUSBMU45"],
+    ["Board Match-Up Community Member", "BMUREGMEM15"],
+    ["IMAA Member", "IMAABMU45"],
+    ["Rotary Club Member", "BMURotary45"]
   ]
 }
