@@ -4,19 +4,19 @@
 
   "finderOptions": [
     {
-      "label": "SID Member — Singapore Institute of Directors",
+      "label": "SID - Singapore Institute of Directors Member",
       "code": "SIDBMU45",
       "active": true,
       "sortOrder": 10
     },
     {
-      "label": "SHRM Member — Society for Human Resource Management",
+      "label": "SHRM - Society for Human Resource Management Member",
       "code": "SHRMBMU45",
       "active": true,
       "sortOrder": 20
     },
     {
-      "label": "NHRDN Member — National HRD Network",
+      "label": "NHRDN - National HRD Network Member",
       "code": "NHRDNBMU15",
       "active": true,
       "sortOrder": 30
@@ -34,7 +34,7 @@
       "sortOrder": 50
     },
     {
-      "label": "NUS Member — National University of Singapore",
+      "label": "NUS - National University of Singapore Member",
       "code": "NUSBMU45",
       "active": true,
       "sortOrder": 60
