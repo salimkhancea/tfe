@@ -127,6 +127,22 @@
       "eligibilityText": "I confirm that I am a current member of the Singapore Institute of Directors.",
       "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC"
     },
+
+    },
+
+    "BMURotary45": {
+      "codeDisplay": "BMURotary45",
+      "active": true,
+      "validUntil": "2026-09-15T23:59:59+08:00",
+      "title": "Exclusive B Connected Executive Pass",
+      "description": "An exclusive Executive Pass offer available to members of the Rotary Club. Valid until 15 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "discountPercent": 45.5,
+      "FinalValue": 599,
+      "discountLabel": "Exclusive Rotary Club Rate – SGD 599",
+      "eligibilityCheckboxRequired": true,
+      "eligibilityText": "I confirm that I am a current member of the Rotary Club",
+      "paymentLink": "https://www.paypal.com/ncp/payment/D2X93GLNULKBC"
+    },
     
     "SIDBMU45": {
       "codeDisplay": "SIDBMU45",
