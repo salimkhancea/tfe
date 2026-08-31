@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>The Flex Executive Summit Registration</title>
+<style>
+*,*:before,*:after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#101010;--gold:#b8944d;--blue:#1769c2;--red-bg:#fef2f2;--red-border:#fecaca;--red-text:#b91c1c;--amber-bg:#fffbeb;--amber-border:#fde68a;--amber-text:#92400e;--green-bg:#ecfdf5;--green-border:#bbf7d0;--green-text:#166534}
+body{font-family:"Open Sans","Segoe UI",system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#000;min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:48px 18px 64px;color:var(--ink)}
+body.tfe-registration-loading{min-height:720px!important;overflow:hidden!important}body.tfe-registration-loading .page{min-height:610px!important}body.tfe-registration-loading .card{min-height:520px!important;overflow:hidden!important}body.tfe-registration-loading .form-content{opacity:0!important;visibility:hidden!important;transform:translateY(8px)!important}body.tfe-registration-ready .form-content{opacity:1;visibility:visible;transform:translateY(0);transition:opacity .28s ease,transform .28s ease}
+.page{width:100%;max-width:720px}.card{background:rgba(255,255,255,.98);border:1px solid rgba(255,255,255,.78);border-radius:26px;padding:30px 44px 42px;box-shadow:0 30px 90px rgba(0,0,0,.32),0 0 0 1px rgba(255,255,255,.08) inset;position:relative;overflow:hidden}.card:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.95}.form-content{position:relative;padding-bottom:4px}
+.progress-wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 32px}.progress-label{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8a8a8a;white-space:nowrap}.progress-track{flex:1;height:4px;border-radius:999px;background:#efefef;overflow:hidden}.progress-fill{height:100%;width:20%;background:linear-gradient(90deg,#0b4ea2,#2f80ed,#6bb6ff);border-radius:999px;transition:width .35s ease}
+.form-step{display:none;animation:stepIn .32s ease both}.form-step.active{display:block}@keyframes stepIn{from{opacity:0;transform:translateX(10px)}to{opacity:1;transform:translateX(0)}}@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}@keyframes logoArrive{to{opacity:1;transform:translateY(0) scale(1)}}
+.page1-flex-logo{display:flex;justify-content:center;margin:8px 0 28px;opacity:0;transform:translateY(-8px) scale(.97);animation:logoArrive .72s ease .22s forwards}.page1-flex-logo img{display:block;max-height:54px;max-width:230px;width:auto;object-fit:contain}.intro-line{font-size:22px;font-weight:780;line-height:1.34;letter-spacing:-.02em;color:#111;max-width:620px;margin:0 0 10px}.intro-line .gold{color:var(--gold)}.intro-helper{font-size:12.8px;line-height:1.58;color:#6a6a6a;margin:0 0 28px;max-width:560px}.delayed-fields{opacity:0;transform:translateY(26px);pointer-events:none}.delayed-fields.show{opacity:1;transform:translateY(0);pointer-events:auto;transition:opacity .56s ease,transform .56s cubic-bezier(.2,.8,.2,1)}
+.one-line-instruction{font-size:18px;font-weight:780;line-height:1.35;letter-spacing:-.015em;color:#111;margin:8px 0 26px;max-width:580px}.eyebrow{font-size:11px;font-weight:850;letter-spacing:.14em;text-transform:uppercase;color:#9b9b9b;margin-bottom:8px}.card-title{font-size:26px;font-weight:780;margin-bottom:8px;line-height:1.22;letter-spacing:-.02em;color:#111}.card-hint{font-size:14px;color:#666;line-height:1.62;margin-bottom:26px;max-width:610px}
+.fields{display:flex;flex-direction:column;gap:18px}.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.row-phone{display:grid;grid-template-columns:146px 1fr;gap:14px}.field-wrap{display:flex;flex-direction:column;gap:6px}.field-label{font-size:12.5px;font-weight:760;color:#414141;display:flex;align-items:center;gap:5px}.req{color:#d63939}.field-icon{width:17px;height:17px;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:850;line-height:1;color:#fff;flex:0 0 auto}.field-icon.wa{border-radius:50%;background:#25d366;font-size:9px}.field-icon.li{border-radius:3px;background:#0a66c2;font-family:Arial,sans-serif}
+input[type=text],input[type=email],input[type=tel],input[type=url],select{width:100%;height:50px;padding:0 14px;font-family:inherit;font-size:14.5px;color:#111;background:#fbfbfb;border:1px solid #e1e1e1;border-radius:11px;outline:none;transition:border-color .15s,box-shadow .15s,background .15s}select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,#555 50%),linear-gradient(135deg,#555 50%,transparent 50%);background-position:calc(100% - 19px) 21px,calc(100% - 13px) 21px;background-size:6px 6px;background-repeat:no-repeat;cursor:pointer}select:disabled{cursor:not-allowed;color:#888}input:focus,select:focus{border-color:#151515;box-shadow:0 0 0 3px rgba(0,0,0,.065);background:#fff}.country-code-other{display:none;margin-top:8px}.country-code-other.show{display:block}
+.preference-note{margin-top:3px;font-size:12.5px;line-height:1.45;color:#555}.preference-note strong{color:#111;font-weight:800}.privacy-note{margin-top:18px;padding:12px 14px;border:1px solid #eee;border-radius:14px;background:#fbfbfb}.consent-note{font-size:11.5px;line-height:1.55;color:#777}.consent-note a{color:#111;font-weight:750;text-decoration:underline;text-underline-offset:2px}
+.payment-summary{border:1px solid #eee;border-radius:18px;background:linear-gradient(180deg,#fff,#fbfbfb);padding:6px 18px;margin-bottom:20px}.summary-row{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:14px 0;border-bottom:1px solid #eee}.summary-row:last-child{border-bottom:0}.summary-label{font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#777}.summary-value{font-size:16px;font-weight:850;color:#111;white-space:nowrap}.summary-value.muted{color:#888;text-decoration:line-through}.summary-note{font-size:12px;line-height:1.45;color:#666;margin-top:4px;font-weight:650}
+.discount-grid{display:grid;grid-template-columns:minmax(0,1fr) 122px;grid-template-areas:"label ." "input apply" "help .";column-gap:10px;row-gap:6px;align-items:center}.discount-grid .field-label{grid-area:label}.discount-grid #f-reference-code{grid-area:input}.discount-grid #apply-code-btn{grid-area:apply}.code-help-link{grid-area:help;justify-self:start;border:0;background:none;padding:1px 0 0;font-family:inherit;font-size:12.5px;font-weight:750;color:var(--blue);cursor:pointer;text-align:left}.code-help-link:hover{color:#0b4ea2;text-decoration:underline;text-underline-offset:3px}
+.code-finder{display:none;margin-top:12px;padding:16px;border:1px solid #dce8f6;border-radius:15px;background:linear-gradient(180deg,#f8fbff,#f5f9fe)}.code-finder.show{display:block;animation:fadeUp .24s ease both}.code-finder-title{font-size:13px;font-weight:820;color:#222;margin-bottom:3px}.code-finder-note{font-size:11.7px;line-height:1.5;color:#6d7783;margin-bottom:12px}.code-finder-label{font-size:12.5px;font-weight:760;color:#414141;margin-bottom:8px;display:block}.code-finder-actions{display:flex;justify-content:flex-end;margin-top:12px}.btn-confirm-code{min-width:110px;height:44px;padding:0 18px;font-size:13px}
+.offer-card{border:1px solid rgba(184,148,77,.34);background:#fffdf8;border-radius:15px;padding:14px;margin:14px 0 0;display:none}.offer-card.show{display:block;animation:fadeUp .24s ease both}.offer-title{font-size:14px;font-weight:850;color:#111;margin-bottom:6px}.offer-text{font-size:12.5px;line-height:1.55;color:#555}.checkbox-row{display:none;gap:9px;align-items:flex-start;margin-top:12px;padding-top:12px;border-top:1px solid rgba(184,148,77,.22)}.checkbox-row.show{display:flex}.checkbox-row input{width:17px;height:17px;margin-top:2px;accent-color:#111;flex:0 0 auto}.checkbox-row label{font-size:12.2px;line-height:1.5;color:#444;font-weight:720}
+.final-payable{margin-top:16px;padding:16px 18px;border-radius:18px;background:#111;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:18px}.final-payable .small{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#cfcfcf;font-weight:800;margin-bottom:5px}.final-payable .amount{font-size:24px;font-weight:900;line-height:1;white-space:nowrap}.final-payable .caption{font-size:11.5px;color:#d2d2d2;line-height:1.45;margin-top:6px}
+.thank-you-panel{min-height:300px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:22px 0 10px}.thank-you-mark{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#111;color:#fff;font-size:24px;font-weight:900;margin-bottom:20px;box-shadow:0 18px 42px rgba(0,0,0,.16)}.thank-you-title{font-size:26px;font-weight:850;letter-spacing:-.02em;color:#111;margin-bottom:10px}.thank-you-text{max-width:500px;font-size:14px;line-height:1.68;color:#5d5d5d}
+.err-msg{display:none;background:var(--red-bg);border:1px solid var(--red-border);color:var(--red-text);border-radius:12px;padding:10px 13px;font-size:12.5px;font-weight:760;margin-top:14px;line-height:1.45}.err-msg.info{background:var(--amber-bg);border-color:var(--amber-border);color:var(--amber-text)}.err-msg.success{background:var(--green-bg);border-color:var(--green-border);color:var(--green-text)}
+.nav{display:flex;gap:10px;margin-top:30px;align-items:center}.nav.right{justify-content:flex-end}.nav.split{justify-content:space-between}.btn{border:0;border-radius:12px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:inherit;transition:opacity .15s,transform .1s;text-decoration:none;background:#111;color:#fff;font-weight:820}.btn:hover{opacity:.88}.btn:active{transform:scale(.99)}.btn:disabled{opacity:.55;cursor:not-allowed}.btn-next,.btn-side{width:104px;height:44px;font-size:13.5px}.btn-small{width:122px;height:50px;font-size:13px;font-weight:760}.btn-pay{min-width:176px;height:48px;padding:0 22px;font-size:13.8px}.btn-arrow{width:42px;height:42px;border-radius:50%;background:#fff;color:#111;border:1px solid #e6e6e6;font-size:20px;font-weight:850;line-height:1}
+.bottom-brand-logo{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;margin:34px -44px -42px;padding:16px 44px 18px;border-radius:0 0 26px 26px;background:#050505;box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}.bottom-brand-logo img{display:block;width:auto;object-fit:contain;opacity:.98}.bmu-logo{max-height:33px;max-width:218px}.bottom-brand-text{display:none;font-size:10.5px;font-weight:820;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.72);text-align:center}.card[data-step="1"] .bottom-brand-text{display:block}.knowledge-partner{display:flex;flex-direction:column;align-items:center;width:100%;margin-top:5px;padding-top:13px;border-top:1px solid rgba(255,255,255,.16)}
+@media (prefers-reduced-motion:reduce){.form-step,.delayed-fields,.delayed-fields.show{animation:none!important;transition:none!important}}
+@media (max-width:640px){body{padding:22px 12px 38px}.card{border-radius:20px;padding:24px 18px 30px}.bottom-brand-logo{margin:30px -18px -30px;padding:14px 18px 15px;border-radius:0 0 20px 20px}.bmu-logo{max-height:30px;max-width:200px}.bottom-brand-text{font-size:9.8px;letter-spacing:.075em}.progress-wrap{margin-bottom:26px}.progress-label{font-size:10.5px}.intro-line{font-size:19px;margin-bottom:9px}.intro-helper{font-size:12.5px;margin-bottom:24px}.page1-flex-logo{margin:4px 0 24px}.page1-flex-logo img{max-height:46px;max-width:200px}.one-line-instruction{font-size:17px;margin-bottom:22px}.eyebrow{font-size:10.5px}.card-title{font-size:23px}.card-hint{font-size:13.5px;margin-bottom:22px}.row2,.row-phone{grid-template-columns:1fr;gap:15px}.discount-grid{grid-template-columns:1fr;grid-template-areas:"label" "input" "apply" "help"}.discount-grid #apply-code-btn{width:100%;height:48px}.code-finder-actions{justify-content:stretch}.btn-confirm-code{width:100%}input[type=text],input[type=email],input[type=tel],input[type=url],select{height:50px;font-size:14.5px}.nav{margin-top:26px}.btn-arrow{width:40px;height:40px}.btn-side{width:96px;height:42px}.btn-pay{min-width:150px;height:46px;padding:0 18px}.payment-summary{padding:4px 14px}.summary-row{padding:13px 0}.summary-value{font-size:15px}.final-payable{display:block}.final-payable .amount{font-size:24px;margin-top:10px}}
+@media (max-width:640px){body.tfe-registration-loading{min-height:660px!important}body.tfe-registration-loading .page{min-height:580px!important}body.tfe-registration-loading .card{min-height:510px!important}}
+</style>
+</head>
+<body class="tfe-registration-loading">
+<div class="page"><div class="card" id="form-card" data-step="1"><div class="form-content">
+  <div class="progress-wrap" aria-label="Registration progress"><div class="progress-label" id="progress-label">Step 1 of 5</div><div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div></div>
+
+  <section class="form-step active" id="step-1">
+    <div class="page1-flex-logo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/flex%20logo.png" alt="The Flex Executive Logo" loading="eager" decoding="async"></div>
+    <div class="intro-line">Secure your <span class="gold">Executive Pass.</span></div>
+    <div class="intro-helper">Complete your registration to gain strategic insights, build meaningful relationships, and explore new pathways for leadership impact.</div>
+    <div class="delayed-fields" id="step-1-fields">
+      <div class="fields">
+        <div class="row2">
+          <div class="field-wrap"><label class="field-label" for="f-first-name">First Name <span class="req">*</span></label><input type="text" id="f-first-name" placeholder="Enter first name" autocomplete="given-name"></div>
+          <div class="field-wrap"><label class="field-label" for="f-last-name">Last Name <span class="req">*</span></label><input type="text" id="f-last-name" placeholder="Enter last name" autocomplete="family-name"></div>
+        </div>
+        <div class="field-wrap"><label class="field-label" for="f-email">Email <span class="req">*</span></label><input type="email" id="f-email" placeholder="Enter your email address" inputmode="email" autocomplete="email"></div>
+      </div>
+      <div class="err-msg" id="err-step-1">Please complete the required fields correctly.</div>
+      <div class="nav right"><button class="btn btn-next" id="step-1-next" type="button" onclick="validateStep1Continue()">Next</button></div>
+    </div>
+  </section>
+
+  <section class="form-step" id="step-2">
+    <div class="one-line-instruction">A few details help us confirm your Executive Pass.</div>
+    <div class="fields">
+      <div class="row-phone">
+        <div class="field-wrap"><label class="field-label" for="f-country-code">Country Code <span class="req">*</span></label><select id="f-country-code" onchange="handleCountryCodeChange()"><option value="+65" selected>+65 Singapore</option><option value="+91">+91 India</option><option value="+60">+60 Malaysia</option><option value="+62">+62 Indonesia</option><option value="+673">+673 Brunei</option><option value="+66">+66 Thailand</option><option value="+63">+63 Philippines</option><option value="+84">+84 Vietnam</option><option value="+852">+852 Hong Kong</option><option value="+971">+971 UAE</option><option value="+44">+44 UK</option><option value="+1">+1 USA/Canada</option><option value="+61">+61 Australia</option><option value="OTHER">Other</option></select><input class="country-code-other" type="text" id="f-country-code-other" placeholder="Enter country code, e.g. +49" inputmode="tel" autocomplete="tel-country-code"></div>
+        <div class="field-wrap"><label class="field-label" for="f-whatsapp"><span class="field-icon wa" aria-hidden="true">☎</span>WhatsApp Phone <span class="req">*</span></label><input type="tel" id="f-whatsapp" placeholder="Enter WhatsApp number" inputmode="tel" autocomplete="tel"></div>
+      </div>
+      <div class="field-wrap"><label class="field-label" for="f-linkedin"><span class="field-icon li" aria-hidden="true">in</span>LinkedIn Profile Link <span style="color:#999;font-weight:500">(optional)</span></label><input type="url" id="f-linkedin" placeholder="https://www.linkedin.com/in/your-profile" inputmode="url" autocomplete="url"></div>
+    </div>
+    <div class="privacy-note"><div class="consent-note">By clicking <strong>Next</strong>, you agree to receive related communication from Board Match-Up and accept our <a href="https://theflexexecutive.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>.</div></div>
+    <div style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden" aria-hidden="true"><label for="website-hp">Website</label><input id="website-hp" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+    <div class="err-msg" id="err-step-2">Please complete the required fields correctly.</div>
+    <div class="nav split"><button class="btn btn-arrow" type="button" aria-label="Back" onclick="goToStep(1)">‹</button><button class="btn btn-side" id="details-save-btn" type="button" onclick="saveDetailsContinue()">Next</button></div>
+  </section>
+
+  <section class="form-step" id="step-3">
+    <div class="fields"><div class="field-wrap"><label class="field-label" for="f-role-description">Choose your Registration Preference <span class="req">*</span></label><select id="f-role-description"><option value="Summit Registration Only - 2 Oct" selected>Summit Registration Only - 2 Oct</option><option value="Opt In: Masterclass + Summit - 1 & 2 Oct">Opt In: Masterclass + Summit - 1 & 2 Oct</option></select><div class="preference-note"><strong>Masterclass is complimentary</strong> with the Executive Pass. Seats are limited and allocated on a first-come, first-served basis.</div></div></div>
+    <div class="err-msg" id="err-step-3">Please select your registration preference.</div>
+    <div class="nav split"><button class="btn btn-arrow" type="button" aria-label="Back" onclick="goToStep(2)">‹</button><button class="btn btn-side" type="button" onclick="validateStep3Continue()">Next</button></div>
+  </section>
+
+  <section class="form-step" id="step-4">
+    <div class="eyebrow">Payment</div><div class="card-title">Confirm your Executive Pass</div><div class="card-hint">Apply a discount code if applicable, then proceed to secure payment.</div>
+    <div class="payment-summary"><div class="summary-row"><div><div class="summary-label">Regular Price</div></div><div class="summary-value muted" id="regular-price-label">SGD 1,099</div></div><div class="summary-row"><div><div class="summary-label">Momentum Executive Pass</div><div class="summary-note">Current online Executive Pass rate.</div></div><div class="summary-value" id="advance-price-label">SGD 770</div></div></div>
+
+    <div class="discount-grid">
+      <label class="field-label" for="f-reference-code">Discount Code</label>
+      <input type="text" id="f-reference-code" placeholder="Enter discount code" autocomplete="off">
+      <button class="btn btn-small" type="button" id="apply-code-btn" onclick="applyReferenceCode()">Apply</button>
+      <button class="code-help-link" type="button" id="code-help-link" onclick="toggleCodeFinder()">Help me to find my code</button>
+    </div>
+
+    <div class="code-finder" id="code-finder">
+      <div class="code-finder-title">Find your eligible code</div><div class="code-finder-note">Select the membership or affiliation that applies to you.</div>
+      <label class="code-finder-label" for="f-code-affiliation">Select your membership / affiliation</label>
+      <select id="f-code-affiliation" onchange="handleEligibilitySelection()"><option value="">Select an option</option></select>
+      <div class="code-finder-actions"><button class="btn btn-confirm-code" type="button" id="confirm-affiliation-btn" onclick="confirmEligibilityCode()" disabled>Confirm</button></div>
+    </div>
+
+    <div class="offer-card" id="code-offer-card"><div class="offer-title" id="code-offer-title">Code Applied</div><div class="offer-text" id="code-offer-text">Offer description will appear here.</div><div class="checkbox-row" id="code-confirm-row"><input type="checkbox" id="f-code-confirm" checked><label for="f-code-confirm" id="code-confirm-label">I confirm that I am eligible for this discount-code offer.</label></div></div>
+    <div class="final-payable"><div><div class="small">Final Value to Pay</div><div class="caption" id="final-payable-caption">Momentum Executive Pass. You will continue to PayPal in this window.</div></div><div class="amount" id="final-payable-label">SGD 770</div></div>
+    <div class="err-msg" id="err-step-4">Please check your payment details.</div>
+    <div class="nav split"><button class="btn btn-arrow" type="button" aria-label="Back" onclick="goToStep(3)">‹</button><button class="btn btn-pay" id="pay-now-btn" type="button" onclick="startPayment()">Pay Now</button></div>
+  </section>
+
+  <section class="form-step" id="step-5"><div class="thank-you-panel"><div class="thank-you-mark">✓</div><div class="thank-you-title" id="thank-you-title">Thank you.</div><div class="thank-you-text" id="thank-you-text">Your registration update has been received.</div></div></section>
+
+  <div class="bottom-brand-logo"><img class="bmu-logo" src="https://img1.wsimg.com/isteam/ip/f949858a-5410-4007-9066-936f82154009/Logo%20New%20BMU-Small-1.png" alt="Board Match-Up Logo" loading="eager" decoding="async"><div class="bottom-brand-text">Event organized by Board Match-Up</div><div class="knowledge-partner"></div></div>
+</div></div></div>
+
+<script>
+var CONFIG={
+  GOOGLE_SHEET_WEBHOOK:"https://script.google.com/macros/s/AKfycbyFIVNfukOVb1BjPT1CkQ6XmNwsVjvOf54MuLUBW6h7xZSn_8UY8LKDivBU9Uux_5iKWg/exec",
+  FORM_NAME:"The Flex Executive Summit Registration Workflow",
+  SOURCE:"Website",
+  PRIVACY_POLICY_URL:"https://theflexexecutive.com/privacy-policy",
+  REGULAR_PRICE:1099,
+  ADVANCE_PRICE:770,
+  CURRENCY:"SGD",
+  ADVANCE_OFFER_LABEL:"Momentum Executive Pass - 30% Off",
+  DEFAULT_PAYMENT_LINK:"https://www.paypal.com/ncp/payment/3KQGSBL7RP2BU",
+  COUPON_CODES_JSON_URL:"https://raw.githubusercontent.com/salimkhancea/tfe/main/tfecodes.json",
+  CODE_FINDER_JSON_URL:"https://raw.githubusercontent.com/salimkhancea/tfe/main/tfecodefinder.json"
+};
+  
+var REFERENCE_CODES={},REFERENCE_CODES_PROMISE=null,CODE_FINDER_OPTIONS=[],CODE_FINDER_PROMISE=null;
+var STATE={currentStep:1,appliedCodeKey:"",appliedCodeInfo:null,finalAmount:CONFIG.ADVANCE_PRICE,paymentLink:CONFIG.DEFAULT_PAYMENT_LINK};
+var CLIENT_SESSION_ID=window.crypto&&crypto.randomUUID?crypto.randomUUID():"sid-"+Date.now()+"-"+Math.random().toString(36).slice(2);
+var PAGE_STARTED_AT=Date.now();
+var $=function(id){return document.getElementById(id)};
+var txt=function(id,v){var e=$(id);if(e)e.textContent=v};
+var val=function(id){var e=$(id);return e?String(e.value||"").trim():""};
+
+function normalizeCouponCodeKey(v){return String(v||"").replace(/\s+/g,"").toUpperCase()}
+function money(n){return CONFIG.CURRENCY+" "+Math.round(Number(n||0)).toLocaleString("en-SG")}
+function getHoneypotValue(){return val("website-hp")}
+function newRequestId(){return "summit-req-"+Date.now()+"-"+Math.random().toString(36).slice(2)}
+
+async function fetchJSON(url){
+  url=String(url||"").trim();
+  if(!/^https?:\/\//i.test(url)||url.indexOf("PASTE_")!==-1)throw new Error("JSON URL is not configured.");
+  var r=await fetch(url+(url.indexOf("?")===-1?"?":"&")+"_="+Date.now(),{method:"GET",mode:"cors",cache:"no-store",credentials:"omit",headers:{Accept:"application/json"}});
+  if(!r.ok)throw new Error("HTTP "+r.status);
+  return r.json();
+}
+
+function normalizeReferenceCodes(data){
+  var source=data&&data.codes&&typeof data.codes==="object"?data.codes:data,out={};
+  if(!source||typeof source!=="object"||Array.isArray(source))throw new Error("The coupon-code JSON must contain a codes object.");
+  function add(code,info,extra){
+    var key=normalizeCouponCodeKey(code);if(!key)return;
+    if(out[key])throw new Error("Duplicate coupon code or alias found: "+key);
+    out[key]=Object.assign({},info,extra||{},{codeDisplay:String(extra&&extra.codeDisplay||info.codeDisplay||code),active:info.active!==false&&(!extra||extra.active!==false),FinalValue:Number(info.FinalValue)});
+  }
+  Object.keys(source).forEach(function(raw){
+    var info=source[raw];if(!info||typeof info!=="object"||Array.isArray(info))return;
+    var main=normalizeCouponCodeKey(raw),finalValue=Number(info.FinalValue);if(!main||!isFinite(finalValue)||finalValue<0)return;
+    add(main,info,{codeDisplay:String(info.codeDisplay||raw),mainCode:main,aliasCode:"",speakerName:""});
+    var aliases=info.aliases;if(!aliases||typeof aliases!=="object"||Array.isArray(aliases))return;
+    Object.keys(aliases).forEach(function(rawAlias){
+      var alias=normalizeCouponCodeKey(rawAlias);if(!alias||alias===main)return;
+      var v=aliases[rawAlias],meta=v&&typeof v==="object"&&!Array.isArray(v)?v:{speakerName:String(v||"")};
+      add(alias,info,{codeDisplay:alias,mainCode:main,aliasCode:alias,speakerName:String(meta.speakerName||meta.name||""),active:meta.active!==false});
+    });
+  });
+  if(!Object.keys(out).length)throw new Error("No valid coupon codes were found.");
+  return out;
+}
+
+function loadReferenceCodes(){
+  if(REFERENCE_CODES_PROMISE)return REFERENCE_CODES_PROMISE;
+  REFERENCE_CODES_PROMISE=fetchJSON(CONFIG.COUPON_CODES_JSON_URL).then(function(data){REFERENCE_CODES=normalizeReferenceCodes(data);return REFERENCE_CODES}).catch(function(err){REFERENCE_CODES={};REFERENCE_CODES_PROMISE=null;throw err});
+  return REFERENCE_CODES_PROMISE;
+}
+
+function normalizeFinderOptions(data){
+  var rows=data&&Array.isArray(data.options)?data.options:[];
+  var out=rows.map(function(row){return Array.isArray(row)?{label:String(row[0]||"").trim(),code:String(row[1]||"").trim()}:null}).filter(function(x){return x&&x.label&&x.code});
+  if(!out.length)throw new Error("No finder options were found.");
+  return out;
+}
+
+function loadFinderOptions(){
+  if(CODE_FINDER_PROMISE)return CODE_FINDER_PROMISE;
+  CODE_FINDER_PROMISE=fetchJSON(CONFIG.CODE_FINDER_JSON_URL).then(function(data){CODE_FINDER_OPTIONS=normalizeFinderOptions(data);return CODE_FINDER_OPTIONS}).catch(function(err){CODE_FINDER_OPTIONS=[];CODE_FINDER_PROMISE=null;throw err});
+  return CODE_FINDER_PROMISE;
+}
+
+function populateFinder(){
+  var s=$("f-code-affiliation");if(!s)return;
+  s.innerHTML='<option value="">Select an option</option>';
+  CODE_FINDER_OPTIONS.forEach(function(item){var o=document.createElement("option");o.value=item.code;o.textContent=item.label;o.dataset.label=item.label;s.appendChild(o)});
+  s.disabled=false;
+}
+
+function formatOfferExpiry(validUntil){
+  if(!validUntil)return "";var d=new Date(validUntil);if(!isFinite(d.getTime()))return "";
+  try{return d.toLocaleDateString("en-SG",{day:"numeric",month:"long",year:"numeric",timeZone:"Asia/Singapore"})}catch(e){return String(validUntil).slice(0,10)}
+}
+
+function cleanPageURL(url){var v=String(url||"").trim();if(!v||/^about:(srcdoc|blank)$/i.test(v)||!/^https?:\/\//i.test(v))return "";return v.split("#")[0]}
+function getCurrentPageURL(){
+  var c=[];try{if(window.top&&window.top!==window)c.push(window.top.location.href)}catch(e){}try{if(window.parent&&window.parent!==window)c.push(window.parent.location.href)}catch(e){}
+  c.push(document.referrer||"",document.baseURI||"",window.location.href||"");
+  for(var i=0;i<c.length;i++){var u=cleanPageURL(c[i]);if(u)return u}
+  return "https://theflexexecutive.com/registration-specialoffer";
+}
+function getCurrentPageOrigin(){try{return new URL(getCurrentPageURL()).origin}catch(e){return "https://theflexexecutive.com"}}
+function addRequestMeta(payload,requestId){var u=getCurrentPageURL();return Object.assign({},payload,{requestId:requestId||newRequestId(),tool:CONFIG.FORM_NAME,source:payload.source||CONFIG.SOURCE,siteOrigin:getCurrentPageOrigin(),pageUrl:u,pageURL:u,referrer:document.referrer||"",clientSessionId:CLIENT_SESSION_ID,pageElapsedMs:Date.now()-PAGE_STARTED_AT,honeypot:getHoneypotValue(),userAgent:String(navigator.userAgent||"").slice(0,220)})}
+
+function showStepMessage(n,msg,type){var e=$("err-step-"+n);if(!e)return;e.textContent=msg;e.className="err-msg"+(type?" "+type:"");e.style.display="block"}
+function hideStepMessage(n){var e=$("err-step-"+n);if(!e)return;e.style.display="none";e.className="err-msg"}
+function isValidEmail(email){return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)}
+function isValidPhone(phone){var d=phone.replace(/[^\d]/g,"");return /^[+\d\s().-]+$/.test(phone)&&d.length>=6&&d.length<=15}
+function isValidCountryCode(code){return /^\+\d{1,4}$/.test(String(code||"").trim())}
+function normalizeLinkedInURL(url){var v=String(url||"").trim();return v&&!/^https?:\/\//i.test(v)?"https://"+v:v}
+function isValidLinkedInURL(url){var v=normalizeLinkedInURL(url);if(!v)return false;try{var u=new URL(v);return /(^|\.)linkedin\.com$/i.test(u.hostname)&&u.pathname.length>1}catch(e){return false}}
+
+function handleCountryCodeChange(){var o=$("f-country-code-other");if(!o)return;if(val("f-country-code")==="OTHER"){o.classList.add("show");setTimeout(function(){o.focus()},60)}else{o.classList.remove("show");o.value=""}}
+function getAttendeeData(){
+  var first=val("f-first-name"),last=val("f-last-name"),ccSel=val("f-country-code"),cc=ccSel==="OTHER"?val("f-country-code-other"):ccSel,waRaw=val("f-whatsapp"),waDigits=waRaw.replace(/[^\d]/g,""),linkedin=normalizeLinkedInURL(val("f-linkedin"));
+  return{firstName:first,lastName:last,fullName:(first+" "+last).trim(),email:val("f-email"),countryCode:cc,whatsappRaw:waRaw,whatsappPhone:cc&&waDigits?cc+"-"+waDigits:"",phone:cc&&waDigits?cc+"-"+waDigits:"",linkedinProfile:linkedin,registrationPreference:val("f-role-description")};
+}
+
+function updateProgress(step){txt("progress-label","Step "+step+" of 5");var f=$("progress-fill");if(f)f.style.width=step*20+"%"}
+function goToStep(step){if(step<1||step>5)return;document.querySelectorAll(".form-step").forEach(function(s){s.classList.remove("active")});var t=$("step-"+step);if(t)t.classList.add("active");STATE.currentStep=step;var c=$("form-card");if(c)c.setAttribute("data-step",String(step));updateProgress(step);if(step===2)resetStep2Button();try{window.scrollTo({top:0,behavior:"smooth"})}catch(e){window.scrollTo(0,0)}}
+
+function validateStep1Continue(){var d=getAttendeeData();if(!d.firstName)return showStepMessage(1,"Please enter your first name.");if(!d.lastName)return showStepMessage(1,"Please enter your last name.");if(!d.email)return showStepMessage(1,"Please enter your email address.");if(!isValidEmail(d.email))return showStepMessage(1,"Please enter a valid email address.");hideStepMessage(1);goToStep(2)}
+function validateStep2(){var d=getAttendeeData();if(!d.countryCode){showStepMessage(2,"Please enter the WhatsApp country code.");return false}if(!isValidCountryCode(d.countryCode)){showStepMessage(2,"Please enter a valid country code, for example +65 or +91.");return false}if(!d.whatsappRaw){showStepMessage(2,"Please enter your WhatsApp phone number.");return false}if(!isValidPhone(d.whatsappRaw)){showStepMessage(2,"Please enter a valid WhatsApp phone number.");return false}if(d.linkedinProfile&&!isValidLinkedInURL(d.linkedinProfile)){showStepMessage(2,"Please enter a valid LinkedIn profile link, or leave it blank.");return false}hideStepMessage(2);return true}
+function validateStep3(){if(!getAttendeeData().registrationPreference){showStepMessage(3,"Please select your registration preference.");return false}hideStepMessage(3);return true}
+function validateStep3Continue(){if(validateStep3())goToStep(4)}
+
+function checkSaveStatusJSONP(requestId){
+  return new Promise(function(resolve,reject){
+    var cb="tfeSummitSaveStatus_"+Date.now()+"_"+Math.random().toString(36).slice(2),s=document.createElement("script"),timer=setTimeout(function(){cleanup();reject(new Error("Status check timed out."))},7000);
+    function cleanup(){clearTimeout(timer);try{delete window[cb]}catch(e){window[cb]=undefined}if(s.parentNode)s.parentNode.removeChild(s)}
+    window[cb]=function(data){cleanup();resolve(data||{})};s.onerror=function(){cleanup();reject(new Error("Status check failed."))};
+    s.src=CONFIG.GOOGLE_SHEET_WEBHOOK+"?action=STATUS&requestId="+encodeURIComponent(requestId)+"&callback="+encodeURIComponent(cb)+"&_="+Date.now();document.body.appendChild(s);
+  });
+}
+function isPendingSaveStatus(data){var t=String(data&&((data.error||"")+" "+(data.message||""))||"").toLowerCase();return !data||data.error==="NOT_FOUND"||t.indexOf("not_found")!==-1||t.indexOf("not found")!==-1||t.indexOf("not found yet")!==-1}
+
+function sendToGoogleSheet(payload){
+  var requestId=newRequestId(),finalPayload=addRequestMeta(payload,requestId);
+  return new Promise(function(resolve,reject){
+    var done=false,pollTimer=null,iframeName="tfe_summit_save_iframe",iframe=document.querySelector('iframe[name="'+iframeName+'"]');
+    if(!iframe){iframe=document.createElement("iframe");iframe.name=iframeName;iframe.id=iframeName;iframe.style.cssText="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;border:0";iframe.setAttribute("aria-hidden","true");document.body.appendChild(iframe)}
+    var timer=setTimeout(function(){if(done)return;checkSaveStatusJSONP(requestId).then(function(data){if(done)return;if(data&&data.ok)finishOk(data);else if(isPendingSaveStatus(data))finishOk({ok:true,assumed:true,requestId:requestId,message:"Save submitted; confirmation pending."});else finishErr(new Error(data&&data.message||"Save status could not be confirmed."))}).catch(function(){if(!done)finishOk({ok:true,assumed:true,requestId:requestId,message:"Save submitted; confirmation unavailable."})})},12000);
+    function cleanup(){clearTimeout(timer);if(pollTimer)clearInterval(pollTimer);window.removeEventListener("message",onMessage)}
+    function finishOk(data){done=true;cleanup();resolve(data)}function finishErr(err){done=true;cleanup();reject(err)}
+    function onMessage(event){var data=event.data||{};if(!data||data.tfeTool!=="SummitRegistration"||data.requestId!==requestId)return;if(data.ok)finishOk(data);else if(!isPendingSaveStatus(data))finishErr(new Error(data.message||data.error||"Save failed."))}
+    window.addEventListener("message",onMessage);
+    pollTimer=setInterval(function(){if(done)return;checkSaveStatusJSONP(requestId).then(function(data){if(done)return;if(data&&data.ok)finishOk(data);else if(data&&data.ok===false&&data.error&&!isPendingSaveStatus(data))finishErr(new Error(data.message||data.error||"Save failed."))}).catch(function(){})},4000);
+    var form=document.createElement("form"),input=document.createElement("textarea"),removed=false;
+    form.method="POST";form.action=CONFIG.GOOGLE_SHEET_WEBHOOK;form.target=iframeName;form.style.display="none";form.acceptCharset="UTF-8";form.enctype="application/x-www-form-urlencoded";input.name="payload";input.value=JSON.stringify(finalPayload);form.appendChild(input);document.body.appendChild(form);
+    function removeForm(){if(removed)return;removed=true;if(form.parentNode)form.parentNode.removeChild(form)}
+    iframe.addEventListener("load",removeForm,{once:true});try{form.submit()}catch(err){removeForm();finishErr(err);return}setTimeout(removeForm,6000);
+  });
+}
+
+function buildBasePayload(statusText,includePreference){
+  var d=getAttendeeData(),p={action:"SAVE_REGISTRATION",submittedAtISO:new Date().toISOString(),firstName:d.firstName,lastName:d.lastName,fullName:d.fullName,email:d.email,countryCode:d.countryCode,whatsappPhone:d.whatsappPhone,phone:d.whatsappPhone,linkedinProfile:d.linkedinProfile,status:statusText,source:CONFIG.SOURCE,pageUrl:getCurrentPageURL(),pageURL:getCurrentPageURL(),regularPrice:CONFIG.REGULAR_PRICE,currentOfferPrice:CONFIG.ADVANCE_PRICE,currency:CONFIG.CURRENCY,offerLabel:CONFIG.ADVANCE_OFFER_LABEL,consentAccepted:true,consentText:"By clicking Next, the registrant agreed to receive related communication from Board Match-Up and accepted the Privacy Policy.",privacyPolicyURL:CONFIG.PRIVACY_POLICY_URL};
+  if(includePreference){p.registrationPreference=d.registrationPreference;p.registrationPreferenceCaptured=true}return p;
+}
+function buildStep2SavePayload(){var p=buildBasePayload("Registration Details Saved",false);p.registrationPreference="Pending Selection";p.registrationPreferenceCaptured=false;p.saveStage="Step 2 - Contact Details";return p}
+function buildCodeSelectionPayload(code,label){var info=STATE.appliedCodeInfo,p=buildBasePayload("Code Selected - "+code+" | "+label,true);return Object.assign(p,{saveStage:"Step 4 - Code Selected",referenceCode:code,referenceCodeEntered:normalizeCouponCodeKey(code),referenceCodeParent:info?String(info.mainCode||STATE.appliedCodeKey||""):"",referenceCodeApplied:!!info,referenceCodeTitle:info?String(info.title||""):"",referenceCodeOffer:info?String(info.discountLabel||""):"",referenceCodeDiscountPercent:info?Number(info.discountPercent||0):0,codeSelectionSource:"Help me to find my code",codeAffiliation:label,finalValue:Math.round(STATE.finalAmount),finalValueToPay:Math.round(STATE.finalAmount)})}
+function backgroundSave(payload,label){try{sendToGoogleSheet(payload).then(function(r){console.log(label+" saved.",r||{})}).catch(function(e){console.warn(label+" save could not be confirmed.",e)})}catch(e){console.warn(label+" save could not be started.",e)}}
+
+function resetStep2Button(){var b=$("details-save-btn");if(b){b.disabled=false;b.textContent="Next"}}
+function saveDetailsContinue(){if(!validateStep2())return;if(!CONFIG.GOOGLE_SHEET_WEBHOOK||CONFIG.GOOGLE_SHEET_WEBHOOK.indexOf("PASTE_")===0)return showStepMessage(2,"Submission setup is incomplete. Please contact us directly.");backgroundSave(buildStep2SavePayload(),"Step 2 registration details");hideStepMessage(2);resetStep2Button();goToStep(3)}
+
+function clearCodeState(msg,type){STATE.appliedCodeKey="";STATE.appliedCodeInfo=null;STATE.finalAmount=CONFIG.ADVANCE_PRICE;STATE.paymentLink=CONFIG.DEFAULT_PAYMENT_LINK;$("code-offer-card").classList.remove("show");$("code-confirm-row").classList.remove("show");$("f-code-confirm").checked=false;updateFinalPaymentDisplay();if(msg)showStepMessage(4,msg,type)}
+function isReferenceCodeExpired(info){if(!info||!info.validUntil)return false;var t=new Date(info.validUntil).getTime();return isFinite(t)&&Date.now()>t}
+
+async function toggleCodeFinder(){
+  var finder=$("code-finder"),link=$("code-help-link"),select=$("f-code-affiliation"),confirm=$("confirm-affiliation-btn");if(!finder)return;
+  if(finder.classList.contains("show")){closeCodeFinder();return}
+  finder.classList.add("show");if(link)link.textContent="Hide code finder";if(confirm)confirm.disabled=true;
+  if(CODE_FINDER_OPTIONS.length){populateFinder();setTimeout(function(){select&&select.focus()},80);return}
+  if(select){select.innerHTML='<option value="">Loading eligible memberships...</option>';select.disabled=true}
+  try{await loadFinderOptions();populateFinder();hideStepMessage(4);setTimeout(function(){select&&select.focus()},80)}catch(err){console.warn("Code finder could not be loaded.",err);if(select){select.innerHTML='<option value="">Unable to load memberships</option>';select.disabled=true}showStepMessage(4,"The code finder is temporarily unavailable. You can still enter your discount code manually.","info")}
+}
+function closeCodeFinder(){var f=$("code-finder"),l=$("code-help-link");if(f)f.classList.remove("show");if(l)l.textContent="Help me to find my code"}
+function handleEligibilitySelection(){var s=$("f-code-affiliation"),b=$("confirm-affiliation-btn");if(s&&b)b.disabled=!String(s.value||"").trim();hideStepMessage(4)}
+function getSelectedFinderOption(){var s=$("f-code-affiliation");if(!s||s.selectedIndex<0)return null;var o=s.options[s.selectedIndex],code=String(o.value||"").trim();return code?{code:code,label:String(o.dataset.label||o.textContent||"").trim()}:null}
+async function confirmEligibilityCode(){
+  var selection=getSelectedFinderOption(),s=$("f-code-affiliation"),b=$("confirm-affiliation-btn"),input=$("f-reference-code");
+  if(!selection||!input)return showStepMessage(4,"Please select your membership or affiliation.","info");
+  if(b){b.disabled=true;b.textContent="Confirming..."}clearCodeState();input.value=selection.code;closeCodeFinder();
+  try{if(await applyReferenceCode())backgroundSave(buildCodeSelectionPayload(selection.code,selection.label),"Code selection")}finally{if(s)s.value="";if(b){b.disabled=true;b.textContent="Confirm"}}
+}
+
+async function applyReferenceCode(){
+  var raw=val("f-reference-code"),key=normalizeCouponCodeKey(raw),confirm=$("f-code-confirm");hideStepMessage(4);
+  if(!raw){clearCodeState("Please enter a discount code to apply.","info");return false}
+  showStepMessage(4,"Checking your discount code...","info");
+  try{await loadReferenceCodes()}catch(err){console.warn("Coupon-code JSON could not be loaded.",err);clearCodeState("Discount codes are temporarily unavailable. Please try again or continue with the current online Executive Pass rate.");return false}
+  var info=REFERENCE_CODES[key];if(!info||!info.active){clearCodeState("This discount code is not valid. Please check the code or continue without a code.");return false}
+  if(isReferenceCodeExpired(info)){var exp=formatOfferExpiry(info.validUntil);clearCodeState(exp?"This exclusive offer expired on "+exp+". Please continue with the current online Executive Pass rate.":"This exclusive offer has expired. Please continue with the current online Executive Pass rate.");return false}
+  var finalAmount=Number(info.FinalValue);if(!isFinite(finalAmount)||finalAmount<0){showStepMessage(4,"This discount code is missing a valid FinalValue in the JSON file.");return false}
+  STATE.appliedCodeKey=key;STATE.appliedCodeInfo=info;STATE.finalAmount=finalAmount;STATE.paymentLink=info.paymentLink||CONFIG.DEFAULT_PAYMENT_LINK;txt("code-offer-title",info.title||"Code Applied");txt("code-offer-text",info.description||"");
+  if(info.eligibilityCheckboxRequired){txt("code-confirm-label",info.eligibilityText||"I confirm that I am eligible for this discount-code offer.");confirm.checked=true;$("code-confirm-row").classList.add("show")}else{confirm.checked=true;$("code-confirm-row").classList.remove("show")}
+  $("code-offer-card").classList.add("show");updateFinalPaymentDisplay();showStepMessage(4,"Discount code applied successfully.","success");return true;
+}
+
+function updateFinalPaymentDisplay(){txt("regular-price-label",money(CONFIG.REGULAR_PRICE));txt("advance-price-label",money(CONFIG.ADVANCE_PRICE));txt("final-payable-label",money(STATE.finalAmount));var b=$("pay-now-btn"),caption=STATE.finalAmount<=0?"Complimentary registration access applied. No online payment is required.":STATE.appliedCodeInfo?STATE.appliedCodeInfo.title+" applied. You will continue to PayPal in this window.":"Momentum Executive Pass. You will continue to PayPal in this window.";txt("final-payable-caption",caption);if(b&&!b.disabled)b.textContent=STATE.finalAmount<=0?"Submit Registration":"Pay Now"}
+function isConfiguredPaymentLink(link){return /^https:\/\/www\.paypal\.com\//i.test(String(link||""))}
+function sendToGoogleSheetBeforeNavigation(payload){if(!navigator.sendBeacon)return false;try{var d=new FormData();d.append("payload",JSON.stringify(addRequestMeta(payload,newRequestId())));return navigator.sendBeacon(CONFIG.GOOGLE_SHEET_WEBHOOK,d)}catch(err){console.warn("Payment-start beacon could not be queued.",err);return false}}
+function redirectToPaymentSameWindow(link){try{if(window.top&&window.top!==window){window.top.location.href=link;return}}catch(err){console.warn("Top-level navigation was restricted by the embed.",err)}try{window.location.assign(link)}catch(err2){var a=document.createElement("a");a.href=link;a.target="_top";a.rel="noopener";a.style.display="none";document.body.appendChild(a);a.click();setTimeout(function(){if(a.parentNode)a.parentNode.removeChild(a)},100)}}
+function buildPaymentPayload(isZero){var info=STATE.appliedCodeInfo,code=info?info.codeDisplay:"No Code",finalValue=money(STATE.finalAmount),status="Payment Started, Code: "+code+", Final Value: "+finalValue;return Object.assign({},buildBasePayload("Payment Started",true),{status:status,referenceCode:code,referenceCodeEntered:STATE.appliedCodeKey||"",referenceCodeParent:info?String(info.mainCode||STATE.appliedCodeKey||""):"",speakerGuestName:info?String(info.speakerName||""):"",referenceCodeApplied:!!info,referenceCodeTitle:info?info.title:"",referenceCodeOffer:info?info.discountLabel:"",referenceCodeDiscountPercent:info?Number(info.discountPercent||0):0,referenceCodeEligibilityConfirmed:info?$("f-code-confirm").checked:false,finalValue:Math.round(STATE.finalAmount),finalValueToPay:Math.round(STATE.finalAmount),paymentLink:isZero?"":STATE.paymentLink,paymentStatus:status})}
+function showThankYou(type){if(type==="zero"){txt("thank-you-title","Thank you. Your registration has been submitted.");txt("thank-you-text","After your registration is confirmed, you will receive a confirmation email. We look forward to welcoming you at the Summit. For any queries, please reach us at reach@boardmatch-up.com or through the official WhatsApp number listed on our website.")}else{txt("thank-you-title","Thank you. Your payment has been initiated.");txt("thank-you-text","You will receive a confirmation email within 48 hours after payment confirmation. We look forward to welcoming you at the Summit. For any queries, please reach us at reach@boardmatch-up.com or through the official WhatsApp number listed on our website.")}goToStep(5)}
+function submitZeroPaymentRegistration(){var b=$("pay-now-btn");b.disabled=true;b.textContent="Submitting...";showStepMessage(4,"Submitting your registration...","info");backgroundSave(buildPaymentPayload(true),"Complimentary registration");setTimeout(function(){b.disabled=false;b.textContent="Submit Registration";showStepMessage(4,"Registration submitted successfully.","success");showThankYou("zero")},850)}
+function startPayment(){
+  if(!validateStep2()){goToStep(2);return}if(!validateStep3()){goToStep(3);return}
+  var info=STATE.appliedCodeInfo,confirm=$("f-code-confirm");if(info&&info.eligibilityCheckboxRequired&&!confirm.checked)return showStepMessage(4,"Please confirm that you are eligible for the applied discount-code offer.");
+  if(STATE.finalAmount<=0||(info&&info.zeroPayment)){submitZeroPaymentRegistration();return}
+  if(!isConfiguredPaymentLink(STATE.paymentLink))return showStepMessage(4,"The PayPal payment link for this discount code is not configured yet. Please update the paymentLink value in the coupon-code JSON.");
+  var b=$("pay-now-btn"),payload=buildPaymentPayload(false);b.disabled=true;b.textContent="Redirecting...";showStepMessage(4,"Continuing to secure PayPal payment...","info");if(!sendToGoogleSheetBeforeNavigation(payload))backgroundSave(payload,"Payment-start details");redirectToPaymentSameWindow(STATE.paymentLink);
+}
+
+(function(){
+  var body=document.body,card=$("form-card"),revealed=false;if(!body||!card||body.getAttribute("data-tfe-registration-ready")==="true")return;body.setAttribute("data-tfe-registration-ready","true");
+  function waitImages(){var p=Array.from(card.querySelectorAll("img")).filter(function(i){return !i.complete});return p.length?Promise.all(p.map(function(i){return new Promise(function(r){i.addEventListener("load",r,{once:true});i.addEventListener("error",r,{once:true})})})):Promise.resolve()}
+  function actualCardHeight(){var old=card.style.getPropertyValue("min-height"),pri=card.style.getPropertyPriority("min-height"),h;card.style.setProperty("min-height","0px","important");h=Math.ceil(card.scrollHeight||card.getBoundingClientRect().height||0);old?card.style.setProperty("min-height",old,pri):card.style.removeProperty("min-height");return h}
+  function reveal(){if(revealed)return;revealed=true;requestAnimationFrame(function(){var h=actualCardHeight();if(h>0)card.style.setProperty("min-height",h+"px","important");requestAnimationFrame(function(){body.classList.remove("tfe-registration-loading");body.classList.add("tfe-registration-ready");setTimeout(function(){card.style.removeProperty("min-height");body.style.removeProperty("min-height")},420)})})}
+  function init(){var fonts=document.fonts&&document.fonts.ready?document.fonts.ready.catch(function(){}):Promise.resolve(),fallback=setTimeout(reveal,1800);Promise.all([fonts,waitImages()]).then(function(){clearTimeout(fallback);setTimeout(reveal,320)});setTimeout(function(){var f=$("step-1-fields");if(f)f.classList.add("show")},1000);["f-first-name","f-last-name","f-email"].forEach(function(id){var i=$(id);if(i)i.addEventListener("input",function(){var d=getAttendeeData();if(d.firstName&&d.lastName&&isValidEmail(d.email))hideStepMessage(1)})});updateFinalPaymentDisplay();updateProgress(1);loadReferenceCodes().catch(function(err){console.warn("Coupon-code data will be retried when a user applies a code.",err)})}
+  document.readyState==="loading"?document.addEventListener("DOMContentLoaded",init,{once:true}):init();
+})();
+</script>
+</body>
+</html>
