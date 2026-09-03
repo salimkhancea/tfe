@@ -1,6 +1,12 @@
 {
   "version": "2026-06-25",
   "speakers": [
+    {
+    "id": "emily-poon",
+    "name": "Emily Poon",
+    "title": "CEO, Singapore Institute of Directors",
+    "bio": "Emily Poon is CEO of the Singapore Institute of Directors (SID) and an accredited director with over 20 years of experience in corporate leadership, reputation strategy and business transformation across Asia. Previously Asia-Pacific President of Ogilvy Public Relations, she led a 26-office regional network and advised boards and senior leaders on stakeholder trust, geopolitical risk and strategic communications. Her work today focuses on strengthening board leadership, governance excellence and institutional trust."
+   }
 
     {
       "id": "tanvi-gautam",
