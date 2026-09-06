@@ -1,6 +1,19 @@
 {
   "version": "2026-06-25",
   "speakers": [
+
+    {
+  "id": "david-clark",
+  "name": "David Clark",
+  "title": "Chief Sustainability Officer, Amcor",
+  "bio": "David Clark is Chief Sustainability Officer at Amcor, where he leads the company’s global sustainability agenda across innovation, procurement, operations and product development. He advances Amcor’s commitments to recyclable or reusable packaging, increased recycled content and net-zero GHG emissions by 2050. David is also Chair of the Plastic Recycling Corporation of California and an Aspen Institute First Movers Fellow."
+},
+{
+  "id": "tracey-campbell",
+  "name": "Tracey Campbell",
+  "title": "SVP, Global Plastics & Industry Affairs, LyondellBasell",
+  "bio": "Tracey Campbell is Senior Vice President, Global Plastics and Industry Affairs at LyondellBasell, representing the company in global initiatives focused on plastics policy, circularity and addressing plastic waste. She also serves as Board Chairman of the Alliance to End Plastic Waste. With 40 years of global petrochemical experience, her leadership has spanned sustainability, corporate affairs, manufacturing, supply chain, strategic planning, R&D and international joint ventures."
+},
     {
     "id": "emily-poon",
     "name": "Emily Poon",
