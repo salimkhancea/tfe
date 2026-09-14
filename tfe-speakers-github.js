@@ -4,7 +4,7 @@
  *
  * GoDaddy embed:
  * <div id="tfe-speakers-root"></div>
- * <script src="https://cdn.jsdelivr.net/gh/salimkhancea/tfe@main/tfe-speakers-github.js?v=20260914-4" defer></script>
+ * <script src="https://cdn.jsdelivr.net/gh/salimkhancea/tfe@main/tfe-speakers-github.js?v=20260914-5" defer></script>
  */
 
 (() => {
@@ -13,10 +13,24 @@
   const root = document.getElementById("tfe-speakers-root");
   if (!root) return;
 
-  const BIO_URL =
-    "https://raw.githubusercontent.com/salimkhancea/tfe/main/tfespeakers.json";
+  const CFG = {
+    bioUrl:
+      "https://raw.githubusercontent.com/salimkhancea/tfe/main/tfespeakers.json",
+
+    ticketUrl:
+      "https://theflexexecutive.com/registration-specialoffer",
+
+    venueUrl:
+      "https://www.millenniumhotels.com/en/singapore/grand-copthorne-waterfront"
+  };
+
+
+  /* =========================================================
+     SPEAKERS
+     ========================================================= */
 
   const speakers = [
+
     {
       id: "tracey-campbell",
       name: "Tracey Campbell",
@@ -25,6 +39,7 @@
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Tracey_web.webp",
       eager: true
     },
+
     {
       id: "emily-poon",
       name: "Emily Poon",
@@ -33,6 +48,7 @@
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Emily_Poon_web.webp",
       eager: true
     },
+
     {
       id: "shine-ding",
       name: "Shine Ding",
@@ -41,6 +57,7 @@
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/ShineDingNew_Web.webp",
       eager: true
     },
+
     {
       id: "tanvi-gautam",
       name: "Dr. Tanvi Gautam",
@@ -50,37 +67,46 @@
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/TanviGautam_web.webp",
       eager: true
     },
+
     {
       id: "jacob-duer",
       name: "Jacob Duer",
-      title: "President & CEO, Alliance to End Plastic Waste",
+      title:
+        "President & CEO, Alliance to End Plastic Waste",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Jacob_New_Web-2.webp"
     },
+
     {
       id: "virginia-cha",
       name: "Virginia Cha",
-      title: "Adjunct Professor, National University of Singapore",
+      title:
+        "Adjunct Professor, National University of Singapore",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Virginia_Cha_Web-7f9ee06.webp",
       eager: true
     },
+
     {
       id: "kanchana-gupta",
       name: "Kanchana Gupta",
-      title: "Founder & CEO, vLookUp",
+      title:
+        "Founder & CEO, vLookUp",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Kanchana_Gupta_Web-d3d68b4.webp",
       eager: true
     },
+
     {
       id: "david-clark",
       name: "David Clark",
-      title: "Chief Sustainability Officer, Amcor",
+      title:
+        "Chief Sustainability Officer, Amcor",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/David_CV_Web.webp",
       eager: true
     },
+
     {
       id: "su-yen-wong",
       name: "Su-Yen Wong",
@@ -90,29 +116,36 @@
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Su_Yen_web.webp",
       eager: true
     },
+
     {
       id: "bassam-salem",
       name: "Bassam Salem",
-      title: "Chairman, Finance & Banking Council, SwissChamHK",
+      title:
+        "Chairman, Finance & Banking Council, SwissChamHK",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/bassam%20salem1-web.webp"
     },
+
     {
       id: "soorya-themudu",
       name: "Soorya Themudu",
-      title: "SVP Global Talent & Development, Sodexo",
+      title:
+        "SVP Global Talent & Development, Sodexo",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Soorya_Web.webp",
       eager: true
     },
+
     {
       id: "dn-prasad",
       name: "DN Prasad",
-      title: "MD & Head – Work & Rewards, Singapore, WTW",
+      title:
+        "MD & Head – Work & Rewards, Singapore, WTW",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DN_Prasad_Web.webp",
       eager: true
     },
+
     {
       id: "brandon-lee",
       name: "Brandon Lee",
@@ -122,82 +155,106 @@
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Brandon_Lee_Web.webp",
       eager: true
     },
+
     {
       id: "probir-das",
       name: "Probir Das",
-      title: "Group CEO, Integris Medtech",
+      title:
+        "Group CEO, Integris Medtech",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Probir_Das_web.webp",
       eager: true
     },
+
     {
       id: "achal-khanna",
       name: "Achal Khanna",
-      title: "CEO, SHRM APAC & MENA",
+      title:
+        "CEO, SHRM APAC & MENA",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Achal%20Khanna.webp"
     },
+
     {
       id: "nitin-jaiswal",
       name: "Nitin Jaiswal",
-      title: "Founder & CEO, The 8th Continent",
+      title:
+        "Founder & CEO, The 8th Continent",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Nitin_Jaiswal_WB_Web.webp",
       eager: true
     },
+
     {
       id: "frank-koo",
       name: "Frank Koo",
-      title: "Speaker, Coach & Community Builder",
+      title:
+        "Speaker, Coach & Community Builder",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Frank%20Koo.webp",
       eager: true
     },
+
     {
       id: "ooi-huey-tyng",
       name: "Ooi Huey Tyng",
-      title: "Independent Director",
+      title:
+        "Independent Director",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Ooi%20Huey%20Tyng.webp"
     },
+
     {
       id: "philip-forrest-am",
       name: "Philip Forrest AM",
-      title: "Business Leader & Board Advisor",
+      title:
+        "Business Leader & Board Advisor",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Philip%20Forrest%20AM-New-web.webp"
     },
+
     {
       id: "sanjeev-jain",
       name: "Sanjeev Jain",
-      title: "Chief Operating Officer, Wipro",
+      title:
+        "Chief Operating Officer, Wipro",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Sanjeev%20Jain.webp"
     },
+
     {
       id: "nancy-groesch",
       name: "Nancy Groesch",
-      title: "Organisational Psychologist & Executive Coach",
+      title:
+        "Organisational Psychologist & Executive Coach",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Nancy%20Groesch.webp",
+
+      /* Change to true to show Nancy again */
       visible: false
     },
+
     {
       id: "priya-rao",
       name: "Priya Rao",
-      title: "Chief Operating Officer, Board Match-Up",
+      title:
+        "Chief Operating Officer, Board Match-Up",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Priya_Web.webp",
       eager: true
     },
+
     {
       id: "karunesh-prasad",
       name: "Karunesh Prasad",
-      title: "Founder, Change Et Al / Board Match-Up",
+      title:
+        "Founder, Change Et Al / Board Match-Up",
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Karunesh%20Prasad.webp"
     }
+
   ];
+
 
   const activeSpeakers =
     speakers.filter(
@@ -205,45 +262,98 @@
         speaker.visible !== false
     );
 
+
   const bioMap = {};
 
-  let biosLoaded = false;
-  let biosPromise = null;
-  let explorerIndex = 0;
-  let sectionHeightLocked = false;
 
-  const esc = (value = "") =>
-    String(value)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+  const mobile =
+    window.matchMedia(
+      "(max-width:767px)"
+    );
+
+
+  let biosLoaded =
+    false;
+
+
+  let biosPromise =
+    null;
+
+
+  let explorerIndex =
+    0;
+
+
+  let resizeTimer =
+    null;
+
+
+  /* =========================================================
+     HELPERS
+     ========================================================= */
+
+  function esc(
+    value = ""
+  ) {
+
+    return String(
+      value
+    )
+
+      .replace(
+        /&/g,
+        "&amp;"
+      )
+
+      .replace(
+        /</g,
+        "&lt;"
+      )
+
+      .replace(
+        />/g,
+        "&gt;"
+      )
+
+      .replace(
+        /"/g,
+        "&quot;"
+      );
+  }
+
 
   /* =========================================================
      CREATE SPEAKER CARDS
      ========================================================= */
 
-  const cardsHTML =
-    speakers
+  function cardsHTML() {
+
+    return speakers
       .map(
-        (speaker, index) => {
+        (
+          speaker,
+          index
+        ) => {
 
           const hidden =
             speaker.visible === false
               ? " tfe-hidden-speaker"
               : "";
 
-          const load =
+
+          const loading =
             speaker.eager ||
             index < 5
               ? "eager"
               : "lazy";
+
 
           const priority =
             speaker.eager ||
             index < 5
               ? "high"
               : "low";
+
 
           return `
             <div
@@ -255,23 +365,32 @@
 
                 <img
                   src="${speaker.image}"
-                  alt="${esc(speaker.name)}"
+                  alt="${esc(
+                    speaker.name
+                  )}"
                   width="138"
                   height="138"
                   decoding="async"
-                  loading="${load}"
+                  loading="${loading}"
                   fetchpriority="${priority}"
                 >
 
               </div>
 
+
               <h3>
-                ${esc(speaker.name)}
+                ${esc(
+                  speaker.name
+                )}
               </h3>
 
+
               <p class="short-title">
-                ${esc(speaker.title)}
+                ${esc(
+                  speaker.title
+                )}
               </p>
+
 
               <div class="speaker-details">
 
@@ -285,10 +404,13 @@
           `;
         }
       )
+
       .join("");
+  }
+
 
   /* =========================================================
-     MAIN HTML
+     HTML
      ========================================================= */
 
   root.innerHTML = `
@@ -315,12 +437,16 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap"
     >
 
+
     <section
       class="tfe-fresh-section tfe-speakers-split tfe-is-loading"
       aria-busy="true"
     >
 
-      <!-- LOADER -->
+
+      <!-- ==============================
+           LOADER
+           ============================== -->
 
       <div
         class="tfe-section-loader"
@@ -328,9 +454,17 @@
         aria-label="Loading speakers section"
       >
 
-        <div class="tfe-loader-ring"></div>
+        <div
+          class="tfe-loader-ring"
+          aria-hidden="true"
+        ></div>
 
-        <div class="tfe-loader-dot"></div>
+
+        <div
+          class="tfe-loader-dot"
+          aria-hidden="true"
+        ></div>
+
 
         <span>
           Loading speakers
@@ -339,18 +473,22 @@
       </div>
 
 
-      <!-- MAIN CONTENT -->
+      <!-- ==============================
+           MAIN SECTION
+           ============================== -->
 
       <div class="tfe-fresh-main">
 
 
-        <!-- SUMMIT POSTER -->
+        <!-- POSTER -->
 
         <div class="tfe-poster-wrap">
 
           <div class="tfe-mini-poster">
 
+
             <div class="tfe-poster-logos">
+
 
               <div
                 class="tfe-logo-slot tfe-logo-slot-one"
@@ -366,6 +504,7 @@
 
               </div>
 
+
               <div
                 class="tfe-logo-slot tfe-logo-slot-two"
               >
@@ -380,6 +519,7 @@
 
               </div>
 
+
             </div>
 
 
@@ -389,9 +529,13 @@
 
 
             <div class="tfe-poster-line">
+
               <span></span>
+
               <i></i>
+
               <span></span>
+
             </div>
 
 
@@ -413,13 +557,21 @@
 
 
             <div class="tfe-poster-line">
+
               <span></span>
+
               <i></i>
+
               <span></span>
+
             </div>
 
 
-            <div class="tfe-poster-events">
+            <div
+              class="tfe-poster-events"
+              aria-label="Event schedule"
+            >
+
 
               <div class="tfe-event-row">
 
@@ -463,7 +615,7 @@
               <div class="tfe-event-location">
 
                 <a
-                  href="https://www.millenniumhotels.com/en/singapore/grand-copthorne-waterfront"
+                  href="${CFG.venueUrl}"
                   target="_blank"
                   rel="noopener"
                 >
@@ -486,6 +638,7 @@
 
                   </svg>
 
+
                   <span>
                     Grand Copthorne Waterfront Hotel, Singapore
                   </span>
@@ -494,20 +647,27 @@
 
               </div>
 
+
             </div>
+
 
           </div>
 
         </div>
 
 
-        <!-- SPEAKER AREA -->
+        <!-- ==============================
+             SPEAKER AREA
+             ============================== -->
 
         <div class="tfe-speakers-area">
 
 
           <div class="tfe-speaker-kicker">
-            Curated leadership voices shaping the Flex Executive Economy
+
+            Curated leadership voices shaping the
+            Flex Executive Economy
+
           </div>
 
 
@@ -515,12 +675,14 @@
 
           <div class="tfe-speaker-grid">
 
-            ${cardsHTML}
+            ${cardsHTML()}
 
           </div>
 
 
-          <!-- KNOW MORE EXPLORER -->
+          <!-- ==============================
+               KNOW MORE SPEAKER EXPLORER
+               ============================== -->
 
           <div
             class="tfe-speaker-explorer"
@@ -530,12 +692,13 @@
 
             <div class="tfe-explorer-topbar">
 
+
               <button
                 class="tfe-explorer-back"
                 type="button"
               >
 
-                <span>
+                <span aria-hidden="true">
                   ←
                 </span>
 
@@ -550,6 +713,7 @@
               >
                 01 / 01
               </div>
+
 
             </div>
 
@@ -580,6 +744,7 @@
                     alt=""
                     width="280"
                     height="280"
+                    decoding="async"
                   >
 
                 </div>
@@ -624,7 +789,7 @@
             </div>
 
 
-            <!-- THUMBNAIL RAIL -->
+            <!-- THUMBNAIL SCROLLER -->
 
             <div class="tfe-thumb-window">
 
@@ -666,7 +831,9 @@
       </div>
 
 
-      <!-- CTA -->
+      <!-- ==============================
+           CTA
+           ============================== -->
 
       <div class="tfe-agenda-section">
 
@@ -675,11 +842,13 @@
 
           <a
             class="tfe-action-btn primary"
-            href="https://theflexexecutive.com/registration-specialoffer"
+            href="${CFG.ticketUrl}"
             target="_blank"
             rel="noopener"
           >
+
             Get Your Executive Pass
+
           </a>
 
 
@@ -687,7 +856,9 @@
             class="tfe-action-btn secondary tfe-know-more-btn"
             type="button"
           >
+
             Know More About Speakers
+
           </button>
 
 
@@ -705,48 +876,65 @@
      ========================================================= */
 
   const style =
-    document.createElement("style");
+    document.createElement(
+      "style"
+    );
 
 
   style.textContent = `
 
-    /* ---------------------------------------------------------
+    /* =========================================================
        GLOBAL
-       --------------------------------------------------------- */
+       ========================================================= */
 
     .tfe-fresh-section,
     .tfe-fresh-section * {
-      box-sizing: border-box;
+
+      box-sizing:
+        border-box;
     }
 
 
     .tfe-fresh-section {
 
-      --gold: #c9a84c;
-      --gold-light: #f1d36b;
-      --poster-bg: #04101f;
-      --poster-bg-2: #010812;
+      --gold:
+        #c9a84c;
 
-      width: 100%;
+      --gold-light:
+        #f1d36b;
 
-      margin: 0;
+      --poster-bg:
+        #04101f;
+
+      --poster-bg-2:
+        #010812;
+
+
+      width:
+        100%;
+
+      margin:
+        0;
 
       padding:
         34px 0 8px;
 
+      position:
+        relative;
+
       overflow:
         visible;
 
-      position:
-        relative;
 
       font-family:
         "DM Sans",
         Arial,
         sans-serif;
 
+
       background-color:
         #000;
+
 
       background-image:
 
@@ -769,9 +957,9 @@
     }
 
 
-    /* ---------------------------------------------------------
-       LOADER
-       --------------------------------------------------------- */
+    /* =========================================================
+       LOADING
+       ========================================================= */
 
     .tfe-fresh-section.tfe-is-loading {
 
@@ -786,6 +974,9 @@
 
       overflow:
         hidden !important;
+
+      background:
+        #000 !important;
     }
 
 
@@ -814,6 +1005,7 @@
       z-index:
         99999;
 
+
       display:
         flex;
 
@@ -826,11 +1018,18 @@
       justify-content:
         flex-start;
 
+
       gap:
         12px;
 
+
       padding-top:
-        clamp(58px,11vh,96px);
+        clamp(
+          58px,
+          11vh,
+          96px
+        );
+
 
       background:
 
@@ -842,8 +1041,15 @@
 
         #000;
 
+
       color:
-        rgba(241,211,107,.82);
+        rgba(
+          241,
+          211,
+          107,
+          .82
+        );
+
 
       font-size:
         11px;
@@ -857,8 +1063,11 @@
       text-transform:
         uppercase;
 
+
       transition:
+
         opacity .45s ease,
+
         visibility .45s ease;
     }
 
@@ -874,20 +1083,49 @@
       border-radius:
         50%;
 
+
       border:
-        1px solid rgba(241,211,107,.18);
+        1px solid rgba(
+          241,
+          211,
+          107,
+          .18
+        );
+
 
       border-top-color:
-        rgba(241,211,107,.95);
+        rgba(
+          241,
+          211,
+          107,
+          .95
+        );
+
 
       border-right-color:
-        rgba(201,168,76,.44);
+        rgba(
+          201,
+          168,
+          76,
+          .44
+        );
+
 
       box-shadow:
-        0 0 34px rgba(201,168,76,.16);
+        0 0 34px
+        rgba(
+          201,
+          168,
+          76,
+          .16
+        );
+
 
       animation:
-        tfe-spin 1s linear infinite;
+        tfe-spin
+        1s
+        linear
+        infinite;
     }
 
 
@@ -902,11 +1140,24 @@
       border-radius:
         50%;
 
+
       background:
-        rgba(241,211,107,.95);
+        rgba(
+          241,
+          211,
+          107,
+          .95
+        );
+
 
       box-shadow:
-        0 0 22px rgba(241,211,107,.42);
+        0 0 22px
+        rgba(
+          241,
+          211,
+          107,
+          .42
+        );
     }
 
 
@@ -929,6 +1180,7 @@
       visibility:
         visible;
 
+
       transition:
         opacity .55s ease;
     }
@@ -937,6 +1189,7 @@
     @keyframes tfe-spin {
 
       to {
+
         transform:
           rotate(360deg);
       }
@@ -944,9 +1197,9 @@
     }
 
 
-    /* ---------------------------------------------------------
+    /* =========================================================
        MAIN LAYOUT
-       --------------------------------------------------------- */
+       ========================================================= */
 
     .tfe-fresh-main {
 
@@ -956,32 +1209,43 @@
           calc(100% - 72px)
         );
 
+
       margin:
         0 auto;
+
 
       display:
         grid;
 
+
       grid-template-columns:
-        280px minmax(0,1fr);
+        280px
+        minmax(
+          0,
+          1fr
+        );
+
 
       gap:
         48px;
 
+
       align-items:
         center;
 
+
       position:
         relative;
+
 
       z-index:
         10;
     }
 
 
-    /* ---------------------------------------------------------
-       SUMMIT POSTER
-       --------------------------------------------------------- */
+    /* =========================================================
+       POSTER
+       ========================================================= */
 
     .tfe-poster-wrap {
 
@@ -1004,14 +1268,24 @@
       height:
         498px;
 
+
       padding:
         28px 24px;
 
+
       border:
-        1.5px solid rgba(255,255,255,.42);
+        1.5px solid
+        rgba(
+          255,
+          255,
+          255,
+          .42
+        );
+
 
       border-radius:
         24px;
+
 
       display:
         flex;
@@ -1022,8 +1296,10 @@
       justify-content:
         space-between;
 
+
       overflow:
         hidden;
+
 
       background:
 
@@ -1039,8 +1315,15 @@
           var(--poster-bg-2)
         );
 
+
       box-shadow:
-        0 28px 70px rgba(0,0,0,.48);
+        0 28px 70px
+        rgba(
+          0,
+          0,
+          0,
+          .48
+        );
     }
 
 
@@ -1049,14 +1332,18 @@
       height:
         78px;
 
+
       display:
         flex;
+
 
       align-items:
         flex-start;
 
+
       justify-content:
         space-between;
+
 
       gap:
         16px;
@@ -1110,6 +1397,9 @@
       height:
         100%;
 
+      display:
+        block;
+
       object-fit:
         contain;
     }
@@ -1120,20 +1410,26 @@
       color:
         #fff;
 
+
       font-size:
         82px;
+
 
       line-height:
         .9;
 
+
       font-weight:
         800;
+
 
       letter-spacing:
         .03em;
 
+
       text-align:
         center;
+
 
       white-space:
         nowrap;
@@ -1162,7 +1458,12 @@
         1px;
 
       background:
-        rgba(201,168,76,.75);
+        rgba(
+          201,
+          168,
+          76,
+          .75
+        );
     }
 
 
@@ -1174,8 +1475,16 @@
       height:
         7px;
 
+
       border:
-        1px solid rgba(201,168,76,.95);
+        1px solid
+        rgba(
+          201,
+          168,
+          76,
+          .95
+        );
+
 
       transform:
         rotate(45deg);
@@ -1187,28 +1496,36 @@
       color:
         #fff;
 
+
       font-family:
         "Oswald",
         Arial,
         sans-serif;
 
+
       font-size:
         42px;
+
 
       line-height:
         1.16;
 
+
       font-weight:
         800;
+
 
       letter-spacing:
         .17em;
 
+
       text-align:
         center;
 
+
       text-transform:
         uppercase;
+
 
       white-space:
         nowrap;
@@ -1227,14 +1544,23 @@
       display:
         grid;
 
+
       gap:
         7px;
 
+
       color:
-        rgba(255,255,255,.86);
+        rgba(
+          255,
+          255,
+          255,
+          .86
+        );
+
 
       text-align:
         center;
+
 
       text-transform:
         uppercase;
@@ -1246,23 +1572,30 @@
       display:
         flex;
 
+
       align-items:
         center;
+
 
       justify-content:
         center;
 
+
       gap:
         11px;
+
 
       font-size:
         14px;
 
+
       font-weight:
         700;
 
+
       letter-spacing:
         .115em;
+
 
       white-space:
         nowrap;
@@ -1272,7 +1605,13 @@
     .tfe-event-row b {
 
       color:
-        rgba(255,255,255,.46);
+        rgba(
+          255,
+          255,
+          255,
+          .46
+        );
+
 
       font-weight:
         400;
@@ -1284,14 +1623,23 @@
       font-size:
         12px;
 
+
       font-weight:
         800;
+
 
       letter-spacing:
         .17em;
 
+
       color:
-        rgba(241,211,107,.92);
+        rgba(
+          241,
+          211,
+          107,
+          .92
+        );
+
 
       white-space:
         nowrap;
@@ -1303,11 +1651,14 @@
       font-size:
         12.5px;
 
+
       line-height:
         1.3;
 
+
       font-weight:
         800;
+
 
       text-transform:
         none;
@@ -1319,17 +1670,27 @@
       display:
         inline-flex;
 
+
       align-items:
         flex-start;
+
 
       justify-content:
         center;
 
+
       gap:
         6px;
 
+
       color:
-        rgba(255,255,255,.84);
+        rgba(
+          255,
+          255,
+          255,
+          .84
+        );
+
 
       text-decoration:
         none;
@@ -1348,43 +1709,53 @@
       width:
         14px;
 
+
       height:
         14px;
+
 
       flex:
         0 0 14px;
 
+
       fill:
         none;
+
 
       stroke:
         var(--gold-light);
 
+
       stroke-width:
         1.8;
 
+
       stroke-linecap:
         round;
+
 
       stroke-linejoin:
         round;
     }
 
 
-    /* ---------------------------------------------------------
+    /* =========================================================
        SPEAKER GRID
-       --------------------------------------------------------- */
+       ========================================================= */
 
     .tfe-speakers-area {
 
       min-width:
         0;
 
+
       position:
         relative;
 
+
       z-index:
         20;
+
 
       overflow:
         visible;
@@ -1396,23 +1767,35 @@
       margin:
         0 auto 34px;
 
+
       text-align:
         center;
 
+
       color:
-        rgba(241,211,107,.9);
+        rgba(
+          241,
+          211,
+          107,
+          .9
+        );
+
 
       font-size:
         .84rem;
 
+
       line-height:
         1.5;
+
 
       font-weight:
         800;
 
+
       letter-spacing:
         .16em;
+
 
       text-transform:
         uppercase;
@@ -1424,20 +1807,26 @@
       display:
         flex;
 
+
       flex-wrap:
         wrap;
+
 
       justify-content:
         center;
 
+
       gap:
         32px 20px;
+
 
       position:
         relative;
 
+
       z-index:
         30;
+
 
       overflow:
         visible;
@@ -1456,23 +1845,33 @@
       position:
         relative;
 
+
       z-index:
         1;
 
+
       flex:
-        0 1 calc((100% - 80px) / 5);
+        0 1
+        calc(
+          (100% - 80px) / 5
+        );
+
 
       min-width:
         0;
 
+
       text-align:
         center;
+
 
       color:
         #fff;
 
+
       cursor:
         pointer;
+
 
       transition:
         transform .25s ease;
@@ -1485,6 +1884,7 @@
       transform:
         translateY(-6px);
 
+
       z-index:
         999;
     }
@@ -1495,26 +1895,39 @@
       width:
         132px;
 
+
       height:
         132px;
+
 
       margin:
         0 auto;
 
+
       border-radius:
         50%;
+
 
       overflow:
         hidden;
 
+
       position:
         relative;
+
 
       background:
         #111;
 
+
       box-shadow:
-        0 18px 36px rgba(0,0,0,.42);
+        0 18px 36px
+        rgba(
+          0,
+          0,
+          0,
+          .42
+        );
     }
 
 
@@ -1523,17 +1936,22 @@
       width:
         100%;
 
+
       height:
         100%;
+
 
       display:
         block;
 
+
       border-radius:
         50%;
 
+
       object-fit:
         cover;
+
 
       object-position:
         center top;
@@ -1545,20 +1963,26 @@
       content:
         "";
 
+
       position:
         absolute;
+
 
       left:
         0;
 
+
       right:
         0;
+
 
       bottom:
         0;
 
+
       height:
         38%;
+
 
       background:
 
@@ -1568,6 +1992,7 @@
           rgba(0,0,0,.72),
           #000
         );
+
 
       pointer-events:
         none;
@@ -1579,34 +2004,49 @@
       margin:
         -14px 0 0;
 
+
       position:
         relative;
+
 
       z-index:
         2;
 
+
       color:
         #fff;
+
 
       font-family:
         "Oswald",
         Arial,
         sans-serif;
 
+
       font-size:
         1.06rem;
+
 
       line-height:
         1.08;
 
+
       letter-spacing:
         .055em;
+
 
       text-transform:
         uppercase;
 
+
       text-shadow:
-        0 2px 9px rgba(0,0,0,.88);
+        0 2px 9px
+        rgba(
+          0,
+          0,
+          0,
+          .88
+        );
     }
 
 
@@ -1615,34 +2055,53 @@
       max-width:
         165px;
 
+
       margin:
         4px auto 0;
+
 
       position:
         relative;
 
+
       z-index:
         2;
 
+
       color:
-        rgba(255,255,255,.72);
+        rgba(
+          255,
+          255,
+          255,
+          .72
+        );
+
 
       font-size:
         .74rem;
 
+
       line-height:
         1.32;
+
 
       font-weight:
         500;
 
+
       text-shadow:
-        0 2px 8px rgba(0,0,0,.88);
+        0 2px 8px
+        rgba(
+          0,
+          0,
+          0,
+          .88
+        );
     }
 
 
     /* =========================================================
-       ORIGINAL SPEAKER POPUP BEHAVIOUR
+       DESKTOP / TABLET SPEAKER BIO POPUP
        ========================================================= */
 
     .speaker-details {
@@ -1650,57 +2109,94 @@
       --tfe-popover-shift:
         0px;
 
+
       position:
         absolute;
+
 
       left:
         50%;
 
+
       top:
         100%;
+
 
       width:
         286px;
 
+
       max-width:
-        calc(100vw - 32px);
+        calc(
+          100vw - 32px
+        );
+
 
       padding:
         18px;
 
+
       border-radius:
         18px;
+
 
       background:
         #fff;
 
+
       border:
-        1px solid rgba(0,0,0,.08);
+        1px solid
+        rgba(
+          0,
+          0,
+          0,
+          .08
+        );
+
 
       box-shadow:
-        0 24px 60px rgba(0,0,0,.5);
+        0 24px 60px
+        rgba(
+          0,
+          0,
+          0,
+          .5
+        );
+
 
       opacity:
         0;
 
+
       visibility:
         hidden;
+
 
       pointer-events:
         none;
 
+
       z-index:
         9999;
 
+
       transform:
+
         translate(
-          calc(-50% + var(--tfe-popover-shift)),
+          calc(
+            -50% +
+            var(--tfe-popover-shift)
+          ),
           14px
         );
 
+
       transition:
+
         opacity .22s ease,
+
         visibility .22s ease,
+
         transform .22s ease;
     }
 
@@ -1710,35 +2206,63 @@
       content:
         "";
 
+
       position:
         absolute;
+
 
       top:
         -7px;
 
+
       left:
+
         clamp(
           18px,
-          calc(50% - var(--tfe-popover-shift)),
-          calc(100% - 18px)
+          calc(
+            50% -
+            var(--tfe-popover-shift)
+          ),
+          calc(
+            100% - 18px
+          )
         );
+
 
       width:
         14px;
 
+
       height:
         14px;
+
 
       background:
         #fff;
 
+
       border-left:
-        1px solid rgba(0,0,0,.06);
+        1px solid
+        rgba(
+          0,
+          0,
+          0,
+          .06
+        );
+
 
       border-top:
-        1px solid rgba(0,0,0,.06);
+        1px solid
+        rgba(
+          0,
+          0,
+          0,
+          .06
+        );
+
 
       transform:
+
         translateX(-50%)
         rotate(45deg);
     }
@@ -1749,14 +2273,18 @@
       margin:
         0;
 
+
       color:
         #202632;
+
 
       font-size:
         .8rem;
 
+
       line-height:
         1.5;
+
 
       font-weight:
         500;
@@ -1769,158 +2297,255 @@
       opacity:
         1;
 
+
       visibility:
         visible;
+
 
       pointer-events:
         auto;
 
+
       transform:
+
         translate(
-          calc(-50% + var(--tfe-popover-shift)),
+          calc(
+            -50% +
+            var(--tfe-popover-shift)
+          ),
           8px
         );
     }
 
 
-    /* Desktop bottom row opens upward */
+    /* =========================================================
+       DESKTOP ROW POSITIONING
+       ========================================================= */
 
-    @media (min-width:768px) {
+    @media (
+      min-width: 768px
+    ) {
 
-      .tfe-speaker-card.tfe-popover-up .speaker-details {
+
+      /* LAST ROW OPENS UPWARD */
+
+      .tfe-speaker-card.tfe-popover-up
+      .speaker-details {
 
         top:
           auto;
 
+
         bottom:
           100%;
 
+
         transform:
+
           translate(
-            calc(-50% + var(--tfe-popover-shift)),
+            calc(
+              -50% +
+              var(--tfe-popover-shift)
+            ),
             -14px
           );
       }
 
 
-      .tfe-speaker-card.tfe-popover-up:hover .speaker-details,
-      .tfe-speaker-card.tfe-popover-up.is-open .speaker-details {
+      .tfe-speaker-card.tfe-popover-up:hover
+      .speaker-details,
+
+      .tfe-speaker-card.tfe-popover-up.is-open
+      .speaker-details {
 
         transform:
+
           translate(
-            calc(-50% + var(--tfe-popover-shift)),
+            calc(
+              -50% +
+              var(--tfe-popover-shift)
+            ),
             -8px
           );
       }
 
 
-      .tfe-speaker-card.tfe-popover-up .speaker-details:before {
+      .tfe-speaker-card.tfe-popover-up
+      .speaker-details:before {
 
         top:
           auto;
 
+
         bottom:
           -7px;
+
 
         border-left:
           0;
 
+
         border-top:
           0;
 
+
         border-right:
-          1px solid rgba(0,0,0,.06);
+          1px solid
+          rgba(
+            0,
+            0,
+            0,
+            .06
+          );
+
 
         border-bottom:
-          1px solid rgba(0,0,0,.06);
+          1px solid
+          rgba(
+            0,
+            0,
+            0,
+            .06
+          );
       }
 
 
-      /* Right-most card aligns popup inward */
+      /* RIGHT-MOST CARD ALIGNS POPUP INWARD */
 
-      .tfe-speaker-card.tfe-popover-right .speaker-details {
+      .tfe-speaker-card.tfe-popover-right
+      .speaker-details {
 
         left:
           auto;
+
 
         right:
           0;
 
+
         transform:
-          translate(0,14px);
+          translate(
+            0,
+            14px
+          );
       }
 
 
-      .tfe-speaker-card.tfe-popover-right:hover .speaker-details,
-      .tfe-speaker-card.tfe-popover-right.is-open .speaker-details {
+      .tfe-speaker-card.tfe-popover-right:hover
+      .speaker-details,
+
+      .tfe-speaker-card.tfe-popover-right.is-open
+      .speaker-details {
 
         transform:
-          translate(0,8px);
+          translate(
+            0,
+            8px
+          );
       }
 
 
-      .tfe-speaker-card.tfe-popover-right .speaker-details:before {
+      .tfe-speaker-card.tfe-popover-right
+      .speaker-details:before {
 
         left:
           auto;
 
+
         right:
+
           calc(
-            var(--tfe-card-half,82px) - 7px
+            var(
+              --tfe-card-half,
+              82px
+            ) - 7px
           );
+
 
         transform:
           rotate(45deg);
       }
 
 
-      .tfe-speaker-card.tfe-popover-up.tfe-popover-right .speaker-details {
+      /* LAST ROW + RIGHT EDGE */
+
+      .tfe-speaker-card.tfe-popover-up.tfe-popover-right
+      .speaker-details {
 
         top:
           auto;
+
 
         bottom:
           100%;
 
+
         transform:
-          translate(0,-14px);
+          translate(
+            0,
+            -14px
+          );
       }
 
 
-      .tfe-speaker-card.tfe-popover-up.tfe-popover-right:hover .speaker-details,
-      .tfe-speaker-card.tfe-popover-up.tfe-popover-right.is-open .speaker-details {
+      .tfe-speaker-card.tfe-popover-up.tfe-popover-right:hover
+      .speaker-details,
+
+      .tfe-speaker-card.tfe-popover-up.tfe-popover-right.is-open
+      .speaker-details {
 
         transform:
-          translate(0,-8px);
+          translate(
+            0,
+            -8px
+          );
       }
 
 
-      .tfe-speaker-card.tfe-popover-up.tfe-popover-right .speaker-details:before {
+      .tfe-speaker-card.tfe-popover-up.tfe-popover-right
+      .speaker-details:before {
 
         top:
           auto;
 
+
         bottom:
           -7px;
+
 
         border-left:
           0;
 
+
         border-top:
           0;
 
+
         border-right:
-          1px solid rgba(0,0,0,.06);
+          1px solid
+          rgba(
+            0,
+            0,
+            0,
+            .06
+          );
+
 
         border-bottom:
-          1px solid rgba(0,0,0,.06);
+          1px solid
+          rgba(
+            0,
+            0,
+            0,
+            .06
+          );
       }
 
     }
 
 
     /* =========================================================
-       SPEAKER EXPLORER
+       KNOW MORE SPEAKER EXPLORER
        ========================================================= */
 
     .tfe-speaker-explorer {
@@ -1928,29 +2553,37 @@
       display:
         none;
 
+
       width:
         100%;
+
 
       max-width:
         890px;
 
+
       margin:
         0 auto;
+
 
       color:
         #fff;
     }
 
 
-    .tfe-explorer-open .tfe-speaker-kicker,
-    .tfe-explorer-open .tfe-speaker-grid {
+    .tfe-explorer-open
+    .tfe-speaker-kicker,
+
+    .tfe-explorer-open
+    .tfe-speaker-grid {
 
       display:
         none !important;
     }
 
 
-    .tfe-explorer-open .tfe-speaker-explorer {
+    .tfe-explorer-open
+    .tfe-speaker-explorer {
 
       display:
         block;
@@ -1962,14 +2595,18 @@
       display:
         flex;
 
+
       align-items:
         center;
+
 
       justify-content:
         space-between;
 
+
       gap:
         18px;
+
 
       margin:
         0 0 18px;
@@ -1981,38 +2618,55 @@
       border:
         0;
 
+
       background:
         transparent;
 
+
       color:
-        rgba(241,211,107,.92);
+        rgba(
+          241,
+          211,
+          107,
+          .92
+        );
+
 
       padding:
         6px 0;
 
+
       display:
         inline-flex;
+
 
       align-items:
         center;
 
+
       gap:
         8px;
+
 
       font:
         inherit;
 
+
       font-size:
         .72rem;
+
 
       font-weight:
         900;
 
+
       letter-spacing:
         .13em;
 
+
       text-transform:
         uppercase;
+
 
       cursor:
         pointer;
@@ -2022,33 +2676,47 @@
     .tfe-explorer-counter {
 
       color:
-        rgba(255,255,255,.52);
+        rgba(
+          255,
+          255,
+          255,
+          .52
+        );
+
 
       font-size:
         .68rem;
 
+
       font-weight:
         900;
+
 
       letter-spacing:
         .15em;
     }
 
 
-    /* ---------------------------------------------------------
-       WHITE SPEAKER CARD
-       --------------------------------------------------------- */
+    /* =========================================================
+       WHITE FEATURED SPEAKER CARD
+       ========================================================= */
 
     .tfe-featured-shell {
 
       display:
         grid;
 
+
       grid-template-columns:
-        42px minmax(0,1fr) 42px;
+
+        42px
+        minmax(0,1fr)
+        42px;
+
 
       align-items:
         center;
+
 
       gap:
         12px;
@@ -2060,67 +2728,129 @@
       min-height:
         420px;
 
+
       border:
-        1.5px solid rgba(211,171,57,.72);
+        1.5px solid
+        rgba(
+          211,
+          171,
+          57,
+          .72
+        );
+
 
       border-radius:
         26px;
 
+
       padding:
         32px 36px;
+
 
       display:
         grid;
 
+
       grid-template-columns:
-        minmax(210px,255px)
-        minmax(0,1fr);
+
+        minmax(
+          210px,
+          255px
+        )
+
+        minmax(
+          0,
+          1fr
+        );
+
 
       gap:
         36px;
 
+
       align-items:
         center;
+
 
       position:
         relative;
 
+
       overflow:
         hidden;
 
+
       background-color:
         #fff;
+
 
       background-image:
 
         radial-gradient(
           ellipse at 96% 8%,
-          rgba(222,235,252,.70),
+          rgba(
+            222,
+            235,
+            252,
+            .70
+          ),
           transparent 45%
         ),
 
         linear-gradient(
           164deg,
           transparent 53%,
-          rgba(225,238,254,.42) 57%,
-          rgba(246,250,255,.86) 61%,
+          rgba(
+            225,
+            238,
+            254,
+            .42
+          ) 57%,
+          rgba(
+            246,
+            250,
+            255,
+            .86
+          ) 61%,
           transparent 67%
         ),
 
         linear-gradient(
           170deg,
           transparent 64%,
-          rgba(218,234,253,.42) 68%,
-          rgba(248,251,255,.90) 72%,
+          rgba(
+            218,
+            234,
+            253,
+            .42
+          ) 68%,
+          rgba(
+            248,
+            251,
+            255,
+            .90
+          ) 72%,
           transparent 79%
         );
 
+
       box-shadow:
 
-        0 28px 72px rgba(0,0,0,.34),
+        0 28px 72px
+        rgba(
+          0,
+          0,
+          0,
+          .34
+        ),
 
         0 0 0 1px
-        rgba(255,255,255,.7)
+        rgba(
+          255,
+          255,
+          255,
+          .7
+        )
         inset;
     }
 
@@ -2130,34 +2860,58 @@
       width:
         100%;
 
+
       max-width:
         250px;
+
 
       aspect-ratio:
         1;
 
+
       margin:
         0 auto;
 
+
       border:
-        3px solid rgba(211,171,57,.88);
+        3px solid
+        rgba(
+          211,
+          171,
+          57,
+          .88
+        );
+
 
       border-radius:
         50%;
 
+
       overflow:
         hidden;
+
 
       background:
         #eef2f7;
 
+
       box-shadow:
 
         0 22px 48px
-        rgba(12,24,42,.18),
+        rgba(
+          12,
+          24,
+          42,
+          .18
+        ),
 
         0 0 0 5px
-        rgba(255,255,255,.92);
+        rgba(
+          255,
+          255,
+          255,
+          .92
+        );
     }
 
 
@@ -2166,14 +2920,18 @@
       width:
         100%;
 
+
       height:
         100%;
+
 
       display:
         block;
 
+
       object-fit:
         cover;
+
 
       object-position:
         center top;
@@ -2185,6 +2943,7 @@
       min-width:
         0;
 
+
       text-align:
         left;
     }
@@ -2195,25 +2954,36 @@
       margin:
         0;
 
+
       color:
         #07111f;
+
 
       font-family:
         "Oswald",
         Arial,
         sans-serif;
 
+
       font-size:
-        clamp(2rem,3vw,2.7rem);
+        clamp(
+          2rem,
+          3vw,
+          2.7rem
+        );
+
 
       line-height:
         1.03;
 
+
       font-weight:
         800;
 
+
       letter-spacing:
         .04em;
+
 
       text-transform:
         uppercase;
@@ -2225,14 +2995,18 @@
       margin:
         10px 0 0;
 
+
       color:
         #596474;
+
 
       font-size:
         .9rem;
 
+
       line-height:
         1.48;
+
 
       font-weight:
         650;
@@ -2244,18 +3018,26 @@
       width:
         76px;
 
+
       height:
         2px;
 
+
       margin:
         19px 0 17px;
+
 
       background:
 
         linear-gradient(
           90deg,
           #d3ab39,
-          rgba(211,171,57,.12)
+          rgba(
+            211,
+            171,
+            57,
+            .12
+          )
         );
     }
 
@@ -2265,28 +3047,40 @@
       margin:
         0;
 
+
       max-height:
         190px;
+
 
       overflow-y:
         auto;
 
+
       padding-right:
         8px;
+
 
       color:
         #334155;
 
+
       font-size:
         .84rem;
+
 
       line-height:
         1.66;
 
+
       font-weight:
         500;
 
+
       scrollbar-width:
+        none;
+
+
+      -ms-overflow-style:
         none;
     }
 
@@ -2295,30 +3089,52 @@
 
       display:
         none;
+
+      width:
+        0;
+
+      height:
+        0;
     }
 
 
-    /* ---------------------------------------------------------
-       EXPLORER ARROWS
-       --------------------------------------------------------- */
+    /* =========================================================
+       EXPLORER NAVIGATION
+       ========================================================= */
 
     .tfe-featured-nav,
     .tfe-thumb-scroll {
 
       border:
-        1px solid rgba(241,211,107,.26);
+        1px solid
+        rgba(
+          241,
+          211,
+          107,
+          .26
+        );
+
 
       background:
-        rgba(6,14,25,.9);
+        rgba(
+          6,
+          14,
+          25,
+          .9
+        );
+
 
       color:
         var(--gold-light);
 
+
       display:
         grid;
 
+
       place-items:
         center;
+
 
       cursor:
         pointer;
@@ -2330,31 +3146,40 @@
       width:
         42px;
 
+
       height:
         42px;
 
+
       border-radius:
         50%;
+
 
       font-size:
         2rem;
     }
 
 
-    /* ---------------------------------------------------------
+    /* =========================================================
        SPEAKER THUMBNAILS
-       --------------------------------------------------------- */
+       ========================================================= */
 
     .tfe-thumb-window {
 
       display:
         grid;
 
+
       grid-template-columns:
-        34px minmax(0,1fr) 34px;
+
+        34px
+        minmax(0,1fr)
+        34px;
+
 
       gap:
         9px;
+
 
       align-items:
         center;
@@ -2366,11 +3191,14 @@
       width:
         34px;
 
+
       height:
         34px;
 
+
       border-radius:
         50%;
+
 
       font-size:
         1.45rem;
@@ -2382,22 +3210,32 @@
       display:
         flex;
 
+
       gap:
         12px;
+
 
       overflow-x:
         auto;
 
+
       overflow-y:
         hidden;
+
 
       padding:
         8px 4px 11px;
 
+
       scroll-behavior:
         smooth;
 
+
       scrollbar-width:
+        none;
+
+
+      -ms-overflow-style:
         none;
     }
 
@@ -2406,6 +3244,12 @@
 
       display:
         none;
+
+      width:
+        0;
+
+      height:
+        0;
     }
 
 
@@ -2414,23 +3258,30 @@
       flex:
         0 0 76px;
 
+
       width:
         76px;
+
 
       border:
         0;
 
+
       background:
         transparent;
+
 
       padding:
         0;
 
+
       color:
         #fff;
 
+
       text-align:
         center;
+
 
       cursor:
         pointer;
@@ -2442,20 +3293,32 @@
       width:
         64px;
 
+
       height:
         64px;
+
 
       margin:
         0 auto 7px;
 
+
       border-radius:
         50%;
+
 
       overflow:
         hidden;
 
+
       border:
-        2px solid rgba(255,255,255,.14);
+        2px solid
+        rgba(
+          255,
+          255,
+          255,
+          .14
+        );
+
 
       background:
         #111;
@@ -2467,11 +3330,18 @@
       width:
         100%;
 
+
       height:
         100%;
 
+
+      display:
+        block;
+
+
       object-fit:
         cover;
+
 
       object-position:
         center top;
@@ -2483,45 +3353,71 @@
       display:
         block;
 
+
       max-width:
         76px;
+
 
       overflow:
         hidden;
 
+
       text-overflow:
         ellipsis;
+
 
       white-space:
         nowrap;
 
+
       color:
-        rgba(255,255,255,.56);
+        rgba(
+          255,
+          255,
+          255,
+          .56
+        );
+
 
       font-size:
         .56rem;
+
 
       font-weight:
         700;
     }
 
 
-    .tfe-thumb-item.is-active .tfe-thumb-photo,
-    .tfe-thumb-item:hover .tfe-thumb-photo {
+    .tfe-thumb-item.is-active
+    .tfe-thumb-photo,
+
+    .tfe-thumb-item:hover
+    .tfe-thumb-photo {
 
       border-color:
         var(--gold-light);
 
+
       box-shadow:
         0 0 0 3px
-        rgba(201,168,76,.09);
+        rgba(
+          201,
+          168,
+          76,
+          .09
+        );
     }
 
 
     .tfe-thumb-item.is-active span {
 
       color:
-        rgba(241,211,107,.96);
+        rgba(
+          241,
+          211,
+          107,
+          .96
+        );
     }
 
 
@@ -2534,14 +3430,18 @@
       width:
         100%;
 
+
       margin:
         12px 0 0;
+
 
       padding:
         4px 0;
 
+
       position:
         relative;
+
 
       z-index:
         2;
@@ -2556,20 +3456,26 @@
           calc(100% - 72px)
         );
 
+
       min-height:
         44px;
+
 
       margin:
         0 auto;
 
+
       display:
         flex;
+
 
       align-items:
         center;
 
+
       justify-content:
         center;
+
 
       position:
         relative;
@@ -2581,32 +3487,42 @@
       min-height:
         44px;
 
+
       padding:
         11px 28px;
+
 
       border-radius:
         999px;
 
+
       display:
         inline-flex;
+
 
       align-items:
         center;
 
+
       justify-content:
         center;
+
 
       font-size:
         .82rem;
 
+
       font-weight:
         800;
+
 
       letter-spacing:
         .11em;
 
+
       text-transform:
         uppercase;
+
 
       text-decoration:
         none;
@@ -2617,6 +3533,7 @@
 
       color:
         #06101d;
+
 
       background:
 
@@ -2633,11 +3550,19 @@
       border:
         0;
 
+
       background:
         transparent;
 
+
       color:
-        rgba(241,211,107,.94);
+        rgba(
+          241,
+          211,
+          107,
+          .94
+        );
+
 
       cursor:
         pointer;
@@ -2649,41 +3574,54 @@
       position:
         absolute;
 
+
       right:
         0;
+
 
       top:
         50%;
 
+
       min-height:
         auto;
+
 
       padding:
         8px 0;
 
+
       border:
         0;
+
 
       border-radius:
         0;
 
+
       background:
         transparent;
+
 
       white-space:
         nowrap;
 
+
       font-size:
         .7rem;
+
 
       letter-spacing:
         .09em;
 
+
       text-transform:
         none;
 
+
       transform:
         translateY(-50%);
+
 
       opacity:
         .88;
@@ -2702,12 +3640,14 @@
       color:
         #fff;
 
+
       opacity:
         1;
     }
 
 
-    .tfe-explorer-open .tfe-know-more-btn {
+    .tfe-explorer-open
+    .tfe-know-more-btn {
 
       display:
         none;
@@ -2718,35 +3658,34 @@
        DESKTOP
        ========================================================= */
 
-    @media (min-width:1025px) {
+    @media (
+      min-width:1025px
+    ) {
 
       .tfe-fresh-section {
 
-        height:
+        min-height:
           1060px;
-
-        max-height:
-          1060px;
-
-        overflow:
-          hidden;
       }
 
     }
 
 
-    @media
-      (min-width:1025px)
-      and
-      (max-width:1240px) {
+    @media (
+      min-width:1025px
+    ) and (
+      max-width:1240px
+    ) {
 
       .tfe-fresh-main {
 
         width:
+
           min(
             1160px,
             calc(100% - 54px)
           );
+
 
         gap:
           34px;
@@ -2757,6 +3696,7 @@
 
         width:
           270px;
+
 
         height:
           480px;
@@ -2775,6 +3715,7 @@
         width:
           124px;
 
+
         height:
           124px;
       }
@@ -2792,6 +3733,7 @@
         max-width:
           150px;
 
+
         font-size:
           .7rem;
       }
@@ -2803,21 +3745,32 @@
        TABLET
        ========================================================= */
 
-    @media
-      (min-width:768px)
-      and
-      (max-width:1024px) {
+    @media (
+      min-width:768px
+    ) and (
+      max-width:1024px
+    ) {
+
+      .tfe-fresh-section {
+
+        padding:
+          30px 0 24px;
+      }
+
 
       .tfe-fresh-main {
 
         width:
+
           min(
             920px,
             calc(100% - 28px)
           );
 
+
         grid-template-columns:
           1fr;
+
 
         gap:
           42px;
@@ -2827,10 +3780,15 @@
       .tfe-mini-poster {
 
         width:
-          min(292px,88vw);
+          min(
+            292px,
+            88vw
+          );
+
 
         height:
           auto;
+
 
         aspect-ratio:
           9 / 16;
@@ -2842,8 +3800,10 @@
         max-width:
           820px;
 
+
         margin:
           0 auto;
+
 
         gap:
           32px 22px;
@@ -2853,21 +3813,29 @@
       .tfe-speaker-card {
 
         flex:
-          0 1 calc((100% - 44px) / 3);
+
+          0 1
+          calc(
+            (100% - 44px) / 3
+          );
       }
 
     }
 
 
-    @media
-      (min-width:768px)
-      and
-      (max-width:860px) {
+    @media (
+      min-width:768px
+    ) and (
+      max-width:860px
+    ) {
 
       .tfe-speaker-card {
 
         flex-basis:
-          calc((100% - 24px) / 2);
+
+          calc(
+            (100% - 24px) / 2
+          );
       }
 
     }
@@ -2877,7 +3845,10 @@
        MOBILE
        ========================================================= */
 
-    @media (max-width:767px) {
+    @media (
+      max-width:767px
+    ) {
+
 
       .tfe-fresh-section {
 
@@ -2891,11 +3862,14 @@
         width:
           100%;
 
+
         grid-template-columns:
           1fr;
 
+
         gap:
           38px;
+
 
         padding:
           0 14px;
@@ -2905,13 +3879,19 @@
       .tfe-mini-poster {
 
         width:
-          min(72vw,276px);
+          min(
+            72vw,
+            276px
+          );
+
 
         height:
           auto;
 
+
         aspect-ratio:
           9 / 16;
+
 
         padding:
           24px 20px;
@@ -2930,6 +3910,7 @@
         width:
           92px;
 
+
         height:
           92px;
       }
@@ -2940,8 +3921,10 @@
         width:
           118px;
 
+
         height:
           52px;
+
 
         margin-top:
           34px;
@@ -2951,17 +3934,29 @@
       .tfe-poster-year {
 
         font-size:
-          clamp(82px,23vw,94px);
+
+          clamp(
+            82px,
+            23vw,
+            94px
+          );
       }
 
 
       .tfe-poster-title {
 
         font-size:
-          clamp(37px,10.6vw,44px);
+
+          clamp(
+            37px,
+            10.6vw,
+            44px
+          );
+
 
         line-height:
           1.08;
+
 
         letter-spacing:
           .105em;
@@ -2973,11 +3968,17 @@
         margin-bottom:
           28px;
 
+
         padding:
           0 6px;
 
+
         font-size:
           .68rem;
+
+
+        letter-spacing:
+          .12em;
       }
 
 
@@ -2991,7 +3992,11 @@
       .tfe-speaker-card {
 
         flex:
-          0 1 calc(50% - 8px);
+
+          0 1
+          calc(
+            50% - 8px
+          );
       }
 
 
@@ -3001,27 +4006,48 @@
         transform:
           none;
 
+
         z-index:
           10000;
       }
 
+
+      /* Dark background when mobile bio is open */
 
       .tfe-speaker-card.is-open:before {
 
         content:
           "";
 
+
         position:
           fixed;
+
 
         inset:
           0;
 
+
         background:
-          rgba(0,0,0,.46);
+          rgba(
+            0,
+            0,
+            0,
+            .62
+          );
+
+
+        backdrop-filter:
+          blur(2px);
+
+
+        -webkit-backdrop-filter:
+          blur(2px);
+
 
         z-index:
           9998;
+
 
         pointer-events:
           none;
@@ -3031,13 +4057,19 @@
       .tfe-photo {
 
         width:
-          min(122px,76%);
+          min(
+            122px,
+            76%
+          );
+
 
         height:
           auto;
 
+
         aspect-ratio:
           1;
+
 
         margin-bottom:
           12px;
@@ -3056,109 +4088,296 @@
         max-width:
           145px;
 
+
         font-size:
           .7rem;
       }
 
 
-      /* -------------------------------------------------------
-         ORIGINAL MOBILE POPUP POSITIONING
-         ------------------------------------------------------- */
+      /* =====================================================
+         MOBILE BIO POPUP
+         Stable centered modal
+         Tap only — hover disabled
+         ===================================================== */
 
       .speaker-details {
 
         position:
           fixed !important;
 
+
         left:
-          50vw !important;
+          50% !important;
+
 
         top:
-          var(
-            --tfe-speaker-card-top,
-            50vh
-          ) !important;
+          50% !important;
+
+
+        right:
+          auto !important;
+
+
+        bottom:
+          auto !important;
+
 
         width:
+
           min(
             340px,
-            calc(100vw - 32px)
-          );
+            calc(
+              100vw - 28px
+            )
+          ) !important;
+
+
+        max-width:
+          none !important;
+
 
         max-height:
+
           min(
-            58vh,
-            360px
-          );
+            70vh,
+            440px
+          ) !important;
+
+
+        margin:
+          0 !important;
+
+
+        padding:
+          22px 20px !important;
+
 
         overflow-y:
-          auto;
+          auto !important;
+
+
+        overflow-x:
+          hidden !important;
+
 
         -webkit-overflow-scrolling:
           touch;
 
-        padding:
-          18px;
 
-        z-index:
-          9999;
+        background:
+          #fff !important;
+
+
+        border:
+          0 !important;
+
 
         border-radius:
-          18px;
+          20px !important;
+
+
+        box-shadow:
+
+          0 30px 80px
+          rgba(
+            0,
+            0,
+            0,
+            .55
+          ),
+
+          0 0 0 1px
+          rgba(
+            255,
+            255,
+            255,
+            .4
+          )
+          inset !important;
+
+
+        opacity:
+          0 !important;
+
+
+        visibility:
+          hidden !important;
+
+
+        pointer-events:
+          none !important;
+
+
+        z-index:
+          9999 !important;
+
 
         text-align:
           left;
 
+
         transform:
-          translateX(-50%)
-          scale(.98) !important;
+
+          translate(
+            -50%,
+            -50%
+          )
+
+          scale(.96)
+          !important;
+
+
+        transition:
+
+          opacity .2s ease,
+
+          transform .2s ease,
+
+          visibility .2s ease
+
+          !important;
+
 
         scrollbar-width:
-          none;
+          none !important;
+
+
+        -ms-overflow-style:
+          none !important;
       }
 
 
       .speaker-details::-webkit-scrollbar {
 
         display:
-          none;
+          none !important;
+
+
+        width:
+          0 !important;
+
+
+        height:
+          0 !important;
       }
 
 
       .speaker-details:before {
 
         display:
-          none;
+          none !important;
       }
 
 
       .speaker-details p {
 
+        margin:
+          0 !important;
+
+
+        color:
+          #202632 !important;
+
+
         font-size:
-          .76rem;
+          .79rem !important;
+
+
+        line-height:
+          1.58 !important;
+
+
+        font-weight:
+          500 !important;
       }
 
 
-      .tfe-speaker-card:hover .speaker-details,
-      .tfe-speaker-card.is-open .speaker-details {
+      /* Disable hover opening on mobile */
+
+      .tfe-speaker-card:hover
+      .speaker-details {
+
+        opacity:
+          0 !important;
+
+
+        visibility:
+          hidden !important;
+
+
+        pointer-events:
+          none !important;
+
 
         transform:
-          translateX(-50%)
-          scale(1) !important;
+
+          translate(
+            -50%,
+            -50%
+          )
+
+          scale(.96)
+
+          !important;
       }
 
 
-      /* -------------------------------------------------------
+      /* Open ONLY on tap / .is-open */
+
+      .tfe-speaker-card.is-open
+      .speaker-details {
+
+        opacity:
+          1 !important;
+
+
+        visibility:
+          visible !important;
+
+
+        pointer-events:
+          auto !important;
+
+
+        transform:
+
+          translate(
+            -50%,
+            -50%
+          )
+
+          scale(1)
+
+          !important;
+      }
+
+
+      /* =====================================================
          MOBILE EXPLORER
-         ------------------------------------------------------- */
+         ===================================================== */
 
       .tfe-speaker-explorer {
 
         max-width:
           100%;
 
+
         padding:
           0 2px;
+      }
+
+
+      .tfe-explorer-topbar {
+
+        margin-bottom:
+          12px;
+      }
+
+
+      .tfe-explorer-back {
+
+        font-size:
+          .64rem;
       }
 
 
@@ -3167,8 +4386,10 @@
         grid-template-columns:
           1fr;
 
+
         gap:
           12px;
+
 
         position:
           relative;
@@ -3180,14 +4401,18 @@
         min-height:
           0;
 
+
         padding:
           23px 18px 22px;
+
 
         grid-template-columns:
           1fr;
 
+
         gap:
           20px;
+
 
         border-radius:
           22px;
@@ -3211,6 +4436,7 @@
       .tfe-featured-name {
 
         font-size:
+
           clamp(
             1.72rem,
             8.5vw,
@@ -3224,8 +4450,10 @@
         max-width:
           290px;
 
+
         margin:
           8px auto 0;
+
 
         font-size:
           .8rem;
@@ -3244,14 +4472,18 @@
         max-height:
           210px;
 
+
         padding:
           0 4px;
+
 
         text-align:
           left;
 
+
         font-size:
           .77rem;
+
 
         line-height:
           1.58;
@@ -3264,14 +4496,18 @@
         position:
           absolute;
 
+
         top:
           78px;
+
 
         z-index:
           5;
 
+
         width:
           38px;
+
 
         height:
           38px;
@@ -3295,7 +4531,11 @@
       .tfe-thumb-window {
 
         grid-template-columns:
-          30px minmax(0,1fr) 30px;
+
+          30px
+          minmax(0,1fr)
+          30px;
+
 
         gap:
           5px;
@@ -3306,6 +4546,7 @@
 
         width:
           30px;
+
 
         height:
           30px;
@@ -3324,6 +4565,7 @@
         flex-basis:
           66px;
 
+
         width:
           66px;
       }
@@ -3334,31 +4576,51 @@
         width:
           56px;
 
+
         height:
           56px;
       }
 
 
-      /* -------------------------------------------------------
+      /* =====================================================
          MOBILE CTA
-         ------------------------------------------------------- */
+         ===================================================== */
+
+      .tfe-agenda-section {
+
+        margin-top:
+          26px;
+
+
+        padding:
+          11px 0;
+      }
+
 
       .tfe-action-row {
 
         width:
-          min(100%,360px);
+          min(
+            100%,
+            360px
+          );
+
 
         display:
           grid;
 
+
         grid-template-columns:
           1fr;
+
 
         justify-items:
           center;
 
+
         gap:
           8px;
+
 
         padding:
           0 10px;
@@ -3370,6 +4632,7 @@
         width:
           100%;
 
+
         max-width:
           310px;
       }
@@ -3380,23 +4643,30 @@
         position:
           static;
 
+
         justify-self:
           end;
+
 
         width:
           auto;
 
+
         min-height:
           auto;
+
 
         margin:
           1px 2px 0 0;
 
+
         padding:
           5px 0;
 
+
         transform:
           none;
+
 
         font-size:
           .67rem;
@@ -3405,7 +4675,91 @@
     }
 
 
-    @media (prefers-reduced-motion:reduce) {
+    /* =========================================================
+       SMALL MOBILE
+       ========================================================= */
+
+    @media (
+      max-width:420px
+    ) {
+
+      .tfe-mini-poster {
+
+        width:
+          min(
+            74vw,
+            264px
+          );
+
+
+        padding:
+          22px 18px;
+      }
+
+
+      .tfe-logo-slot-one {
+
+        width:
+          84px;
+
+
+        height:
+          84px;
+      }
+
+
+      .tfe-logo-slot-two {
+
+        width:
+          110px;
+
+
+        height:
+          48px;
+
+
+        margin-top:
+          32px;
+      }
+
+
+      .tfe-photo {
+
+        width:
+          min(
+            112px,
+            78%
+          );
+      }
+
+
+      .tfe-speaker-card h3 {
+
+        margin-top:
+          -10px;
+
+
+        font-size:
+          .92rem;
+      }
+
+
+      .short-title {
+
+        font-size:
+          .66rem;
+      }
+
+    }
+
+
+    /* =========================================================
+       REDUCED MOTION
+       ========================================================= */
+
+    @media (
+      prefers-reduced-motion: reduce
+    ) {
 
       .tfe-loader-ring {
 
@@ -3418,6 +4772,10 @@
 
         scroll-behavior:
           auto !important;
+
+
+        transition:
+          none !important;
       }
 
     }
@@ -3425,7 +4783,9 @@
   `;
 
 
-  root.appendChild(style);
+  root.appendChild(
+    style
+  );
 
 
   /* =========================================================
@@ -3443,12 +4803,6 @@
       ".tfe-speaker-card:not(.tfe-hidden-speaker)"
     )
   ];
-
-
-  const mobile =
-    window.matchMedia(
-      "(max-width:767px)"
-    );
 
 
   const explorer =
@@ -3530,21 +4884,26 @@
 
 
   /* =========================================================
-     LOADING
+     LOADER
      ========================================================= */
 
-  const wait =
-    ms =>
-      new Promise(
-        resolve =>
-          setTimeout(
-            resolve,
-            ms
-          )
-      );
+  function wait(
+    ms
+  ) {
+
+    return new Promise(
+      resolve =>
+        setTimeout(
+          resolve,
+          ms
+        )
+    );
+  }
 
 
-  function imageReady(img) {
+  function imageReady(
+    img
+  ) {
 
     return new Promise(
       resolve => {
@@ -3572,7 +4931,8 @@
           "load",
           done,
           {
-            once: true
+            once:
+              true
           }
         );
 
@@ -3581,109 +4941,46 @@
           "error",
           done,
           {
-            once: true
+            once:
+              true
           }
         );
 
       }
     );
-
-  }
-
-
-  function measureAndLockSectionHeight() {
-
-    if (
-      !section.classList.contains(
-        "tfe-is-ready"
-      )
-    ) {
-
-      return;
-    }
-
-
-    section.style.height =
-      "auto";
-
-
-    section.style.minHeight =
-      "0";
-
-
-    section.style.maxHeight =
-      "none";
-
-
-    section.style.overflow =
-      "visible";
-
-
-    requestAnimationFrame(
-      () => {
-
-        let height =
-          Math.ceil(
-            section.scrollHeight
-          );
-
-
-        if (
-          height < 600
-        ) {
-
-          height =
-            600;
-        }
-
-
-        section.style.height =
-          "auto";
-
-
-        section.style.minHeight =
-          `${height}px`;
-
-
-        section.style.maxHeight =
-          "none";
-
-
-        section.style.overflow =
-          "visible";
-
-
-        sectionHeightLocked =
-          true;
-
-      }
-    );
-
   }
 
 
   async function revealWhenReady() {
 
-    const criticalImages = [
+    const critical = [
+
       ...root.querySelectorAll(
         ".tfe-poster-logos img, .tfe-speaker-card:nth-child(-n+5) img"
       )
+
     ];
 
 
     await Promise.all([
 
-      wait(450),
+      wait(
+        450
+      ),
+
 
       Promise.race([
 
         Promise.all(
-          criticalImages.map(
+          critical.map(
             imageReady
           )
         ),
 
-        wait(1400)
+
+        wait(
+          1400
+        )
 
       ])
 
@@ -3703,15 +5000,6 @@
     section.setAttribute(
       "aria-busy",
       "false"
-    );
-
-
-    measureAndLockSectionHeight();
-
-
-    setTimeout(
-      measureAndLockSectionHeight,
-      650
     );
 
 
@@ -3738,627 +5026,16 @@
 
 
     scheduleBioHydration();
-
   }
 
 
   /* =========================================================
-     ORIGINAL SPEAKER POPUP LOGIC
+     BIOGRAPHIES
      ========================================================= */
 
-  function reset(card) {
-
-    card.classList.remove(
-      "is-open"
-    );
-
-
-    card.style.removeProperty(
-      "--tfe-speaker-card-top"
-    );
-
-
-    const details =
-      card.querySelector(
-        ".speaker-details"
-      );
-
-
-    if (
-      details
-    ) {
-
-      details.style.setProperty(
-        "--tfe-popover-shift",
-        "0px"
-      );
-    }
-
-  }
-
-
-  function closeOthers(active) {
-
-    cards.forEach(
-      card => {
-
-        if (
-          card !== active
-        ) {
-
-          reset(card);
-        }
-
-      }
-    );
-
-  }
-
-
-  /* ---------------------------------------------------------
-     MOBILE POPUP POSITION
-     --------------------------------------------------------- */
-
-  function setMobileTop(card) {
-
-    if (
-      !mobile.matches
-    ) {
-
-      return;
-    }
-
-
-    const details =
-      card.querySelector(
-        ".speaker-details"
-      );
-
-
-    const rect =
-      card.getBoundingClientRect();
-
-
-    const height =
-      details
-
-        ? Math.min(
-            details.scrollHeight || 260,
-            Math.round(
-              window.innerHeight * .58
-            )
-          )
-
-        : 260;
-
-
-    const top =
-      Math.min(
-
-        rect.bottom + 12,
-
-        window.innerHeight -
-        height -
-        16
-      );
-
-
-    card.style.setProperty(
-
-      "--tfe-speaker-card-top",
-
-      `${Math.max(
-        16,
-        top
-      )}px`
-    );
-
-  }
-
-
-  /* ---------------------------------------------------------
-     KEEP DESKTOP POPOVER INSIDE SCREEN
-     --------------------------------------------------------- */
-
-  function keepInside(card) {
-
-    if (
-      mobile.matches
-    ) {
-
-      return;
-    }
-
-
-    const details =
-      card.querySelector(
-        ".speaker-details"
-      );
-
-
-    if (
-      !details
-    ) {
-
-      return;
-    }
-
-
-    details.style.setProperty(
-      "--tfe-popover-shift",
-      "0px"
-    );
-
-
-    /*
-     * Right-most cards already use dedicated
-     * right alignment.
-     */
-
-    if (
-      card.classList.contains(
-        "tfe-popover-right"
-      )
-    ) {
-
-      return;
-    }
-
-
-    requestAnimationFrame(
-      () => {
-
-        const rect =
-          details.getBoundingClientRect();
-
-
-        const gap =
-          16;
-
-
-        let shift =
-          0;
-
-
-        if (
-          rect.left < gap
-        ) {
-
-          shift +=
-            gap -
-            rect.left;
-        }
-
-
-        if (
-          rect.right >
-          window.innerWidth -
-          gap
-        ) {
-
-          shift -=
-            rect.right -
-            (
-              window.innerWidth -
-              gap
-            );
-        }
-
-
-        details.style.setProperty(
-
-          "--tfe-popover-shift",
-
-          `${Math.round(
-            shift
-          )}px`
-        );
-
-      }
-    );
-
-  }
-
-
-  /* ---------------------------------------------------------
-     DETECT BOTTOM ROW + RIGHT EDGE
-     --------------------------------------------------------- */
-
-  function markBottomRow() {
-
-    if (
-      mobile.matches
-    ) {
-
-      cards.forEach(
-        card => {
-
-          card.classList.remove(
-            "tfe-popover-up",
-            "tfe-popover-right"
-          );
-
-
-          card.style.removeProperty(
-            "--tfe-card-half"
-          );
-
-        }
-      );
-
-
-      return;
-    }
-
-
-    const rowGap =
-      14;
-
-
-    const rows =
-      [];
-
-
-    cards.forEach(
-      card => {
-
-        const rect =
-          card.getBoundingClientRect();
-
-
-        if (
-          rect.width <= 0 ||
-          rect.height <= 0
-        ) {
-
-          return;
-        }
-
-
-        card.style.setProperty(
-
-          "--tfe-card-half",
-
-          `${Math.round(
-            rect.width / 2
-          )}px`
-        );
-
-
-        const top =
-          Math.round(
-            rect.top
-          );
-
-
-        let row =
-          rows.find(
-            current =>
-              Math.abs(
-                current.top -
-                top
-              ) <= rowGap
-          );
-
-
-        if (
-          !row
-        ) {
-
-          row = {
-            top,
-            items: []
-          };
-
-
-          rows.push(
-            row
-          );
-        }
-
-
-        row.items.push({
-          card,
-          rect
-        });
-
-
-        row.top =
-          Math.min(
-            row.top,
-            top
-          );
-
-      }
-    );
-
-
-    if (
-      !rows.length
-    ) {
-
-      return;
-    }
-
-
-    const lastRowTop =
-      Math.max(
-        ...rows.map(
-          row =>
-            row.top
-        )
-      );
-
-
-    rows.forEach(
-      row => {
-
-        const rightMost =
-          row.items.reduce(
-            (best,item) =>
-
-              !best ||
-              item.rect.right >
-              best.rect.right
-
-                ? item
-
-                : best,
-
-            null
-          );
-
-
-        row.items.forEach(
-          item => {
-
-            item.card.classList.toggle(
-
-              "tfe-popover-up",
-
-              row.top >=
-              lastRowTop -
-              rowGap
-            );
-
-
-            item.card.classList.toggle(
-
-              "tfe-popover-right",
-
-              Boolean(
-                rightMost
-              ) &&
-              item.card ===
-              rightMost.card
-            );
-
-          }
-        );
-
-      }
-    );
-
-  }
-
-
-  /* ---------------------------------------------------------
-     CARD EVENTS
-     --------------------------------------------------------- */
-
-  cards.forEach(
-    card => {
-
-
-      card.addEventListener(
-        "mouseenter",
-        () => {
-
-          markBottomRow();
-
-          keepInside(
-            card
-          );
-
-          ensureBio(
-            card.dataset.speakerId
-          );
-
-        }
-      );
-
-
-      card.addEventListener(
-        "mouseleave",
-        () => {
-
-          if (
-            !card.classList.contains(
-              "is-open"
-            )
-          ) {
-
-            keepInside(
-              card
-            );
-          }
-
-        }
-      );
-
-
-      card.addEventListener(
-        "click",
-        event => {
-
-          event.stopPropagation();
-
-
-          const open =
-            !card.classList.contains(
-              "is-open"
-            );
-
-
-          closeOthers(
-            card
-          );
-
-
-          card.classList.toggle(
-            "is-open",
-            open
-          );
-
-
-          if (
-            open
-          ) {
-
-            markBottomRow();
-
-
-            setMobileTop(
-              card
-            );
-
-
-            keepInside(
-              card
-            );
-
-
-            ensureBio(
-              card.dataset.speakerId
-            );
-          }
-
-        }
-      );
-
-    }
-  );
-
-
-  /* ---------------------------------------------------------
-     CLOSE POPUP WHEN CLICKING OUTSIDE
-     --------------------------------------------------------- */
-
-  document.addEventListener(
-    "click",
-    event => {
-
-      if (
-        !event.target.closest(
-          ".tfe-speaker-card"
-        )
-      ) {
-
-        cards.forEach(
-          reset
-        );
-      }
-
-    }
-  );
-
-
-  /* ---------------------------------------------------------
-     MOBILE: CLOSE POPUP ON PAGE SCROLL
-     --------------------------------------------------------- */
-
-  window.addEventListener(
-    "scroll",
-    () => {
-
-      const open =
-        section.querySelector(
-          ".tfe-speaker-card.is-open"
-        );
-
-
-      if (
-        open &&
-        mobile.matches
-      ) {
-
-        reset(
-          open
-        );
-      }
-
-    },
-    {
-      passive: true
-    }
-  );
-
-
-  /* ---------------------------------------------------------
-     RESIZE
-     --------------------------------------------------------- */
-
-  let resizeTimer =
-    null;
-
-
-  window.addEventListener(
-    "resize",
-    () => {
-
-      clearTimeout(
-        resizeTimer
-      );
-
-
-      resizeTimer =
-        setTimeout(
-          () => {
-
-            markBottomRow();
-
-
-            const open =
-              section.querySelector(
-                ".tfe-speaker-card.is-open"
-              );
-
-
-            if (
-              open
-            ) {
-
-              setMobileTop(
-                open
-              );
-
-
-              keepInside(
-                open
-              );
-            }
-
-
-            if (
-              sectionHeightLocked
-            ) {
-
-              measureAndLockSectionHeight();
-            }
-
-          },
-          120
-        );
-
-    }
-  );
-
-
-  /* =========================================================
-     SPEAKER BIOGRAPHIES
-     ========================================================= */
-
-  function isPlaceholder(text) {
+  function isPlaceholder(
+    text
+  ) {
 
     const value =
       String(
@@ -4380,7 +5057,6 @@
         "Visit Speaker Page for more details."
 
     );
-
   }
 
 
@@ -4437,9 +5113,6 @@
       renderExplorer();
     }
 
-
-    measureAndLockSectionHeight();
-
   }
 
 
@@ -4481,7 +5154,7 @@
     biosPromise =
       fetch(
 
-        `${BIO_URL}?v=${Date.now()}`,
+        `${CFG.bioUrl}?v=${Date.now()}`,
 
         {
           cache:
@@ -4490,7 +5163,9 @@
           credentials:
             "omit"
         }
+
       )
+
 
       .then(
         response => {
@@ -4510,8 +5185,10 @@
         }
       )
 
+
       .then(
         data => {
+
 
           (
             data.speakers || []
@@ -4549,6 +5226,7 @@
         }
       )
 
+
       .catch(
         error => {
 
@@ -4572,11 +5250,12 @@
 
 
     return biosPromise;
-
   }
 
 
-  function ensureBio(id) {
+  function ensureBio(
+    id
+  ) {
 
     if (
       bioMap[id]
@@ -4597,10 +5276,10 @@
 
 
     const node =
-      card &&
-      card.querySelector(
-        ".tfe-speaker-bio"
-      );
+      card
+        ?.querySelector(
+          ".tfe-speaker-bio"
+        );
 
 
     if (
@@ -4616,16 +5295,18 @@
 
 
     return loadBios()
+
       .then(
         () => {
 
           if (
-            card &&
             node
           ) {
 
             node.textContent =
+
               bioMap[id] ||
+
               "Visit Speaker Page for more details.";
           }
 
@@ -4657,6 +5338,7 @@
           timeout:
             4500
         }
+
       );
 
     } else {
@@ -4671,16 +5353,538 @@
   }
 
 
-  window.addEventListener(
-    "pageshow",
+  /* =========================================================
+     SPEAKER POPUP
+     ========================================================= */
+
+  function resetCard(
+    card
+  ) {
+
+    card.classList.remove(
+      "is-open"
+    );
+
+
+    const details =
+      card.querySelector(
+        ".speaker-details"
+      );
+
+
+    if (
+      details
+    ) {
+
+      details.style.setProperty(
+        "--tfe-popover-shift",
+        "0px"
+      );
+    }
+
+  }
+
+
+  function closeOtherCards(
+    active = null
+  ) {
+
+    cards.forEach(
+      card => {
+
+        if (
+          card !== active
+        ) {
+
+          resetCard(
+            card
+          );
+        }
+
+      }
+    );
+
+  }
+
+
+  /* =========================================================
+     DESKTOP POPOVER VIEWPORT CORRECTION
+     ========================================================= */
+
+  function keepInside(
+    card
+  ) {
+
+    if (
+      mobile.matches
+    ) {
+
+      return;
+    }
+
+
+    const details =
+      card.querySelector(
+        ".speaker-details"
+      );
+
+
+    if (
+      !details
+    ) {
+
+      return;
+    }
+
+
+    details.style.setProperty(
+      "--tfe-popover-shift",
+      "0px"
+    );
+
+
+    /*
+     * Right-most cards already use
+     * dedicated right alignment.
+     */
+
+    if (
+      card.classList.contains(
+        "tfe-popover-right"
+      )
+    ) {
+
+      return;
+    }
+
+
+    requestAnimationFrame(
+      () => {
+
+        const rect =
+          details.getBoundingClientRect();
+
+
+        const gap =
+          16;
+
+
+        let shift =
+          0;
+
+
+        if (
+          rect.left <
+          gap
+        ) {
+
+          shift +=
+            gap -
+            rect.left;
+        }
+
+
+        if (
+          rect.right >
+          window.innerWidth -
+          gap
+        ) {
+
+          shift -=
+
+            rect.right -
+
+            (
+              window.innerWidth -
+              gap
+            );
+        }
+
+
+        details.style.setProperty(
+
+          "--tfe-popover-shift",
+
+          `${Math.round(
+            shift
+          )}px`
+        );
+
+      }
+    );
+
+  }
+
+
+  /* =========================================================
+     DETECT LAST ROW + RIGHT MOST CARD
+     ========================================================= */
+
+  function markRows() {
+
+    if (
+      mobile.matches
+    ) {
+
+      cards.forEach(
+        card => {
+
+          card.classList.remove(
+            "tfe-popover-up",
+            "tfe-popover-right"
+          );
+
+
+          card.style.removeProperty(
+            "--tfe-card-half"
+          );
+
+        }
+      );
+
+
+      return;
+    }
+
+
+    const rows =
+      [];
+
+
+    const rowGap =
+      14;
+
+
+    cards.forEach(
+      card => {
+
+        const rect =
+          card.getBoundingClientRect();
+
+
+        if (
+          rect.width <= 0 ||
+          rect.height <= 0
+        ) {
+
+          return;
+        }
+
+
+        card.style.setProperty(
+
+          "--tfe-card-half",
+
+          `${Math.round(
+            rect.width /
+            2
+          )}px`
+        );
+
+
+        const top =
+          Math.round(
+            rect.top
+          );
+
+
+        let row =
+          rows.find(
+            current =>
+
+              Math.abs(
+                current.top -
+                top
+              ) <=
+              rowGap
+          );
+
+
+        if (
+          !row
+        ) {
+
+          row = {
+            top,
+            items:
+              []
+          };
+
+
+          rows.push(
+            row
+          );
+        }
+
+
+        row.items.push({
+          card,
+          rect
+        });
+
+
+        row.top =
+          Math.min(
+            row.top,
+            top
+          );
+
+      }
+    );
+
+
+    if (
+      !rows.length
+    ) {
+
+      return;
+    }
+
+
+    const lastRowTop =
+      Math.max(
+        ...rows.map(
+          row =>
+            row.top
+        )
+      );
+
+
+    rows.forEach(
+      row => {
+
+        const rightMost =
+          row.items.reduce(
+            (
+              best,
+              item
+            ) =>
+
+              !best ||
+
+              item.rect.right >
+              best.rect.right
+
+                ? item
+
+                : best,
+
+            null
+          );
+
+
+        row.items.forEach(
+          item => {
+
+
+            item.card.classList.toggle(
+
+              "tfe-popover-up",
+
+              row.top >=
+              lastRowTop -
+              rowGap
+            );
+
+
+            item.card.classList.toggle(
+
+              "tfe-popover-right",
+
+              !!rightMost &&
+
+              item.card ===
+              rightMost.card
+            );
+
+          }
+        );
+
+      }
+    );
+
+  }
+
+
+  /* =========================================================
+     SPEAKER CARD EVENTS
+     ========================================================= */
+
+  cards.forEach(
+    card => {
+
+
+      /* Desktop hover only */
+
+      card.addEventListener(
+        "mouseenter",
+        () => {
+
+          if (
+            mobile.matches
+          ) {
+
+            return;
+          }
+
+
+          markRows();
+
+
+          keepInside(
+            card
+          );
+
+
+          ensureBio(
+            card.dataset.speakerId
+          );
+
+        }
+      );
+
+
+      card.addEventListener(
+        "mouseleave",
+        () => {
+
+          if (
+            mobile.matches
+          ) {
+
+            return;
+          }
+
+
+          if (
+            !card.classList.contains(
+              "is-open"
+            )
+          ) {
+
+            keepInside(
+              card
+            );
+          }
+
+        }
+      );
+
+
+      /*
+       * Tap / click.
+       *
+       * Desktop:
+       * also supports click-open.
+       *
+       * Mobile:
+       * opens centered modal.
+       */
+
+      card.addEventListener(
+        "click",
+        event => {
+
+          event.stopPropagation();
+
+
+          const open =
+            !card.classList.contains(
+              "is-open"
+            );
+
+
+          closeOtherCards(
+            card
+          );
+
+
+          card.classList.toggle(
+            "is-open",
+            open
+          );
+
+
+          if (
+            open
+          ) {
+
+            ensureBio(
+              card.dataset.speakerId
+            );
+
+
+            if (
+              !mobile.matches
+            ) {
+
+              markRows();
+
+
+              keepInside(
+                card
+              );
+            }
+
+          }
+
+        }
+      );
+
+    }
+  );
+
+
+  /* =========================================================
+     CLOSE SPEAKER POPUP WHEN CLICKING OUTSIDE
+     ========================================================= */
+
+  document.addEventListener(
+    "click",
     event => {
 
       if (
-        event.persisted
+        !event.target.closest(
+          ".tfe-speaker-card"
+        )
       ) {
 
-        loadBios(
-          true
+        closeOtherCards();
+      }
+
+    }
+  );
+
+
+  /* =========================================================
+     ESC CLOSES SPEAKER POPUP
+     ========================================================= */
+
+  document.addEventListener(
+    "keydown",
+    event => {
+
+      if (
+        event.key !==
+        "Escape"
+      ) {
+
+        return;
+      }
+
+
+      const openCard =
+        section.querySelector(
+          ".tfe-speaker-card.is-open"
+        );
+
+
+      if (
+        openCard
+      ) {
+
+        resetCard(
+          openCard
         );
       }
 
@@ -4689,7 +5893,7 @@
 
 
   /* =========================================================
-     SPEAKER EXPLORER
+     EXPLORER THUMBNAILS
      ========================================================= */
 
   function buildThumbs() {
@@ -4707,6 +5911,7 @@
         speaker,
         index
       ) => {
+
 
         const button =
           document.createElement(
@@ -4748,6 +5953,7 @@
 
           </div>
 
+
           <span>
             ${esc(
               speaker.name
@@ -4777,6 +5983,10 @@
 
   }
 
+
+  /* =========================================================
+     EXPLORER RENDER
+     ========================================================= */
 
   function renderExplorer() {
 
@@ -4811,9 +6021,11 @@
 
 
     featuredBio.textContent =
+
       bioMap[
         speaker.id
       ] ||
+
       "Profile details loading…";
 
 
@@ -4840,54 +6052,61 @@
       ...thumbStrip.querySelectorAll(
         ".tfe-thumb-item"
       )
-    ].forEach(
-      (
-        button,
-        index
-      ) => {
+    ]
 
-        const active =
-          index ===
-          explorerIndex;
+      .forEach(
+        (
+          button,
+          index
+        ) => {
 
 
-        button.classList.toggle(
-          "is-active",
-          active
-        );
+          const active =
+            index ===
+            explorerIndex;
 
 
-        button.setAttribute(
-          "aria-selected",
-          active
-            ? "true"
-            : "false"
-        );
+          button.classList.toggle(
+            "is-active",
+            active
+          );
 
 
-        if (
-          active &&
-          button.scrollIntoView
-        ) {
+          button.setAttribute(
+            "aria-selected",
+            active
+              ? "true"
+              : "false"
+          );
 
-          button.scrollIntoView({
 
-            behavior:
-              "smooth",
+          if (
+            active
+          ) {
 
-            block:
-              "nearest",
+            button.scrollIntoView({
 
-            inline:
-              "center"
-          });
+              behavior:
+                "smooth",
+
+              block:
+                "nearest",
+
+              inline:
+                "center"
+
+            });
+          }
+
         }
-
-      }
-    );
+      );
 
   }
 
+
+  /* =========================================================
+     CHANGE EXPLORER SPEAKER
+     ========================================================= */
 
   function showSpeaker(
     index,
@@ -4962,14 +6181,16 @@
   }
 
 
+  /* =========================================================
+     OPEN EXPLORER
+     ========================================================= */
+
   function openExplorer() {
 
     buildThumbs();
 
 
-    cards.forEach(
-      reset
-    );
+    closeOtherCards();
 
 
     section.classList.add(
@@ -4988,11 +6209,8 @@
     );
 
 
-    measureAndLockSectionHeight();
-
-
     requestAnimationFrame(
-      () => {
+      () =>
 
         explorer.scrollIntoView({
 
@@ -5001,13 +6219,16 @@
 
           block:
             "nearest"
-        });
 
-      }
+        })
     );
 
   }
 
+
+  /* =========================================================
+     CLOSE EXPLORER
+     ========================================================= */
 
   function closeExplorer() {
 
@@ -5022,25 +6243,20 @@
     );
 
 
-    measureAndLockSectionHeight();
-
-
     requestAnimationFrame(
-      () => {
+      () =>
 
         knowMoreBtn.focus({
           preventScroll:
             true
-        });
-
-      }
+        })
     );
 
   }
 
 
   /* =========================================================
-     EXPLORER BUTTON EVENTS
+     EXPLORER EVENTS
      ========================================================= */
 
   knowMoreBtn.addEventListener(
@@ -5082,6 +6298,7 @@
       thumbStrip.scrollBy({
 
         left:
+
           -Math.max(
             260,
             thumbStrip.clientWidth *
@@ -5090,6 +6307,7 @@
 
         behavior:
           "smooth"
+
       });
 
     }
@@ -5103,6 +6321,7 @@
       thumbStrip.scrollBy({
 
         left:
+
           Math.max(
             260,
             thumbStrip.clientWidth *
@@ -5111,6 +6330,7 @@
 
         behavior:
           "smooth"
+
       });
 
     }
@@ -5118,7 +6338,7 @@
 
 
   /* =========================================================
-     KEYBOARD NAVIGATION
+     EXPLORER KEYBOARD NAVIGATION
      ========================================================= */
 
   section.addEventListener(
@@ -5175,10 +6395,76 @@
 
 
   /* =========================================================
+     RESIZE
+     ========================================================= */
+
+  window.addEventListener(
+    "resize",
+    () => {
+
+      clearTimeout(
+        resizeTimer
+      );
+
+
+      resizeTimer =
+        setTimeout(
+          () => {
+
+            markRows();
+
+
+            const open =
+              section.querySelector(
+                ".tfe-speaker-card.is-open"
+              );
+
+
+            if (
+              open &&
+              !mobile.matches
+            ) {
+
+              keepInside(
+                open
+              );
+            }
+
+          },
+          120
+        );
+
+    }
+  );
+
+
+  /* =========================================================
+     BACK / FORWARD CACHE
+     ========================================================= */
+
+  window.addEventListener(
+    "pageshow",
+    event => {
+
+      if (
+        event.persisted
+      ) {
+
+        loadBios(
+          true
+        );
+      }
+
+    }
+  );
+
+
+  /* =========================================================
      START
      ========================================================= */
 
-  markBottomRow();
+  markRows();
+
 
   revealWhenReady();
 
