@@ -1,1 +1,3777 @@
-(()=>{const R=document.getElementById('tfe-speakers-root');if(!R)return;R.innerHTML=String.raw`<style id="tfe-speakers-critical-load-lock">.tfe-fresh-section.tfe-is-loading{height:600px!important;min-height:600px!important;max-height:600px!important;overflow:hidden!important;background:#000!important;position:relative!important}.tfe-fresh-section.tfe-is-loading .tfe-fresh-main,.tfe-fresh-section.tfe-is-loading .tfe-agenda-section{opacity:0!important;visibility:hidden!important}</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://img1.wsimg.com" crossorigin><link rel="dns-prefetch" href="https://img1.wsimg.com"><link rel="preload" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"></noscript><section class="tfe-fresh-section tfe-speakers-split tfe-is-loading" aria-busy="true"><div class="tfe-section-loader" aria-live="polite" aria-label="Loading speakers section"><div class="tfe-loader-ring" aria-hidden="true"></div><div class="tfe-loader-dot" aria-hidden="true"></div><span>Loading speakers</span></div><div class="tfe-fresh-main"><div class="tfe-poster-wrap"><div class="tfe-mini-poster"><div class="tfe-poster-logos"><div class="tfe-logo-slot tfe-logo-slot-one"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/flex%20logo.png" alt="The Flex Executive Logo" width="110" height="110" decoding="async" onload="this.parentElement.classList.add('has-logo')" onerror="this.style.display='none';" loading="eager" fetchpriority="high"><span>Logo 1</span></div><div class="tfe-logo-slot tfe-logo-slot-two"><img src="https://img1.wsimg.com/isteam/ip/f949858a-5410-4007-9066-936f82154009/Logo%20New%20BMU-Small-1.png" alt="Board Match-Up Logo" width="140" height="60" decoding="async" onload="this.parentElement.classList.add('has-logo')" onerror="this.style.display='none';" loading="eager" fetchpriority="high"><span>Logo 2</span></div></div><div class="tfe-poster-year">2026</div><div class="tfe-poster-line"><span></span><i></i><span></span></div><div class="tfe-poster-title"><div class="gold">The Flex</div><div>Executive</div><div class="gold">Summit</div></div><div class="tfe-poster-line"><span></span><i></i><span></span></div><div class="tfe-poster-events" aria-label="Event schedule"><div class="tfe-event-row"><span>1 Oct</span><b>|</b><span>Masterclass</span></div><div class="tfe-event-row"><span>2 Oct</span><b>|</b><span>Summit</span></div><div class="tfe-event-single">Networking Dinner</div><div class="tfe-event-location"><a href="https://www.millenniumhotels.com/en/singapore/grand-copthorne-waterfront" target="_blank" rel="noopener" aria-label="Grand Copthorne Waterfront Hotel Singapore"><svg class="tfe-location-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z"></path><circle cx="12" cy="10" r="2.3"></circle></svg><span>Grand Copthorne Waterfront Hotel, Singapore</span></a></div></div></div></div><div class="tfe-speakers-area"><div class="tfe-speaker-kicker">Curated leadership voices shaping the Flex Executive Economy</div><div class="tfe-speaker-grid"><div class="tfe-speaker-card" data-speaker-id="tracey-campbell"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Tracey_web.webp" alt="Tracey Campbell" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>Tracey Campbell</h3><p class="short-title">Senior Vice President, LyondellBasell</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="emily-poon"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Emily_Poon_web.webp" alt="Emily Poon" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>Emily Poon</h3><p class="short-title">CEO, Singapore Institute of Directors</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="shine-ding"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/ShineDingNew_Web.webp" alt="Shine Ding" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>Shine Ding</h3><p class="short-title">Partner, Egon Zehnder Singapore</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="tanvi-gautam"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/TanviGautam_web.webp" alt="Dr. Tanvi Gautam" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>Dr. Tanvi Gautam</h3><p class="short-title">Sr. Faculty and Program Director Singapore Management University</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="jacob-duer"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Jacob_New_Web-2.webp" alt="Jacob Duer" width="138" height="138" decoding="async" loading="lazy" fetchpriority="low"></div><h3>Jacob Duer</h3><p class="short-title">President &amp; CEO, Alliance to End Plastic Waste</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="virginia-cha"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Virginia_Cha_Web-7f9ee06.webp" alt="Virginia Cha" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>Virginia Cha</h3><p class="short-title">Adjunct Professor, National University of Singapore</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="kanchana-gupta"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Kanchana_Gupta_Web-d3d68b4.webp" alt="Kanchana Gupta" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>Kanchana Gupta</h3><p class="short-title">Founder &amp; CEO, vLookUp</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="david-clark"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/David_CV_Web.webp" alt="David Clark" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>David Clark</h3><p class="short-title">Chief Sustainability Officer, Amcor</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="su-yen-wong"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Su_Yen_web.webp" alt="Su-Yen Wong" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>Su-Yen Wong</h3><p class="short-title">Chairperson, James Cook University Singapore &amp; Independent Director</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="bassam-salem"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/bassam%20salem1-web.webp" alt="Bassam Salem" width="138" height="138" decoding="async" loading="lazy" fetchpriority="low"></div><h3>Bassam Salem</h3><p class="short-title">Chairman, Finance &amp; Banking Council, SwissChamHK</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="soorya-themudu"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Soorya_Web.webp" alt="Soorya Themudu" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>Soorya Themudu</h3><p class="short-title">SVP Global Talent &amp; Development, Sodexo</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="dn-prasad"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DN_Prasad_Web.webp" alt="DN Prasad" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>DN Prasad</h3><p class="short-title">MD &amp; Head – Work &amp; Rewards, Singapore, WTW</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="brandon-lee"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Brandon_Lee_Web.webp" alt="Brandon Lee" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>Brandon Lee</h3><p class="short-title">Chief Futures, Skills & Workforce Development Agency (SWDA)</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="probir-das"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Probir_Das_web.webp" alt="Probir Das" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>Probir Das</h3><p class="short-title">Group CEO, Integris Medtech</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="achal-khanna"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Achal%20Khanna.webp" alt="Achal Khanna" width="138" height="138" decoding="async" loading="lazy" fetchpriority="low"></div><h3>Achal Khanna</h3><p class="short-title">CEO, SHRM APAC &amp; MENA</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="nitin-jaiswal"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Nitin_Jaiswal_WB_Web.webp" alt="Nitin Jaiswal" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>Nitin Jaiswal</h3><p class="short-title">Founder &amp; CEO, The 8th Continent</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="frank-koo"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Frank%20Koo.webp" alt="Frank Koo" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>Frank Koo</h3><p class="short-title">Speaker, Coach &amp; Community Builder</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="ooi-huey-tyng"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Ooi%20Huey%20Tyng.webp" alt="Ooi Huey Tyng" width="138" height="138" decoding="async" loading="lazy" fetchpriority="low"></div><h3>Ooi Huey Tyng</h3><p class="short-title">Independent Director</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="philip-forrest-am"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Philip%20Forrest%20AM-New-web.webp" alt="Philip Forrest AM" width="138" height="138" decoding="async" loading="lazy" fetchpriority="low"></div><h3>Philip Forrest AM</h3><p class="short-title">Business Leader &amp; Board Advisor</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="sanjeev-jain"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Sanjeev%20Jain.webp" alt="Sanjeev Jain" width="138" height="138" decoding="async" loading="lazy" fetchpriority="low"></div><h3>Sanjeev Jain</h3><p class="short-title">Chief Operating Officer, Wipro</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="nancy-groesch"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Nancy%20Groesch.webp" alt="Nancy Groesch" width="138" height="138" decoding="async" loading="lazy" fetchpriority="low"></div><h3>Nancy Groesch</h3><p class="short-title">Organisational Psychologist &amp; Executive Coach</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="priya-rao"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Priya_Web.webp" alt="Priya Rao" width="138" height="138" decoding="async" loading="eager" fetchpriority="high"></div><h3>Priya Rao</h3><p class="short-title"> Chief Operating Officer, <br> Board Match-Up</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div><div class="tfe-speaker-card" data-speaker-id="karunesh-prasad"><div class="tfe-photo"><img src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Karunesh%20Prasad.webp" alt="Karunesh Prasad" width="138" height="138" decoding="async" loading="lazy" fetchpriority="low"></div><h3>Karunesh Prasad</h3><p class="short-title">Founder, Change Et Al / Board Match-Up</p><div class="speaker-details"><p class="tfe-speaker-bio">Profile details loading…</p></div></div></div><div class="tfe-speaker-explorer" aria-hidden="true"><div class="tfe-explorer-topbar"><button class="tfe-explorer-back" type="button" aria-label="Back to all speakers"><span aria-hidden="true">←</span> All Speakers </button><div class="tfe-explorer-counter" aria-live="polite">01 / 01</div></div><div class="tfe-featured-shell"><button class="tfe-featured-nav tfe-featured-prev" type="button" aria-label="Previous speaker"><span aria-hidden="true">‹</span></button><article class="tfe-featured-card" aria-live="polite"><div class="tfe-featured-photo"><img class="tfe-featured-img" src="" alt="" width="280" height="280" decoding="async"></div><div class="tfe-featured-content"><h2 class="tfe-featured-name">Speaker Name</h2><p class="tfe-featured-title">Speaker Title</p><div class="tfe-featured-divider"></div><p class="tfe-featured-bio">Profile details loading…</p></div></article><button class="tfe-featured-nav tfe-featured-next" type="button" aria-label="Next speaker"><span aria-hidden="true">›</span></button></div><div class="tfe-thumb-window"><button class="tfe-thumb-scroll tfe-thumb-scroll-left" type="button" aria-label="Scroll speaker list left"><span aria-hidden="true">‹</span></button><div class="tfe-thumb-strip" role="listbox" aria-label="Select a speaker"></div><button class="tfe-thumb-scroll tfe-thumb-scroll-right" type="button" aria-label="Scroll speaker list right"><span aria-hidden="true">›</span></button></div></div></div></div><div class="tfe-agenda-section"><div class="tfe-action-row"><a class="tfe-action-btn primary" href="https://theflexexecutive.com/registration-specialoffer" target="_blank" rel="noopener">Get Your Executive Pass</a><button class="tfe-action-btn secondary tfe-know-more-btn" type="button">Know More About Speakers</button></div></div></section><style>.tfe-fresh-section,.tfe-fresh-section *{box-sizing:border-box}.tfe-fresh-section{--gold:#c9a84c;--gold-light:#f1d36b;--poster-bg:#04101f;--poster-bg-2:#010812;width:100%;margin:0;padding:34px 0 8px;overflow:visible;position:relative;font-family:"DM Sans",Arial,sans-serif;background-color:#000;background-image:radial-gradient(ellipse at 50% 44%,rgba(162,122,32,.14)0%,rgba(128,92,24,.09)20%,rgba(61,42,11,.045)38%,rgba(0,0,0,0)62%),linear-gradient(90deg,#000 0%,#000 18%,#010101 34%,#050403 50%,#010101 66%,#000 82%,#000 100%)}.tfe-fresh-section.tfe-is-loading{height:600px!important;min-height:600px!important;max-height:600px!important;overflow:hidden!important}.tfe-section-loader{position:absolute;inset:0;z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:12px;padding-top:clamp(58px,11vh,96px);background:radial-gradient(ellipse 42% 30% at 50% 42%,rgba(201,168,76,.16),transparent 58%),#000;color:rgba(241,211,107,.82);font-family:"DM Sans",Arial,sans-serif;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;opacity:1;visibility:visible;transition:opacity .45s ease,visibility .45s ease}.tfe-loader-ring{width:38px;height:38px;border-radius:50%;border:1px solid rgba(241,211,107,.18);border-top-color:rgba(241,211,107,.95);border-right-color:rgba(201,168,76,.44);box-shadow:0 0 34px rgba(201,168,76,.16);animation:tfe-section-spin 1s linear infinite}.tfe-loader-dot{width:5px;height:5px;border-radius:50%;background:rgba(241,211,107,.95);box-shadow:0 0 22px rgba(241,211,107,.42)}.tfe-fresh-section.tfe-is-loading .tfe-fresh-main,.tfe-fresh-section.tfe-is-loading .tfe-agenda-section{opacity:0!important;visibility:hidden!important;pointer-events:none}.tfe-fresh-section.tfe-is-ready .tfe-section-loader{opacity:0;visibility:hidden}.tfe-fresh-section.tfe-is-ready .tfe-fresh-main,.tfe-fresh-section.tfe-is-ready .tfe-agenda-section{opacity:1;visibility:visible;transition:opacity .55s ease}@keyframes tfe-section-spin{to{transform:rotate(360deg)}}.tfe-fresh-main{width:min(1220px,calc(100% - 72px));margin:0 auto;display:grid;grid-template-columns:280px minmax(0,1fr);gap:48px;align-items:center;position:relative;z-index:10}.tfe-poster-wrap{display:flex;justify-content:center;align-items:center}.tfe-mini-poster{width:280px;height:498px;padding:28px 24px;border:1.5px solid rgba(255,255,255,.42);border-radius:24px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;background:radial-gradient(circle at 75% 12%,rgba(201,168,76,.10),transparent 26%),linear-gradient(145deg,var(--poster-bg),var(--poster-bg-2));box-shadow:0 28px 70px rgba(0,0,0,.48)}.tfe-poster-logos{height:72px;display:flex;align-items:flex-start;justify-content:space-between;gap:16px}.tfe-logo-slot{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px dashed rgba(241,211,107,.34);border-radius:10px;color:rgba(241,211,107,.72);font-size:.58rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.tfe-logo-slot-one{width:110px;height:110px}.tfe-logo-slot-two{width:140px;height:60px;margin-top:45px}.tfe-logo-slot img{width:100%;height:100%;display:block;object-fit:contain;padding:2px}.tfe-logo-slot.has-logo{border:0}.tfe-logo-slot.has-logo span{display:none}.tfe-poster-year{color:#fff;font-size:82px;line-height:.9;font-weight:800;letter-spacing:.03em;text-align:center;white-space:nowrap}.tfe-poster-line{display:flex;align-items:center;gap:7px}.tfe-poster-line span{flex:1;height:1px;background:rgba(201,168,76,.75)}.tfe-poster-line i{width:7px;height:7px;border:1px solid rgba(201,168,76,.95);transform:rotate(45deg)}.tfe-poster-title{color:#fff;font-family:"Oswald",Arial,sans-serif;font-size:42px;line-height:1.16;font-weight:800;letter-spacing:.17em;text-align:center;text-transform:uppercase;white-space:nowrap}.tfe-poster-title .gold{color:var(--gold-light)}.tfe-poster-events{display:grid;gap:7px;color:rgba(255,255,255,.86);text-align:center;text-transform:uppercase}.tfe-event-row{display:flex;align-items:center;justify-content:center;gap:11px;font-size:14px;line-height:1.1;font-weight:700;letter-spacing:.115em;white-space:nowrap}.tfe-event-row b{color:rgba(255,255,255,.46);font-weight:400}.tfe-event-single{font-size:12px;line-height:1.15;font-weight:800;letter-spacing:.17em;color:rgba(241,211,107,.92);white-space:nowrap}.tfe-event-location{font-size:12.5px;line-height:1.3;font-weight:800;letter-spacing:.025em;color:rgba(255,255,255,.88);text-transform:none}.tfe-event-location a{display:inline-flex;align-items:flex-start;justify-content:center;gap:6px;max-width:100%;color:rgba(255,255,255,.84);text-decoration:none;transition:color .2s ease}.tfe-event-location a:hover{color:var(--gold-light)}.tfe-location-icon{width:14px;height:14px;flex:0 0 14px;margin-top:0;fill:none;stroke:var(--gold-light);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.tfe-speakers-area{min-width:0;position:relative;z-index:20;overflow:visible}.tfe-speaker-kicker{margin:0 auto 34px;text-align:center;color:rgba(241,211,107,.9);font-size:.84rem;line-height:1.5;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.tfe-speaker-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:32px 20px;position:relative;z-index:30;overflow:visible}.tfe-speaker-explorer{display:none;width:100%;max-width:890px;margin:0 auto;color:#fff}.tfe-fresh-section.tfe-explorer-open .tfe-speaker-kicker,.tfe-fresh-section.tfe-explorer-open .tfe-speaker-grid{display:none!important}.tfe-fresh-section.tfe-explorer-open .tfe-speaker-explorer{display:block}.tfe-explorer-topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:0 0 18px}.tfe-explorer-back{appearance:none;border:0;background:transparent;color:rgba(241,211,107,.92);padding:6px 0;display:inline-flex;align-items:center;gap:8px;font-family:"DM Sans",Arial,sans-serif;font-size:.72rem;font-weight:900;letter-spacing:.13em;text-transform:uppercase;cursor:pointer}.tfe-explorer-back span{font-size:1rem;line-height:1}.tfe-explorer-counter{color:rgba(255,255,255,.52);font-size:.68rem;font-weight:900;letter-spacing:.15em;text-transform:uppercase}.tfe-featured-shell{display:grid;grid-template-columns:42px minmax(0,1fr)42px;align-items:center;gap:12px}.tfe-featured-card{min-height:420px;border:1.5px solid rgba(211,171,57,.72);border-radius:26px;padding:32px 36px;display:grid;grid-template-columns:minmax(210px,255px)minmax(0,1fr);gap:36px;align-items:center;position:relative;background-color:#fff;background-image:radial-gradient(ellipse at 96% 8%,rgba(222,235,252,.70)0%,rgba(238,246,255,.42)22%,rgba(255,255,255,0)45%),linear-gradient(164deg,rgba(255,255,255,0)0%,rgba(255,255,255,0)53%,rgba(225,238,254,.42)57%,rgba(246,250,255,.86)61%,rgba(255,255,255,0)67%),linear-gradient(170deg,rgba(255,255,255,0)0%,rgba(255,255,255,0)64%,rgba(218,234,253,.42)68%,rgba(248,251,255,.90)72%,rgba(255,255,255,0)79%);box-shadow:0 28px 72px rgba(0,0,0,.34),0 0 0 1px rgba(255,255,255,.7)inset;overflow:hidden}.tfe-featured-photo{width:100%;max-width:250px;aspect-ratio:1/1;margin:0 auto;border:3px solid rgba(211,171,57,.88);border-radius:50%;overflow:hidden;position:relative;background:#eef2f7;box-shadow:0 22px 48px rgba(12,24,42,.18),0 0 0 5px rgba(255,255,255,.92)}.tfe-featured-photo:after{content:"";position:absolute;inset:auto 0 0;height:24%;background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(7,17,31,.18));pointer-events:none}.tfe-featured-img{width:100%;height:100%;display:block;object-fit:cover;object-position:center top}.tfe-featured-content{min-width:0;text-align:left;position:relative;z-index:2}.tfe-featured-name{margin:0;color:#07111f;font-family:"Oswald",Arial,sans-serif;font-size:clamp(2rem,3vw,2.7rem);line-height:1.03;font-weight:800;letter-spacing:.04em;text-transform:uppercase}.tfe-featured-title{margin:10px 0 0;color:#596474;font-size:.9rem;line-height:1.48;font-weight:650}.tfe-featured-divider{width:76px;height:2px;margin:19px 0 17px;background:linear-gradient(90deg,#d3ab39,rgba(211,171,57,.12))}.tfe-featured-bio{margin:0;max-height:190px;overflow-y:auto;padding-right:8px;color:#334155;font-size:.84rem;line-height:1.66;font-weight:500;scrollbar-width:thin;scrollbar-color:rgba(176,139,38,.58)rgba(15,23,42,.07)}.tfe-featured-bio::-webkit-scrollbar{width:5px}.tfe-featured-bio::-webkit-scrollbar-track{background:rgba(15,23,42,.06);border-radius:10px}.tfe-featured-bio::-webkit-scrollbar-thumb{background:rgba(176,139,38,.58);border-radius:10px}.tfe-featured-nav,.tfe-thumb-scroll{appearance:none;border:1px solid rgba(241,211,107,.26);background:rgba(6,14,25,.9);color:var(--gold-light);display:grid;place-items:center;cursor:pointer;transition:transform .2s ease,border-color .2s ease,background .2s ease}.tfe-featured-nav{width:42px;height:42px;border-radius:50%;font-size:2rem;line-height:1}.tfe-featured-nav:hover,.tfe-thumb-scroll:hover{transform:translateY(-1px);border-color:rgba(241,211,107,.72);background:rgba(21,28,39,.98)}.tfe-thumb-window{display:grid;grid-template-columns:34px minmax(0,1fr)34px;gap:9px;align-items:center}.tfe-thumb-scroll{width:34px;height:34px;border-radius:50%;font-size:1.45rem;line-height:1}.tfe-thumb-strip{display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;padding:8px 4px 11px;scroll-behavior:smooth;scroll-snap-type:x proximity;scrollbar-width:none}.tfe-thumb-strip::-webkit-scrollbar{display:none}.tfe-thumb-item{appearance:none;flex:0 0 76px;width:76px;border:0;background:transparent;padding:0;color:#fff;text-align:center;cursor:pointer;scroll-snap-align:center}.tfe-thumb-photo{width:64px;height:64px;margin:0 auto 7px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,255,255,.14);background:#111;transition:border-color .22s ease,transform .22s ease,box-shadow .22s ease}.tfe-thumb-photo img{width:100%;height:100%;display:block;object-fit:cover;object-position:center top}.tfe-thumb-item span{display:block;max-width:76px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:rgba(255,255,255,.56);font-size:.56rem;line-height:1.2;font-weight:700}.tfe-thumb-item:hover .tfe-thumb-photo,.tfe-thumb-item.is-active .tfe-thumb-photo{border-color:var(--gold-light);transform:translateY(-2px);box-shadow:0 0 0 3px rgba(201,168,76,.09),0 12px 24px rgba(0,0,0,.28)}.tfe-thumb-item.is-active span{color:rgba(241,211,107,.96)}.tfe-action-btn.secondary{border:0;color:rgba(241,211,107,.94);background:transparent;cursor:pointer}.tfe-know-more-btn{position:absolute;right:0;top:50%;min-height:auto!important;padding:8px 0!important;border:0!important;border-radius:0!important;background:transparent!important;white-space:nowrap;font-size:.7rem!important;letter-spacing:.09em!important;text-transform:none!important;transform:translateY(-50%);opacity:.88}.tfe-know-more-btn:after{content:" →";font-size:.92rem;line-height:1}.tfe-know-more-btn:hover{color:#fff;opacity:1;transform:translateY(calc(-50% - 1px))}.tfe-fresh-section.tfe-explorer-open .tfe-know-more-btn{display:none}.tfe-fresh-section.tfe-explorer-open .tfe-agenda-section{margin-top:18px}.tfe-speaker-card[data-speaker-id="nancy-groesch"]{display:none!important}.tfe-speaker-card{position:relative;z-index:1;flex:0 1 calc((100% - 80px)/5);min-width:0;text-align:center;color:#fff;cursor:pointer;transition:transform .25s ease}.tfe-speaker-card:hover,.tfe-speaker-card.is-open{transform:translateY(-6px);z-index:999}.tfe-photo{width:132px;height:132px;margin:0 auto;border-radius:50%;overflow:hidden;position:relative;background:#111;box-shadow:0 18px 36px rgba(0,0,0,.42)}.tfe-photo img{width:100%;height:100%;display:block;border-radius:50%;object-fit:cover;object-position:center top}.tfe-photo:after{content:"";position:absolute;left:0;right:0;bottom:0;height:38%;background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.72),#000);pointer-events:none}.tfe-speaker-card h3{margin:-14px 0 0;position:relative;z-index:2;color:#fff;font-family:"Oswald",Arial,sans-serif;font-size:1.06rem;line-height:1.08;letter-spacing:.055em;text-transform:uppercase;text-shadow:0 2px 9px rgba(0,0,0,.88)}.short-title{max-width:165px;margin:4px auto 0;position:relative;z-index:2;color:rgba(255,255,255,.72);font-size:.74rem;line-height:1.32;font-weight:500;text-shadow:0 2px 8px rgba(0,0,0,.88)}.speaker-details{--tfe-popover-shift:0;position:absolute;left:50%;top:100%;width:286px;max-width:calc(100vw - 32px);padding:18px;border-radius:18px;background:#fff;border:1px solid rgba(0,0,0,.08);box-shadow:0 24px 60px rgba(0,0,0,.5);opacity:0;visibility:hidden;pointer-events:none;z-index:9999;transform:translate(calc(-50% + var(--tfe-popover-shift)),14px);transition:opacity .22s ease,visibility .22s ease,transform .22s ease}.speaker-details:before{content:"";position:absolute;top:-7px;left:clamp(18px,calc(50% - var(--tfe-popover-shift)),calc(100% - 18px));width:14px;height:14px;background:#fff;border-left:1px solid rgba(0,0,0,.06);border-top:1px solid rgba(0,0,0,.06);transform:translateX(-50%)rotate(45deg)}.speaker-details p{margin:0;color:#202632;font-size:.8rem;line-height:1.5;font-weight:500}.tfe-speaker-card:hover .speaker-details,.tfe-speaker-card.is-open .speaker-details{opacity:1;visibility:visible;pointer-events:auto;transform:translate(calc(-50% + var(--tfe-popover-shift)),8px)}@media(min-width:768px){.tfe-speaker-card.tfe-popover-up .speaker-details{top:auto;bottom:100%;transform:translate(calc(-50% + var(--tfe-popover-shift)),-14px)}.tfe-speaker-card.tfe-popover-up:hover .speaker-details,.tfe-speaker-card.tfe-popover-up.is-open .speaker-details{transform:translate(calc(-50% + var(--tfe-popover-shift)),-8px)}.tfe-speaker-card.tfe-popover-up .speaker-details:before{top:auto;bottom:-7px;border-left:0;border-top:0;border-right:1px solid rgba(0,0,0,.06);border-bottom:1px solid rgba(0,0,0,.06)}.tfe-speaker-card.tfe-popover-right .speaker-details{left:auto;right:0;transform:translate(0,14px)}.tfe-speaker-card.tfe-popover-right:hover .speaker-details,.tfe-speaker-card.tfe-popover-right.is-open .speaker-details{transform:translate(0,8px)}.tfe-speaker-card.tfe-popover-right .speaker-details:before{left:auto;right:calc(var(--tfe-card-half,82px)- 7px);transform:rotate(45deg)}.tfe-speaker-card.tfe-popover-up.tfe-popover-right .speaker-details{top:auto;bottom:100%;transform:translate(0,-14px)}.tfe-speaker-card.tfe-popover-up.tfe-popover-right:hover .speaker-details,.tfe-speaker-card.tfe-popover-up.tfe-popover-right.is-open .speaker-details{transform:translate(0,-8px)}.tfe-speaker-card.tfe-popover-up.tfe-popover-right .speaker-details:before{top:auto;bottom:-7px;border-left:0;border-top:0;border-right:1px solid rgba(0,0,0,.06);border-bottom:1px solid rgba(0,0,0,.06)}}.tfe-agenda-section{width:100%;margin:12px 0 0;padding:4px 0;position:relative;z-index:2;overflow:hidden;background:transparent}.tfe-action-row{width:min(1180px,calc(100% - 72px));margin:0 auto;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;position:relative;min-height:44px}.tfe-action-btn{min-height:44px;padding:11px 28px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;transition:transform .25s ease}.tfe-action-btn.primary{color:#06101d;background:linear-gradient(135deg,#f1d36b,#c9a84c)}.tfe-action-btn:hover{transform:translateY(-1px)}@media(min-width:1025px){.tfe-poster-logos{height:78px;align-items:flex-start}.tfe-logo-slot-one{width:78px;height:78px}.tfe-logo-slot-two{width:112px;height:48px;margin-top:8px}.tfe-logo-slot img{padding:0}}@media(min-width:1025px){.tfe-fresh-section{height:1060px;max-height:1060px;overflow:hidden}}@media(min-width:1025px)and(max-width:1240px){.tfe-fresh-main{width:min(1160px,calc(100% - 54px));gap:34px}.tfe-mini-poster{width:270px;height:480px;padding:26px 22px}.tfe-poster-year{font-size:78px}.tfe-poster-title{font-size:40px;letter-spacing:.145em}.tfe-speaker-grid{gap:30px 16px}.tfe-speaker-card{flex-basis:calc((100% - 64px)/5)}.tfe-photo{width:124px;height:124px}.tfe-speaker-card h3{font-size:1rem;letter-spacing:.045em}.short-title{max-width:150px;font-size:.7rem}}@media(min-width:1025px)and(max-width:1120px){.tfe-fresh-main{width:min(1040px,calc(100% - 40px));grid-template-columns:250px minmax(0,1fr);gap:28px}.tfe-mini-poster{width:250px;height:445px;padding:24px 20px}.tfe-poster-year{font-size:72px}.tfe-poster-title{font-size:36px;letter-spacing:.13em}.tfe-speaker-grid{gap:28px 14px}.tfe-photo{width:116px;height:116px}.tfe-speaker-card h3{font-size:.94rem}.short-title{max-width:138px;font-size:.66rem}}@media(min-width:768px)and(max-width:1024px){.tfe-fresh-section{padding:30px 0 24px}.tfe-fresh-main{width:min(920px,calc(100% - 28px));grid-template-columns:1fr;gap:42px}.tfe-mini-poster{width:min(292px,88vw);height:auto;aspect-ratio:9/16;padding:clamp(22px,3vw,28px)clamp(18px,2.8vw,24px)}.tfe-poster-logos{height:clamp(64px,22cqw,72px)}.tfe-logo-slot-one{width:clamp(82px,36cqw,102px);height:clamp(82px,36cqw,102px)}.tfe-logo-slot-two{width:clamp(108px,46cqw,132px);height:clamp(46px,18cqw,56px);margin-top:clamp(30px,13cqw,40px)}.tfe-poster-year{font-size:clamp(66px,28cqw,82px)}.tfe-poster-title{font-size:clamp(31px,14.2cqw,40px);letter-spacing:clamp(.075em,.75cqw,.105em)}.tfe-poster-events{gap:6px}.tfe-event-row{font-size:clamp(12.5px,4.6cqw,14px)}.tfe-event-single{font-size:clamp(11px,4cqw,12px)}.tfe-event-location{font-size:clamp(11px,3.4cqw,12px)}.tfe-speaker-kicker{margin-bottom:30px;padding:0 12px;font-size:.78rem}.tfe-speaker-grid{max-width:820px;margin:0 auto;gap:32px 22px}.tfe-speaker-card{flex:0 1 calc((100% - 44px)/3)}.tfe-photo{width:126px;height:126px}.tfe-speaker-card h3{font-size:1.04rem}.short-title{max-width:168px;font-size:.74rem}.speaker-details{width:280px}}@media(min-width:768px)and(max-width:860px){.tfe-speaker-card{flex-basis:calc((100% - 24px)/2)}}@media(max-width:767px){.tfe-fresh-section{padding:0 0 20px}.tfe-fresh-main{width:100%;grid-template-columns:1fr;gap:38px;padding:0 14px}.tfe-mini-poster{width:min(72vw,276px);height:auto;aspect-ratio:9/16;padding:24px 20px}.tfe-poster-logos{height:76px}.tfe-logo-slot-one{width:92px;height:92px}.tfe-logo-slot-two{width:118px;height:52px;margin-top:34px}.tfe-poster-year{font-size:clamp(82px,23vw,94px)}.tfe-poster-title{font-size:clamp(37px,10.6vw,44px);line-height:1.08;letter-spacing:.105em}.tfe-poster-events{gap:7px}.tfe-event-row{font-size:clamp(13px,4vw,15px)}.tfe-event-single{font-size:clamp(11px,3.4vw,12px)}.tfe-event-location{font-size:clamp(11px,3.8vw,12.6px)}.tfe-speaker-kicker{margin-bottom:28px;padding:0 6px;font-size:.68rem;letter-spacing:.12em}.tfe-speaker-grid{gap:28px 14px}.tfe-speaker-card{flex:0 1 calc(50% - 8px)}.tfe-speaker-card:hover,.tfe-speaker-card.is-open{transform:none;z-index:10000}.tfe-speaker-card.is-open:before{content:"";position:fixed;inset:0;background:rgba(0,0,0,.46);z-index:9998;pointer-events:none}.tfe-photo{width:min(122px,76%);height:auto;aspect-ratio:1/1;margin-bottom:12px}.tfe-speaker-card h3{font-size:1rem}.short-title{max-width:145px;font-size:.7rem}.speaker-details{position:fixed!important;left:50vw!important;top:var(--tfe-speaker-card-top,50vh)!important;width:min(340px,calc(100vw - 32px));max-height:min(58vh,360px);overflow-y:auto;-webkit-overflow-scrolling:touch;padding:18px;z-index:9999;border-radius:18px;text-align:left;transform:translateX(-50%)scale(.98)!important}.speaker-details:before{display:none}.speaker-details p{font-size:.76rem}.tfe-speaker-card:hover .speaker-details,.tfe-speaker-card.is-open .speaker-details{transform:translateX(-50%)scale(1)!important}.tfe-agenda-section{margin-top:26px;padding:11px 0}.tfe-action-row{width:min(100%,360px);gap:10px;padding:0 10px}.tfe-action-btn{width:100%;max-width:310px;min-height:42px;padding:10px 20px;font-size:.76rem}}@media(max-width:767px){.tfe-action-row{display:grid!important;grid-template-columns:1fr!important;justify-items:center!important;min-height:0!important}.tfe-know-more-btn{position:static!important;justify-self:end!important;width:auto!important;max-width:none!important;min-height:auto!important;margin:1px 2px 0 0!important;padding:5px 0!important;transform:none!important;font-size:.67rem!important}.tfe-know-more-btn:hover{transform:none!important}}@media(max-width:767px){.tfe-section-loader{padding-top:52px;font-size:10px}.tfe-loader-ring{width:34px;height:34px}}@media(max-width:420px){.tfe-mini-poster{width:min(74vw,264px);padding:22px 18px}.tfe-logo-slot-one{width:84px;height:84px}.tfe-logo-slot-two{width:110px;height:48px;margin-top:32px}.tfe-poster-year{font-size:clamp(76px,22vw,86px)}.tfe-poster-title{font-size:clamp(34px,10vw,40px)}.tfe-event-row{font-size:clamp(12px,3.8vw,14px)}.tfe-event-single{font-size:clamp(10.5px,3.2vw,11.5px)}.tfe-event-location{font-size:clamp(11px,3.2vw,12px)}.tfe-photo{width:min(112px,78%)}.tfe-speaker-card h3{margin-top:-10px;font-size:.92rem}.short-title{font-size:.66rem}}@media(max-width:767px){.tfe-speaker-explorer{max-width:100%;padding:0 2px}.tfe-explorer-topbar{margin-bottom:12px}.tfe-explorer-back{font-size:.64rem}.tfe-featured-shell{grid-template-columns:1fr;gap:12px;position:relative}.tfe-featured-card{min-height:0;padding:23px 18px 22px;grid-template-columns:1fr;gap:20px;border-radius:22px}.tfe-featured-photo{max-width:190px}.tfe-featured-content{text-align:center}.tfe-featured-name{font-size:clamp(1.72rem,8.5vw,2.2rem)}.tfe-featured-title{max-width:290px;margin:8px auto 0;font-size:.8rem}.tfe-featured-divider{margin:16px auto}.tfe-featured-bio{max-height:210px;padding:0 4px;text-align:left;font-size:.77rem;line-height:1.58}.tfe-featured-prev,.tfe-featured-next{position:absolute;top:78px;z-index:5;width:38px;height:38px}.tfe-featured-prev{left:8px}.tfe-featured-next{right:8px}.tfe-thumb-window{grid-template-columns:30px minmax(0,1fr)30px;gap:5px}.tfe-thumb-scroll{width:30px;height:30px}.tfe-thumb-strip{gap:9px}.tfe-thumb-item{flex-basis:66px;width:66px}.tfe-thumb-photo{width:56px;height:56px}.tfe-thumb-item span{max-width:66px;font-size:.52rem}}@media(prefers-reduced-motion:reduce){.tfe-loader-ring{animation:none!important}.tfe-speaker-card,.speaker-details,.tfe-action-btn,.tfe-section-loader,.tfe-fresh-section.tfe-is-ready .tfe-fresh-main,.tfe-fresh-section.tfe-is-ready .tfe-agenda-section{transition:none!important}}</style>`;(function(){var bioBaseUrl="https://raw.githubusercontent.com/salimkhancea/tfe/main/tfespeakers.json";function getFreshBioUrl(){return bioBaseUrl+"?v="+Date.now();}var section=document.querySelector(".tfe-speakers-split");if(!section)return;var sectionHeightLocked=false;var LOAD_MIN_MS=450;var LOAD_MAX_WAIT_MS=1400;function wait(ms){return new Promise(function(resolve){setTimeout(resolve,ms);});}function imageReady(img){return new Promise(function(resolve){if(!img){resolve();return;}if(img.complete&&img.naturalWidth!==0){resolve();return;}var done=function(){resolve();};img.addEventListener("load",done,{once:true});img.addEventListener("error",done,{once:true});});}function measureAndLockSectionHeight(){if(!section.classList.contains("tfe-is-ready"))return;section.style.height="auto";section.style.minHeight="0";section.style.maxHeight="none";section.style.overflow="visible";requestAnimationFrame(function(){var h=Math.ceil(section.scrollHeight);if(h<600)h=600;section.style.height="auto";section.style.minHeight=h+"px";section.style.maxHeight="none";section.style.overflow="visible";sectionHeightLocked=true;});}function revealSectionWhenReady(){var criticalImgs=Array.prototype.slice.call(section.querySelectorAll(".tfe-poster-logos img, .tfe-speaker-card:nth-child(-n+5) img"));var criticalReady=Promise.all(criticalImgs.map(imageReady));Promise.all([wait(LOAD_MIN_MS),Promise.race([criticalReady,wait(LOAD_MAX_WAIT_MS)])]).then(function(){section.classList.remove("tfe-is-loading");section.classList.add("tfe-is-ready");section.setAttribute("aria-busy","false");measureAndLockSectionHeight();setTimeout(measureAndLockSectionHeight,650);setTimeout(function(){var loader=section.querySelector(".tfe-section-loader");if(loader)loader.style.display="none";},700);scheduleBioHydration();});}var cards=Array.prototype.slice.call(section.querySelectorAll(".tfe-speaker-card"));var mobile=window.matchMedia("(max-width:767px)");var explorer=section.querySelector(".tfe-speaker-explorer");var knowMoreBtn=section.querySelector(".tfe-know-more-btn");var explorerBack=section.querySelector(".tfe-explorer-back");var featuredImg=section.querySelector(".tfe-featured-img");var featuredName=section.querySelector(".tfe-featured-name");var featuredTitle=section.querySelector(".tfe-featured-title");var featuredBio=section.querySelector(".tfe-featured-bio");var explorerCounter=section.querySelector(".tfe-explorer-counter");var thumbStrip=section.querySelector(".tfe-thumb-strip");var prevBtn=section.querySelector(".tfe-featured-prev");var nextBtn=section.querySelector(".tfe-featured-next");var thumbLeft=section.querySelector(".tfe-thumb-scroll-left");var thumbRight=section.querySelector(".tfe-thumb-scroll-right");var explorerIndex=0;var explorerCards=cards.filter(function(card){return card.getAttribute("data-speaker-id")!=="nancy-groesch";});function getCardSpeakerData(card){var id=card.getAttribute("data-speaker-id")||"";var img=card.querySelector(".tfe-photo img");var name=card.querySelector("h3");var title=card.querySelector(".short-title");return{id:id,name:name?(name.textContent||"").trim():"",title:title?(title.textContent||"").replace(/\s+/g," ").trim():"",image:img?img.getAttribute("src")||"":"",alt:img?img.getAttribute("alt")||"":""};}function buildSpeakerThumbs(){if(!thumbStrip||thumbStrip.children.length)return;explorerCards.forEach(function(card,index){var d=getCardSpeakerData(card);var btn=document.createElement("button");btn.type="button";btn.className="tfe-thumb-item";btn.setAttribute("role","option");btn.setAttribute("aria-label","View "+d.name);btn.setAttribute("data-index",String(index));var photo=document.createElement("div");photo.className="tfe-thumb-photo";var img=document.createElement("img");img.src=d.image;img.alt="";img.width=64;img.height=64;img.loading="lazy";img.decoding="async";var label=document.createElement("span");label.textContent=d.name;photo.appendChild(img);btn.appendChild(photo);btn.appendChild(label);btn.addEventListener("click",function(){showExplorerSpeaker(index,true);});thumbStrip.appendChild(btn);});}function renderExplorerSpeaker(){if(!explorerCards.length)return;if(explorerIndex<0)explorerIndex=explorerCards.length-1;if(explorerIndex>=explorerCards.length)explorerIndex=0;var card=explorerCards[explorerIndex];var d=getCardSpeakerData(card);var id=d.id;var bio=(bioMap[id]||localBios[id]||"").trim();featuredImg.src=d.image;featuredImg.alt=d.alt||d.name;featuredName.textContent=d.name;featuredTitle.textContent=d.title;featuredBio.textContent=bio||"Profile details loading…";featuredBio.scrollTop=0;explorerCounter.textContent=String(explorerIndex+1).padStart(2,"0")+" / "+String(explorerCards.length).padStart(2,"0");var thumbs=thumbStrip?Array.prototype.slice.call(thumbStrip.querySelectorAll(".tfe-thumb-item")):[];thumbs.forEach(function(btn,i){var active=i===explorerIndex;btn.classList.toggle("is-active",active);btn.setAttribute("aria-selected",active?"true":"false");if(active&&typeof btn.scrollIntoView==="function"){btn.scrollIntoView({behavior:"smooth",block:"nearest",inline:"center"});}});}function showExplorerSpeaker(index,focusBio){explorerIndex=index;var card=explorerCards[explorerIndex];renderExplorerSpeaker();if(card){ensureSpeakerBio(card);loadSpeakerBios().then(function(){if(section.classList.contains("tfe-explorer-open")){renderExplorerSpeaker();}});}if(focusBio&&featuredName){featuredName.setAttribute("tabindex","-1");featuredName.focus({preventScroll:true});}}function openSpeakerExplorer(){buildSpeakerThumbs();cards.forEach(reset);section.classList.add("tfe-explorer-open");if(explorer)explorer.setAttribute("aria-hidden","false");showExplorerSpeaker(explorerIndex,false);measureAndLockSectionHeight();requestAnimationFrame(function(){if(explorer){explorer.scrollIntoView({behavior:"smooth",block:"nearest"});}});}function closeSpeakerExplorer(){section.classList.remove("tfe-explorer-open");if(explorer)explorer.setAttribute("aria-hidden","true");measureAndLockSectionHeight();if(knowMoreBtn){requestAnimationFrame(function(){knowMoreBtn.focus({preventScroll:true});});}}if(knowMoreBtn)knowMoreBtn.addEventListener("click",openSpeakerExplorer);if(explorerBack)explorerBack.addEventListener("click",closeSpeakerExplorer);if(prevBtn)prevBtn.addEventListener("click",function(){showExplorerSpeaker(explorerIndex-1,false);});if(nextBtn)nextBtn.addEventListener("click",function(){showExplorerSpeaker(explorerIndex+1,false);});if(thumbLeft)thumbLeft.addEventListener("click",function(){if(thumbStrip)thumbStrip.scrollBy({left:-Math.max(260,thumbStrip.clientWidth*.72),behavior:"smooth"});});if(thumbRight)thumbRight.addEventListener("click",function(){if(thumbStrip)thumbStrip.scrollBy({left:Math.max(260,thumbStrip.clientWidth*.72),behavior:"smooth"});});section.addEventListener("keydown",function(e){if(!section.classList.contains("tfe-explorer-open"))return;if(e.key==="ArrowLeft"){e.preventDefault();showExplorerSpeaker(explorerIndex-1,false);}else if(e.key==="ArrowRight"){e.preventDefault();showExplorerSpeaker(explorerIndex+1,false);}else if(e.key==="Escape"){e.preventDefault();closeSpeakerExplorer();}});function reset(card){card.classList.remove("is-open");card.style.removeProperty("--tfe-speaker-card-top");var details=card.querySelector(".speaker-details");if(details)details.style.setProperty("--tfe-popover-shift","0px");}function closeOthers(active){cards.forEach(function(card){if(card!==active)reset(card);});}function setMobileTop(card){if(!mobile.matches)return;var details=card.querySelector(".speaker-details");var rect=card.getBoundingClientRect();var height=details?Math.min(details.scrollHeight||260,Math.round(window.innerHeight*.58)):260;var top=Math.min(rect.bottom+12,window.innerHeight-height-16);card.style.setProperty("--tfe-speaker-card-top",Math.max(16,top)+"px");}function keepInside(card){if(mobile.matches)return;var details=card.querySelector(".speaker-details");if(!details)return;details.style.setProperty("--tfe-popover-shift","0px");if(card.classList.contains("tfe-popover-right"))return;requestAnimationFrame(function(){var r=details.getBoundingClientRect(),gap=16,shift=0;if(r.left<gap)shift+=gap-r.left;if(r.right>window.innerWidth-gap)shift-=r.right-(window.innerWidth-gap);details.style.setProperty("--tfe-popover-shift",Math.round(shift)+"px");});}function markBottomRow(){if(mobile.matches){cards.forEach(function(card){card.classList.remove("tfe-popover-up","tfe-popover-right");card.style.removeProperty("--tfe-card-half");});return;}var rowGap=14;var rows=[];cards.forEach(function(card){var rect=card.getBoundingClientRect();if(rect.width<=0||rect.height<=0)return;card.style.setProperty("--tfe-card-half",Math.round(rect.width/2)+"px");var top=Math.round(rect.top);var row=null;for(var i=0;i<rows.length;i++){if(Math.abs(rows[i].top-top)<=rowGap){row=rows[i];break;}}if(!row){row={top:top,items:[]};rows.push(row);}row.items.push({card:card,rect:rect});row.top=Math.min(row.top,top);});if(!rows.length)return;var lastRowTop=rows.reduce(function(max,row){return Math.max(max,row.top);},-Infinity);rows.forEach(function(row){var rightMost=row.items.reduce(function(best,item){return!best||item.rect.right>best.rect.right?item:best;},null);row.items.forEach(function(item){item.card.classList.toggle("tfe-popover-up",row.top>=lastRowTop-rowGap);item.card.classList.toggle("tfe-popover-right",rightMost&&item.card===rightMost.card);});});}cards.forEach(function(card){card.addEventListener("mouseenter",function(){markBottomRow();keepInside(card);ensureSpeakerBio(card);});card.addEventListener("mouseleave",function(){if(!card.classList.contains("is-open"))keepInside(card);});card.addEventListener("click",function(e){e.stopPropagation();var open=!card.classList.contains("is-open");closeOthers(card);card.classList.toggle("is-open",open);if(open){markBottomRow();setMobileTop(card);keepInside(card);ensureSpeakerBio(card);}});});document.addEventListener("click",function(e){if(!e.target.closest(".tfe-speaker-card"))cards.forEach(reset);});var resizeTimer=null;window.addEventListener("resize",function(){if(resizeTimer)clearTimeout(resizeTimer);resizeTimer=setTimeout(function(){markBottomRow();var open=section.querySelector(".tfe-speaker-card.is-open");if(open){setMobileTop(open);keepInside(open);}if(sectionHeightLocked)measureAndLockSectionHeight();},120);});window.addEventListener("scroll",function(){var open=section.querySelector(".tfe-speaker-card.is-open");if(open&&mobile.matches)reset(open);},{passive:true});markBottomRow();revealSectionWhenReady();var localBios=window.localSpeakerBios||{};var bioMap={};var biosLoaded=false;var biosLoading=false;var biosPromise=null;function isPlaceholder(text){text=(text||"").trim();return!text||text==="Profile details loading…"||text==="Loading profile…"||text==="Visit Speaker Page for more details.";}function applySpeakerBio(card,bio){var node=card.querySelector(".tfe-speaker-bio");if(!node)return;if(bio){node.textContent=bio;return;}var existing=(node.textContent||"").trim();if(existing&&!isPlaceholder(existing))return;node.textContent="Visit Speaker Page for more details.";}function applyKnownBio(card){var id=card.getAttribute("data-speaker-id");applySpeakerBio(card,bioMap[id]||localBios[id]||"");}function applyKnownBiosToAll(){cards.forEach(applyKnownBio);if(section.classList.contains("tfe-explorer-open"))renderExplorerSpeaker();measureAndLockSectionHeight();}function loadSpeakerBios(forceFresh){if(forceFresh){biosLoaded=false;biosLoading=false;biosPromise=null;}if(biosLoaded)return Promise.resolve(bioMap);if(biosLoading&&biosPromise)return biosPromise;biosLoading=true;biosPromise=fetch(getFreshBioUrl(),{cache:"no-store",credentials:"omit"}).then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json();}).then(function(data){(data.speakers||[]).forEach(function(s){if(s&&s.id)bioMap[s.id]=s.bio||"";});biosLoaded=true;biosLoading=false;applyKnownBiosToAll();return bioMap;}).catch(function(error){biosLoaded=false;biosLoading=false;biosPromise=null;applyKnownBiosToAll();if(window.console&&console.warn){console.warn("Speaker bios could not be refreshed:",error);}return bioMap;});return biosPromise;}function ensureSpeakerBio(card){var node=card.querySelector(".tfe-speaker-bio");var id=card.getAttribute("data-speaker-id");if(!node||!id)return;if(bioMap[id]||localBios[id]){applyKnownBio(card);return;}if(isPlaceholder(node.textContent))node.textContent="Loading profile…";loadSpeakerBios().then(function(){applyKnownBio(card);});}window.addEventListener("pageshow",function(event){if(event.persisted){loadSpeakerBios(true);}});function scheduleBioHydration(){if(Object.keys(localBios).length){applyKnownBiosToAll();}if("requestIdleCallback" in window){requestIdleCallback(function(){loadSpeakerBios();},{timeout:4500});}else{setTimeout(function(){loadSpeakerBios();},3200);}}})();})();
+/**
+ * The Flex Executive Summit 2026 — Speaker Component
+ * Readable GitHub version
+ *
+ * GoDaddy embed:
+ * <div id="tfe-speakers-root"></div>
+ * <script src="https://cdn.jsdelivr.net/gh/salimkhancea/tfe@main/tfe-speakers.js?v=20260914" defer></script>
+ */
+
+(() => {
+  "use strict";
+
+  const root = document.getElementById("tfe-speakers-root");
+  if (!root) return;
+
+  const BIO_URL =
+    "https://raw.githubusercontent.com/salimkhancea/tfe/main/tfespeakers.json";
+
+  /* =========================================================
+     SPEAKER DATA
+     ========================================================= */
+
+  const speakers = [
+    {
+      id: "tracey-campbell",
+      name: "Tracey Campbell",
+      title: "Senior Vice President, LyondellBasell",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Tracey_web.webp",
+      eager: true
+    },
+    {
+      id: "emily-poon",
+      name: "Emily Poon",
+      title: "CEO, Singapore Institute of Directors",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Emily_Poon_web.webp",
+      eager: true
+    },
+    {
+      id: "shine-ding",
+      name: "Shine Ding",
+      title: "Partner, Egon Zehnder Singapore",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/ShineDingNew_Web.webp",
+      eager: true
+    },
+    {
+      id: "tanvi-gautam",
+      name: "Dr. Tanvi Gautam",
+      title:
+        "Sr. Faculty and Program Director Singapore Management University",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/TanviGautam_web.webp",
+      eager: true
+    },
+    {
+      id: "jacob-duer",
+      name: "Jacob Duer",
+      title: "President & CEO, Alliance to End Plastic Waste",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Jacob_New_Web-2.webp"
+    },
+    {
+      id: "virginia-cha",
+      name: "Virginia Cha",
+      title: "Adjunct Professor, National University of Singapore",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Virginia_Cha_Web-7f9ee06.webp",
+      eager: true
+    },
+    {
+      id: "kanchana-gupta",
+      name: "Kanchana Gupta",
+      title: "Founder & CEO, vLookUp",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Kanchana_Gupta_Web-d3d68b4.webp",
+      eager: true
+    },
+    {
+      id: "david-clark",
+      name: "David Clark",
+      title: "Chief Sustainability Officer, Amcor",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/David_CV_Web.webp",
+      eager: true
+    },
+    {
+      id: "su-yen-wong",
+      name: "Su-Yen Wong",
+      title:
+        "Chairperson, James Cook University Singapore & Independent Director",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Su_Yen_web.webp",
+      eager: true
+    },
+    {
+      id: "bassam-salem",
+      name: "Bassam Salem",
+      title: "Chairman, Finance & Banking Council, SwissChamHK",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/bassam%20salem1-web.webp"
+    },
+    {
+      id: "soorya-themudu",
+      name: "Soorya Themudu",
+      title: "SVP Global Talent & Development, Sodexo",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Soorya_Web.webp",
+      eager: true
+    },
+    {
+      id: "dn-prasad",
+      name: "DN Prasad",
+      title: "MD & Head – Work & Rewards, Singapore, WTW",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/DN_Prasad_Web.webp",
+      eager: true
+    },
+    {
+      id: "brandon-lee",
+      name: "Brandon Lee",
+      title:
+        "Chief Futures, Skills & Workforce Development Agency (SWDA)",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Brandon_Lee_Web.webp",
+      eager: true
+    },
+    {
+      id: "probir-das",
+      name: "Probir Das",
+      title: "Group CEO, Integris Medtech",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Probir_Das_web.webp",
+      eager: true
+    },
+    {
+      id: "achal-khanna",
+      name: "Achal Khanna",
+      title: "CEO, SHRM APAC & MENA",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Achal%20Khanna.webp"
+    },
+    {
+      id: "nitin-jaiswal",
+      name: "Nitin Jaiswal",
+      title: "Founder & CEO, The 8th Continent",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Nitin_Jaiswal_WB_Web.webp",
+      eager: true
+    },
+    {
+      id: "frank-koo",
+      name: "Frank Koo",
+      title: "Speaker, Coach & Community Builder",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Frank%20Koo.webp",
+      eager: true
+    },
+    {
+      id: "ooi-huey-tyng",
+      name: "Ooi Huey Tyng",
+      title: "Independent Director",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Ooi%20Huey%20Tyng.webp"
+    },
+    {
+      id: "philip-forrest-am",
+      name: "Philip Forrest AM",
+      title: "Business Leader & Board Advisor",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Philip%20Forrest%20AM-New-web.webp"
+    },
+    {
+      id: "sanjeev-jain",
+      name: "Sanjeev Jain",
+      title: "Chief Operating Officer, Wipro",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Sanjeev%20Jain.webp"
+    },
+
+    /* Hidden for now. Change visible:false to visible:true to restore. */
+    {
+      id: "nancy-groesch",
+      name: "Nancy Groesch",
+      title: "Organisational Psychologist & Executive Coach",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Nancy%20Groesch.webp",
+      visible: false
+    },
+
+    {
+      id: "priya-rao",
+      name: "Priya Rao",
+      title: "Chief Operating Officer, Board Match-Up",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Priya_Web.webp",
+      eager: true
+    },
+    {
+      id: "karunesh-prasad",
+      name: "Karunesh Prasad",
+      title: "Founder, Change Et Al / Board Match-Up",
+      image:
+        "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Karunesh%20Prasad.webp"
+    }
+  ];
+
+  const activeSpeakers = speakers.filter(
+    speaker => speaker.visible !== false
+  );
+
+  const bioMap = {};
+
+  /* =========================================================
+     HELPERS
+     ========================================================= */
+
+  function escapeHTML(value = "") {
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  /* =========================================================
+     CREATE SPEAKER GRID
+     ========================================================= */
+
+  const speakerCardsHTML = speakers
+    .map((speaker, index) => {
+      const loading =
+        speaker.eager || index < 5
+          ? "eager"
+          : "lazy";
+
+      const priority =
+        speaker.eager || index < 5
+          ? "high"
+          : "low";
+
+      const hidden =
+        speaker.visible === false
+          ? " tfe-hidden-speaker"
+          : "";
+
+      return `
+        <div
+          class="tfe-speaker-card${hidden}"
+          data-speaker-id="${speaker.id}"
+        >
+          <div class="tfe-photo">
+            <img
+              src="${speaker.image}"
+              alt="${escapeHTML(speaker.name)}"
+              width="138"
+              height="138"
+              decoding="async"
+              loading="${loading}"
+              fetchpriority="${priority}"
+            >
+          </div>
+
+          <h3>${escapeHTML(speaker.name)}</h3>
+
+          <p class="short-title">
+            ${escapeHTML(speaker.title)}
+          </p>
+
+          <div class="speaker-details">
+            <p class="tfe-speaker-bio">
+              Profile details loading…
+            </p>
+          </div>
+        </div>
+      `;
+    })
+    .join("");
+
+  /* =========================================================
+     MAIN HTML
+     ========================================================= */
+
+  root.innerHTML = `
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    >
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    >
+
+    <link
+      rel="preconnect"
+      href="https://img1.wsimg.com"
+      crossorigin
+    >
+
+    <link
+      rel="dns-prefetch"
+      href="https://img1.wsimg.com"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap"
+    >
+
+    <section
+      class="tfe-fresh-section tfe-speakers-split tfe-is-loading"
+      aria-busy="true"
+    >
+
+      <!-- LOADER -->
+      <div
+        class="tfe-section-loader"
+        aria-live="polite"
+        aria-label="Loading speakers section"
+      >
+        <div
+          class="tfe-loader-ring"
+          aria-hidden="true"
+        ></div>
+
+        <div
+          class="tfe-loader-dot"
+          aria-hidden="true"
+        ></div>
+
+        <span>Loading speakers</span>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="tfe-fresh-main">
+
+        <!-- POSTER -->
+        <div class="tfe-poster-wrap">
+
+          <div class="tfe-mini-poster">
+
+            <div class="tfe-poster-logos">
+
+              <div
+                class="tfe-logo-slot tfe-logo-slot-one"
+              >
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/flex%20logo.png"
+                  alt="The Flex Executive Logo"
+                  width="110"
+                  height="110"
+                  loading="eager"
+                >
+              </div>
+
+              <div
+                class="tfe-logo-slot tfe-logo-slot-two"
+              >
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/f949858a-5410-4007-9066-936f82154009/Logo%20New%20BMU-Small-1.png"
+                  alt="Board Match-Up Logo"
+                  width="140"
+                  height="60"
+                  loading="eager"
+                >
+              </div>
+
+            </div>
+
+            <div class="tfe-poster-year">
+              2026
+            </div>
+
+            <div class="tfe-poster-line">
+              <span></span>
+              <i></i>
+              <span></span>
+            </div>
+
+            <div class="tfe-poster-title">
+              <div class="gold">
+                The Flex
+              </div>
+
+              <div>
+                Executive
+              </div>
+
+              <div class="gold">
+                Summit
+              </div>
+            </div>
+
+            <div class="tfe-poster-line">
+              <span></span>
+              <i></i>
+              <span></span>
+            </div>
+
+            <div
+              class="tfe-poster-events"
+              aria-label="Event schedule"
+            >
+
+              <div class="tfe-event-row">
+                <span>1 Oct</span>
+                <b>|</b>
+                <span>Masterclass</span>
+              </div>
+
+              <div class="tfe-event-row">
+                <span>2 Oct</span>
+                <b>|</b>
+                <span>Summit</span>
+              </div>
+
+              <div class="tfe-event-single">
+                Networking Dinner
+              </div>
+
+              <div class="tfe-event-location">
+
+                <a
+                  href="https://www.millenniumhotels.com/en/singapore/grand-copthorne-waterfront"
+                  target="_blank"
+                  rel="noopener"
+                >
+
+                  <svg
+                    class="tfe-location-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z"
+                    ></path>
+
+                    <circle
+                      cx="12"
+                      cy="10"
+                      r="2.3"
+                    ></circle>
+                  </svg>
+
+                  <span>
+                    Grand Copthorne Waterfront Hotel, Singapore
+                  </span>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- SPEAKERS -->
+        <div class="tfe-speakers-area">
+
+          <div class="tfe-speaker-kicker">
+            Curated leadership voices shaping the
+            Flex Executive Economy
+          </div>
+
+          <!-- STANDARD GRID -->
+          <div class="tfe-speaker-grid">
+            ${speakerCardsHTML}
+          </div>
+
+          <!-- KNOW MORE / EXPLORER -->
+          <div
+            class="tfe-speaker-explorer"
+            aria-hidden="true"
+          >
+
+            <div class="tfe-explorer-topbar">
+
+              <button
+                class="tfe-explorer-back"
+                type="button"
+              >
+                <span aria-hidden="true">←</span>
+                All Speakers
+              </button>
+
+              <div
+                class="tfe-explorer-counter"
+                aria-live="polite"
+              >
+                01 / 01
+              </div>
+
+            </div>
+
+            <div class="tfe-featured-shell">
+
+              <button
+                class="tfe-featured-nav tfe-featured-prev"
+                type="button"
+                aria-label="Previous speaker"
+              >
+                ‹
+              </button>
+
+              <!-- WHITE FEATURED CARD -->
+              <article
+                class="tfe-featured-card"
+                aria-live="polite"
+              >
+
+                <div class="tfe-featured-photo">
+
+                  <img
+                    class="tfe-featured-img"
+                    src=""
+                    alt=""
+                    width="280"
+                    height="280"
+                  >
+
+                </div>
+
+                <div class="tfe-featured-content">
+
+                  <h2 class="tfe-featured-name">
+                    Speaker Name
+                  </h2>
+
+                  <p class="tfe-featured-title">
+                    Speaker Title
+                  </p>
+
+                  <div
+                    class="tfe-featured-divider"
+                  ></div>
+
+                  <p class="tfe-featured-bio">
+                    Profile details loading…
+                  </p>
+
+                </div>
+
+              </article>
+
+              <button
+                class="tfe-featured-nav tfe-featured-next"
+                type="button"
+                aria-label="Next speaker"
+              >
+                ›
+              </button>
+
+            </div>
+
+            <!-- SMALL SPEAKER SCROLLER -->
+            <div class="tfe-thumb-window">
+
+              <button
+                class="tfe-thumb-scroll tfe-thumb-scroll-left"
+                type="button"
+                aria-label="Scroll speaker list left"
+              >
+                ‹
+              </button>
+
+              <div
+                class="tfe-thumb-strip"
+                role="listbox"
+                aria-label="Select a speaker"
+              ></div>
+
+              <button
+                class="tfe-thumb-scroll tfe-thumb-scroll-right"
+                type="button"
+                aria-label="Scroll speaker list right"
+              >
+                ›
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CTA ROW -->
+      <div class="tfe-agenda-section">
+
+        <div class="tfe-action-row">
+
+          <a
+            class="tfe-action-btn primary"
+            href="https://theflexexecutive.com/registration-specialoffer"
+            target="_blank"
+            rel="noopener"
+          >
+            Get Your Executive Pass
+          </a>
+
+          <button
+            class="tfe-action-btn secondary tfe-know-more-btn"
+            type="button"
+          >
+            Know More About Speakers
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+  `;
+
+  /* =========================================================
+     CSS
+     ========================================================= */
+
+  const style = document.createElement("style");
+
+  style.textContent = `
+
+    /* ---------------------------------------------------------
+       GLOBAL
+       --------------------------------------------------------- */
+
+    .tfe-fresh-section,
+    .tfe-fresh-section * {
+      box-sizing: border-box;
+    }
+
+    .tfe-fresh-section {
+      --gold: #c9a84c;
+      --gold-light: #f1d36b;
+      --poster-bg: #04101f;
+      --poster-bg-2: #010812;
+
+      width: 100%;
+      margin: 0;
+      padding: 34px 0 8px;
+
+      position: relative;
+      overflow: visible;
+
+      font-family: "DM Sans", Arial, sans-serif;
+
+      background-color: #000;
+
+      background-image:
+        radial-gradient(
+          ellipse at 50% 44%,
+          rgba(162,122,32,.14) 0%,
+          rgba(128,92,24,.09) 20%,
+          rgba(61,42,11,.045) 38%,
+          transparent 62%
+        ),
+        linear-gradient(
+          90deg,
+          #000 0%,
+          #000 18%,
+          #010101 34%,
+          #050403 50%,
+          #010101 66%,
+          #000 82%,
+          #000 100%
+        );
+    }
+
+    /* ---------------------------------------------------------
+       LOADING
+       --------------------------------------------------------- */
+
+    .tfe-fresh-section.tfe-is-loading {
+      height: 600px !important;
+      min-height: 600px !important;
+      max-height: 600px !important;
+      overflow: hidden !important;
+      background: #000 !important;
+    }
+
+    .tfe-is-loading .tfe-fresh-main,
+    .tfe-is-loading .tfe-agenda-section {
+      opacity: 0 !important;
+      visibility: hidden !important;
+      pointer-events: none;
+    }
+
+    .tfe-section-loader {
+      position: absolute;
+      inset: 0;
+      z-index: 99999;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      gap: 12px;
+
+      padding-top:
+        clamp(58px, 11vh, 96px);
+
+      background:
+        radial-gradient(
+          ellipse 42% 30% at 50% 42%,
+          rgba(201,168,76,.16),
+          transparent 58%
+        ),
+        #000;
+
+      color:
+        rgba(241,211,107,.82);
+
+      font-size: 11px;
+      font-weight: 800;
+
+      letter-spacing: .16em;
+
+      text-transform: uppercase;
+
+      opacity: 1;
+      visibility: visible;
+
+      transition:
+        opacity .45s ease,
+        visibility .45s ease;
+    }
+
+    .tfe-loader-ring {
+      width: 38px;
+      height: 38px;
+
+      border-radius: 50%;
+
+      border:
+        1px solid rgba(241,211,107,.18);
+
+      border-top-color:
+        rgba(241,211,107,.95);
+
+      border-right-color:
+        rgba(201,168,76,.44);
+
+      box-shadow:
+        0 0 34px rgba(201,168,76,.16);
+
+      animation:
+        tfe-spin 1s linear infinite;
+    }
+
+    .tfe-loader-dot {
+      width: 5px;
+      height: 5px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(241,211,107,.95);
+
+      box-shadow:
+        0 0 22px rgba(241,211,107,.42);
+    }
+
+    .tfe-is-ready .tfe-section-loader {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .tfe-is-ready .tfe-fresh-main,
+    .tfe-is-ready .tfe-agenda-section {
+      opacity: 1;
+      visibility: visible;
+
+      transition:
+        opacity .55s ease;
+    }
+
+    @keyframes tfe-spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* ---------------------------------------------------------
+       MAIN TWO-COLUMN AREA
+       --------------------------------------------------------- */
+
+    .tfe-fresh-main {
+      width:
+        min(1220px, calc(100% - 72px));
+
+      margin:
+        0 auto;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        280px minmax(0, 1fr);
+
+      gap:
+        48px;
+
+      align-items:
+        center;
+
+      position:
+        relative;
+
+      z-index:
+        10;
+    }
+
+    /* ---------------------------------------------------------
+       SUMMIT POSTER
+       --------------------------------------------------------- */
+
+    .tfe-poster-wrap {
+      display:
+        flex;
+
+      justify-content:
+        center;
+
+      align-items:
+        center;
+    }
+
+    .tfe-mini-poster {
+      width:
+        280px;
+
+      height:
+        498px;
+
+      padding:
+        28px 24px;
+
+      border:
+        1.5px solid rgba(255,255,255,.42);
+
+      border-radius:
+        24px;
+
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      justify-content:
+        space-between;
+
+      overflow:
+        hidden;
+
+      background:
+        radial-gradient(
+          circle at 75% 12%,
+          rgba(201,168,76,.10),
+          transparent 26%
+        ),
+        linear-gradient(
+          145deg,
+          var(--poster-bg),
+          var(--poster-bg-2)
+        );
+
+      box-shadow:
+        0 28px 70px rgba(0,0,0,.48);
+    }
+
+    .tfe-poster-logos {
+      height:
+        78px;
+
+      display:
+        flex;
+
+      align-items:
+        flex-start;
+
+      justify-content:
+        space-between;
+
+      gap:
+        16px;
+    }
+
+    .tfe-logo-slot {
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      overflow:
+        hidden;
+    }
+
+    .tfe-logo-slot-one {
+      width:
+        78px;
+
+      height:
+        78px;
+    }
+
+    .tfe-logo-slot-two {
+      width:
+        112px;
+
+      height:
+        48px;
+
+      margin-top:
+        8px;
+    }
+
+    .tfe-logo-slot img {
+      width:
+        100%;
+
+      height:
+        100%;
+
+      display:
+        block;
+
+      object-fit:
+        contain;
+    }
+
+    .tfe-poster-year {
+      color:
+        #fff;
+
+      font-size:
+        82px;
+
+      line-height:
+        .9;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        .03em;
+
+      text-align:
+        center;
+
+      white-space:
+        nowrap;
+    }
+
+    .tfe-poster-line {
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        7px;
+    }
+
+    .tfe-poster-line span {
+      flex:
+        1;
+
+      height:
+        1px;
+
+      background:
+        rgba(201,168,76,.75);
+    }
+
+    .tfe-poster-line i {
+      width:
+        7px;
+
+      height:
+        7px;
+
+      border:
+        1px solid rgba(201,168,76,.95);
+
+      transform:
+        rotate(45deg);
+    }
+
+    .tfe-poster-title {
+      color:
+        #fff;
+
+      font-family:
+        "Oswald", Arial, sans-serif;
+
+      font-size:
+        42px;
+
+      line-height:
+        1.16;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        .17em;
+
+      text-align:
+        center;
+
+      text-transform:
+        uppercase;
+
+      white-space:
+        nowrap;
+    }
+
+    .tfe-poster-title .gold {
+      color:
+        var(--gold-light);
+    }
+
+    .tfe-poster-events {
+      display:
+        grid;
+
+      gap:
+        7px;
+
+      color:
+        rgba(255,255,255,.86);
+
+      text-align:
+        center;
+
+      text-transform:
+        uppercase;
+    }
+
+    .tfe-event-row {
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      gap:
+        11px;
+
+      font-size:
+        14px;
+
+      line-height:
+        1.1;
+
+      font-weight:
+        700;
+
+      letter-spacing:
+        .115em;
+
+      white-space:
+        nowrap;
+    }
+
+    .tfe-event-row b {
+      color:
+        rgba(255,255,255,.46);
+
+      font-weight:
+        400;
+    }
+
+    .tfe-event-single {
+      color:
+        rgba(241,211,107,.92);
+
+      font-size:
+        12px;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        .17em;
+
+      white-space:
+        nowrap;
+    }
+
+    .tfe-event-location {
+      color:
+        rgba(255,255,255,.88);
+
+      font-size:
+        12.5px;
+
+      line-height:
+        1.3;
+
+      font-weight:
+        800;
+
+      text-transform:
+        none;
+    }
+
+    .tfe-event-location a {
+      display:
+        inline-flex;
+
+      align-items:
+        flex-start;
+
+      justify-content:
+        center;
+
+      gap:
+        6px;
+
+      color:
+        rgba(255,255,255,.84);
+
+      text-decoration:
+        none;
+    }
+
+    .tfe-event-location a:hover {
+      color:
+        var(--gold-light);
+    }
+
+    .tfe-location-icon {
+      width:
+        14px;
+
+      height:
+        14px;
+
+      flex:
+        0 0 14px;
+
+      fill:
+        none;
+
+      stroke:
+        var(--gold-light);
+
+      stroke-width:
+        1.8;
+
+      stroke-linecap:
+        round;
+
+      stroke-linejoin:
+        round;
+    }
+
+    /* ---------------------------------------------------------
+       SPEAKER AREA
+       --------------------------------------------------------- */
+
+    .tfe-speakers-area {
+      min-width:
+        0;
+
+      position:
+        relative;
+
+      z-index:
+        20;
+    }
+
+    .tfe-speaker-kicker {
+      margin:
+        0 auto 34px;
+
+      text-align:
+        center;
+
+      color:
+        rgba(241,211,107,.9);
+
+      font-size:
+        .84rem;
+
+      line-height:
+        1.5;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        .16em;
+
+      text-transform:
+        uppercase;
+    }
+
+    /* ---------------------------------------------------------
+       SPEAKER GRID
+       --------------------------------------------------------- */
+
+    .tfe-speaker-grid {
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      justify-content:
+        center;
+
+      gap:
+        32px 20px;
+
+      position:
+        relative;
+
+      z-index:
+        30;
+    }
+
+    .tfe-hidden-speaker {
+      display:
+        none !important;
+    }
+
+    .tfe-speaker-card {
+      position:
+        relative;
+
+      z-index:
+        1;
+
+      flex:
+        0 1 calc((100% - 80px) / 5);
+
+      min-width:
+        0;
+
+      text-align:
+        center;
+
+      color:
+        #fff;
+
+      cursor:
+        pointer;
+
+      transition:
+        transform .25s ease;
+    }
+
+    .tfe-speaker-card:hover,
+    .tfe-speaker-card.is-open {
+      transform:
+        translateY(-6px);
+
+      z-index:
+        999;
+    }
+
+    .tfe-photo {
+      width:
+        132px;
+
+      height:
+        132px;
+
+      margin:
+        0 auto;
+
+      border-radius:
+        50%;
+
+      overflow:
+        hidden;
+
+      position:
+        relative;
+
+      background:
+        #111;
+
+      box-shadow:
+        0 18px 36px rgba(0,0,0,.42);
+    }
+
+    .tfe-photo img {
+      width:
+        100%;
+
+      height:
+        100%;
+
+      display:
+        block;
+
+      border-radius:
+        50%;
+
+      object-fit:
+        cover;
+
+      object-position:
+        center top;
+    }
+
+    .tfe-photo::after {
+      content:
+        "";
+
+      position:
+        absolute;
+
+      left:
+        0;
+
+      right:
+        0;
+
+      bottom:
+        0;
+
+      height:
+        38%;
+
+      background:
+        linear-gradient(
+          to bottom,
+          transparent,
+          rgba(0,0,0,.72),
+          #000
+        );
+
+      pointer-events:
+        none;
+    }
+
+    .tfe-speaker-card h3 {
+      margin:
+        -14px 0 0;
+
+      position:
+        relative;
+
+      z-index:
+        2;
+
+      color:
+        #fff;
+
+      font-family:
+        "Oswald", Arial, sans-serif;
+
+      font-size:
+        1.06rem;
+
+      line-height:
+        1.08;
+
+      letter-spacing:
+        .055em;
+
+      text-transform:
+        uppercase;
+
+      text-shadow:
+        0 2px 9px rgba(0,0,0,.88);
+    }
+
+    .short-title {
+      max-width:
+        165px;
+
+      margin:
+        4px auto 0;
+
+      position:
+        relative;
+
+      z-index:
+        2;
+
+      color:
+        rgba(255,255,255,.72);
+
+      font-size:
+        .74rem;
+
+      line-height:
+        1.32;
+
+      font-weight:
+        500;
+
+      text-shadow:
+        0 2px 8px rgba(0,0,0,.88);
+    }
+
+    /* ---------------------------------------------------------
+       SMALL BIO POPOVER
+       --------------------------------------------------------- */
+
+    .speaker-details {
+      --shift:
+        0px;
+
+      position:
+        absolute;
+
+      left:
+        50%;
+
+      top:
+        100%;
+
+      width:
+        286px;
+
+      max-width:
+        calc(100vw - 32px);
+
+      padding:
+        18px;
+
+      border-radius:
+        18px;
+
+      background:
+        #fff;
+
+      border:
+        1px solid rgba(0,0,0,.08);
+
+      box-shadow:
+        0 24px 60px rgba(0,0,0,.5);
+
+      opacity:
+        0;
+
+      visibility:
+        hidden;
+
+      pointer-events:
+        none;
+
+      z-index:
+        9999;
+
+      transform:
+        translate(
+          calc(-50% + var(--shift)),
+          14px
+        );
+
+      transition:
+        opacity .22s ease,
+        visibility .22s ease,
+        transform .22s ease;
+    }
+
+    .speaker-details::before {
+      content:
+        "";
+
+      position:
+        absolute;
+
+      top:
+        -7px;
+
+      left:
+        50%;
+
+      width:
+        14px;
+
+      height:
+        14px;
+
+      background:
+        #fff;
+
+      border-left:
+        1px solid rgba(0,0,0,.06);
+
+      border-top:
+        1px solid rgba(0,0,0,.06);
+
+      transform:
+        translateX(-50%) rotate(45deg);
+    }
+
+    .speaker-details p {
+      margin:
+        0;
+
+      color:
+        #202632;
+
+      font-size:
+        .8rem;
+
+      line-height:
+        1.5;
+
+      font-weight:
+        500;
+    }
+
+    .tfe-speaker-card:hover .speaker-details,
+    .tfe-speaker-card.is-open .speaker-details {
+      opacity:
+        1;
+
+      visibility:
+        visible;
+
+      pointer-events:
+        auto;
+
+      transform:
+        translate(
+          calc(-50% + var(--shift)),
+          8px
+        );
+    }
+
+    /* ---------------------------------------------------------
+       SPEAKER EXPLORER
+       --------------------------------------------------------- */
+
+    .tfe-speaker-explorer {
+      display:
+        none;
+
+      width:
+        100%;
+
+      max-width:
+        890px;
+
+      margin:
+        0 auto;
+
+      color:
+        #fff;
+    }
+
+    .tfe-explorer-open .tfe-speaker-kicker,
+    .tfe-explorer-open .tfe-speaker-grid {
+      display:
+        none !important;
+    }
+
+    .tfe-explorer-open .tfe-speaker-explorer {
+      display:
+        block;
+    }
+
+    .tfe-explorer-topbar {
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
+
+      gap:
+        18px;
+
+      margin:
+        0 0 18px;
+    }
+
+    .tfe-explorer-back {
+      border:
+        0;
+
+      background:
+        transparent;
+
+      color:
+        rgba(241,211,107,.92);
+
+      padding:
+        6px 0;
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      gap:
+        8px;
+
+      font:
+        inherit;
+
+      font-size:
+        .72rem;
+
+      font-weight:
+        900;
+
+      letter-spacing:
+        .13em;
+
+      text-transform:
+        uppercase;
+
+      cursor:
+        pointer;
+    }
+
+    .tfe-explorer-counter {
+      color:
+        rgba(255,255,255,.52);
+
+      font-size:
+        .68rem;
+
+      font-weight:
+        900;
+
+      letter-spacing:
+        .15em;
+    }
+
+    /* ---------------------------------------------------------
+       WHITE FEATURED SPEAKER CARD
+       --------------------------------------------------------- */
+
+    .tfe-featured-shell {
+      display:
+        grid;
+
+      grid-template-columns:
+        42px minmax(0,1fr) 42px;
+
+      align-items:
+        center;
+
+      gap:
+        12px;
+    }
+
+    .tfe-featured-card {
+      min-height:
+        420px;
+
+      border:
+        1.5px solid rgba(211,171,57,.72);
+
+      border-radius:
+        26px;
+
+      padding:
+        32px 36px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        minmax(210px,255px)
+        minmax(0,1fr);
+
+      gap:
+        36px;
+
+      align-items:
+        center;
+
+      position:
+        relative;
+
+      overflow:
+        hidden;
+
+      background-color:
+        #fff;
+
+      background-image:
+        radial-gradient(
+          ellipse at 96% 8%,
+          rgba(222,235,252,.70) 0%,
+          rgba(238,246,255,.42) 22%,
+          transparent 45%
+        ),
+        linear-gradient(
+          164deg,
+          transparent 0%,
+          transparent 53%,
+          rgba(225,238,254,.42) 57%,
+          rgba(246,250,255,.86) 61%,
+          transparent 67%
+        ),
+        linear-gradient(
+          170deg,
+          transparent 0%,
+          transparent 64%,
+          rgba(218,234,253,.42) 68%,
+          rgba(248,251,255,.90) 72%,
+          transparent 79%
+        );
+
+      box-shadow:
+        0 28px 72px rgba(0,0,0,.34),
+        0 0 0 1px rgba(255,255,255,.7) inset;
+    }
+
+    .tfe-featured-photo {
+      width:
+        100%;
+
+      max-width:
+        250px;
+
+      aspect-ratio:
+        1 / 1;
+
+      margin:
+        0 auto;
+
+      border:
+        3px solid rgba(211,171,57,.88);
+
+      border-radius:
+        50%;
+
+      overflow:
+        hidden;
+
+      background:
+        #eef2f7;
+
+      box-shadow:
+        0 22px 48px rgba(12,24,42,.18),
+        0 0 0 5px rgba(255,255,255,.92);
+    }
+
+    .tfe-featured-img {
+      width:
+        100%;
+
+      height:
+        100%;
+
+      display:
+        block;
+
+      object-fit:
+        cover;
+
+      object-position:
+        center top;
+    }
+
+    .tfe-featured-content {
+      min-width:
+        0;
+
+      text-align:
+        left;
+    }
+
+    .tfe-featured-name {
+      margin:
+        0;
+
+      color:
+        #07111f;
+
+      font-family:
+        "Oswald", Arial, sans-serif;
+
+      font-size:
+        clamp(2rem, 3vw, 2.7rem);
+
+      line-height:
+        1.03;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        .04em;
+
+      text-transform:
+        uppercase;
+    }
+
+    .tfe-featured-title {
+      margin:
+        10px 0 0;
+
+      color:
+        #596474;
+
+      font-size:
+        .9rem;
+
+      line-height:
+        1.48;
+
+      font-weight:
+        650;
+    }
+
+    .tfe-featured-divider {
+      width:
+        76px;
+
+      height:
+        2px;
+
+      margin:
+        19px 0 17px;
+
+      background:
+        linear-gradient(
+          90deg,
+          #d3ab39,
+          rgba(211,171,57,.12)
+        );
+    }
+
+    .tfe-featured-bio {
+      margin:
+        0;
+
+      max-height:
+        190px;
+
+      overflow-y:
+        auto;
+
+      padding-right:
+        8px;
+
+      color:
+        #334155;
+
+      font-size:
+        .84rem;
+
+      line-height:
+        1.66;
+
+      font-weight:
+        500;
+    }
+
+    /* ---------------------------------------------------------
+       EXPLORER NAVIGATION ARROWS
+       --------------------------------------------------------- */
+
+    .tfe-featured-nav,
+    .tfe-thumb-scroll {
+      border:
+        1px solid rgba(241,211,107,.26);
+
+      background:
+        rgba(6,14,25,.9);
+
+      color:
+        var(--gold-light);
+
+      display:
+        grid;
+
+      place-items:
+        center;
+
+      cursor:
+        pointer;
+
+      transition:
+        transform .2s ease,
+        border-color .2s ease,
+        background .2s ease;
+    }
+
+    .tfe-featured-nav {
+      width:
+        42px;
+
+      height:
+        42px;
+
+      border-radius:
+        50%;
+
+      font-size:
+        2rem;
+
+      line-height:
+        1;
+    }
+
+    .tfe-featured-nav:hover,
+    .tfe-thumb-scroll:hover {
+      transform:
+        translateY(-1px);
+
+      border-color:
+        rgba(241,211,107,.72);
+
+      background:
+        rgba(21,28,39,.98);
+    }
+
+    /* ---------------------------------------------------------
+       THUMBNAIL SCROLLER
+       --------------------------------------------------------- */
+
+    .tfe-thumb-window {
+      display:
+        grid;
+
+      grid-template-columns:
+        34px minmax(0,1fr) 34px;
+
+      gap:
+        9px;
+
+      align-items:
+        center;
+    }
+
+    .tfe-thumb-scroll {
+      width:
+        34px;
+
+      height:
+        34px;
+
+      border-radius:
+        50%;
+
+      font-size:
+        1.45rem;
+    }
+
+    .tfe-thumb-strip {
+      display:
+        flex;
+
+      gap:
+        12px;
+
+      overflow-x:
+        auto;
+
+      overflow-y:
+        hidden;
+
+      padding:
+        8px 4px 11px;
+
+      scroll-behavior:
+        smooth;
+
+      scrollbar-width:
+        none;
+    }
+
+    .tfe-thumb-strip::-webkit-scrollbar {
+      display:
+        none;
+    }
+
+    .tfe-thumb-item {
+      flex:
+        0 0 76px;
+
+      width:
+        76px;
+
+      border:
+        0;
+
+      background:
+        transparent;
+
+      padding:
+        0;
+
+      color:
+        #fff;
+
+      text-align:
+        center;
+
+      cursor:
+        pointer;
+    }
+
+    .tfe-thumb-photo {
+      width:
+        64px;
+
+      height:
+        64px;
+
+      margin:
+        0 auto 7px;
+
+      border-radius:
+        50%;
+
+      overflow:
+        hidden;
+
+      border:
+        2px solid rgba(255,255,255,.14);
+
+      background:
+        #111;
+
+      transition:
+        border-color .22s ease,
+        transform .22s ease,
+        box-shadow .22s ease;
+    }
+
+    .tfe-thumb-photo img {
+      width:
+        100%;
+
+      height:
+        100%;
+
+      display:
+        block;
+
+      object-fit:
+        cover;
+
+      object-position:
+        center top;
+    }
+
+    .tfe-thumb-item span {
+      display:
+        block;
+
+      max-width:
+        76px;
+
+      overflow:
+        hidden;
+
+      text-overflow:
+        ellipsis;
+
+      white-space:
+        nowrap;
+
+      color:
+        rgba(255,255,255,.56);
+
+      font-size:
+        .56rem;
+
+      font-weight:
+        700;
+    }
+
+    .tfe-thumb-item:hover .tfe-thumb-photo,
+    .tfe-thumb-item.is-active .tfe-thumb-photo {
+      border-color:
+        var(--gold-light);
+
+      transform:
+        translateY(-2px);
+
+      box-shadow:
+        0 0 0 3px rgba(201,168,76,.09),
+        0 12px 24px rgba(0,0,0,.28);
+    }
+
+    .tfe-thumb-item.is-active span {
+      color:
+        rgba(241,211,107,.96);
+    }
+
+    /* ---------------------------------------------------------
+       CTA AREA
+       --------------------------------------------------------- */
+
+    .tfe-agenda-section {
+      width:
+        100%;
+
+      margin:
+        12px 0 0;
+
+      padding:
+        4px 0;
+
+      position:
+        relative;
+
+      z-index:
+        2;
+    }
+
+    .tfe-action-row {
+      width:
+        min(1180px, calc(100% - 72px));
+
+      min-height:
+        44px;
+
+      margin:
+        0 auto;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      position:
+        relative;
+    }
+
+    .tfe-action-btn {
+      min-height:
+        44px;
+
+      padding:
+        11px 28px;
+
+      border-radius:
+        999px;
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      font-size:
+        .82rem;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        .11em;
+
+      text-transform:
+        uppercase;
+
+      text-decoration:
+        none;
+
+      transition:
+        transform .25s ease;
+    }
+
+    /* MAIN CTA — REMAINS CENTERED AND PRIMARY */
+
+    .tfe-action-btn.primary {
+      color:
+        #06101d;
+
+      background:
+        linear-gradient(
+          135deg,
+          #f1d36b,
+          #c9a84c
+        );
+    }
+
+    .tfe-action-btn.primary:hover {
+      transform:
+        translateY(-1px);
+    }
+
+    /* KNOW MORE — QUIET SECONDARY LINK */
+
+    .tfe-action-btn.secondary {
+      border:
+        0;
+
+      background:
+        transparent;
+
+      color:
+        rgba(241,211,107,.94);
+
+      cursor:
+        pointer;
+    }
+
+    .tfe-know-more-btn {
+      position:
+        absolute;
+
+      right:
+        0;
+
+      top:
+        50%;
+
+      min-height:
+        auto;
+
+      padding:
+        8px 0;
+
+      border:
+        0;
+
+      border-radius:
+        0;
+
+      background:
+        transparent;
+
+      white-space:
+        nowrap;
+
+      font-size:
+        .7rem;
+
+      letter-spacing:
+        .09em;
+
+      text-transform:
+        none;
+
+      transform:
+        translateY(-50%);
+
+      opacity:
+        .88;
+    }
+
+    .tfe-know-more-btn::after {
+      content:
+        " →";
+
+      font-size:
+        .92rem;
+    }
+
+    .tfe-know-more-btn:hover {
+      color:
+        #fff;
+
+      opacity:
+        1;
+    }
+
+    .tfe-explorer-open .tfe-know-more-btn {
+      display:
+        none;
+    }
+
+    /* =========================================================
+       TABLET
+       ========================================================= */
+
+    @media (
+      min-width: 768px
+    ) and (
+      max-width: 1024px
+    ) {
+
+      .tfe-fresh-section {
+        padding:
+          30px 0 24px;
+      }
+
+      .tfe-fresh-main {
+        width:
+          min(920px, calc(100% - 28px));
+
+        grid-template-columns:
+          1fr;
+
+        gap:
+          42px;
+      }
+
+      .tfe-mini-poster {
+        width:
+          min(292px, 88vw);
+
+        height:
+          auto;
+
+        aspect-ratio:
+          9 / 16;
+      }
+
+      .tfe-speaker-grid {
+        max-width:
+          820px;
+
+        margin:
+          0 auto;
+
+        gap:
+          32px 22px;
+      }
+
+      .tfe-speaker-card {
+        flex:
+          0 1 calc((100% - 44px) / 3);
+      }
+    }
+
+    @media (
+      max-width: 860px
+    ) and (
+      min-width: 768px
+    ) {
+
+      .tfe-speaker-card {
+        flex-basis:
+          calc((100% - 24px) / 2);
+      }
+    }
+
+    /* =========================================================
+       MOBILE
+       ========================================================= */
+
+    @media (
+      max-width: 767px
+    ) {
+
+      .tfe-fresh-section {
+        padding:
+          0 0 20px;
+      }
+
+      .tfe-fresh-main {
+        width:
+          100%;
+
+        grid-template-columns:
+          1fr;
+
+        gap:
+          38px;
+
+        padding:
+          0 14px;
+      }
+
+      .tfe-mini-poster {
+        width:
+          min(72vw, 276px);
+
+        height:
+          auto;
+
+        aspect-ratio:
+          9 / 16;
+
+        padding:
+          24px 20px;
+      }
+
+      .tfe-poster-logos {
+        height:
+          76px;
+      }
+
+      .tfe-logo-slot-one {
+        width:
+          92px;
+
+        height:
+          92px;
+      }
+
+      .tfe-logo-slot-two {
+        width:
+          118px;
+
+        height:
+          52px;
+
+        margin-top:
+          34px;
+      }
+
+      .tfe-poster-year {
+        font-size:
+          clamp(82px, 23vw, 94px);
+      }
+
+      .tfe-poster-title {
+        font-size:
+          clamp(37px, 10.6vw, 44px);
+
+        line-height:
+          1.08;
+
+        letter-spacing:
+          .105em;
+      }
+
+      .tfe-speaker-kicker {
+        margin-bottom:
+          28px;
+
+        padding:
+          0 6px;
+
+        font-size:
+          .68rem;
+
+        letter-spacing:
+          .12em;
+      }
+
+      .tfe-speaker-grid {
+        gap:
+          28px 14px;
+      }
+
+      .tfe-speaker-card {
+        flex:
+          0 1 calc(50% - 8px);
+      }
+
+      .tfe-speaker-card:hover,
+      .tfe-speaker-card.is-open {
+        transform:
+          none;
+      }
+
+      .tfe-photo {
+        width:
+          min(122px, 76%);
+
+        height:
+          auto;
+
+        aspect-ratio:
+          1 / 1;
+
+        margin-bottom:
+          12px;
+      }
+
+      .tfe-speaker-card h3 {
+        font-size:
+          1rem;
+      }
+
+      .short-title {
+        max-width:
+          145px;
+
+        font-size:
+          .7rem;
+      }
+
+      /* MOBILE BIO POPUP */
+
+      .speaker-details {
+        position:
+          fixed !important;
+
+        left:
+          50vw !important;
+
+        top:
+          50% !important;
+
+        width:
+          min(340px, calc(100vw - 32px));
+
+        max-height:
+          min(58vh, 360px);
+
+        overflow-y:
+          auto;
+
+        z-index:
+          9999;
+
+        text-align:
+          left;
+
+        transform:
+          translate(-50%, -50%)
+          scale(.98) !important;
+      }
+
+      .speaker-details::before {
+        display:
+          none;
+      }
+
+      .tfe-speaker-card:hover .speaker-details,
+      .tfe-speaker-card.is-open .speaker-details {
+        transform:
+          translate(-50%, -50%)
+          scale(1) !important;
+      }
+
+      /* MOBILE EXPLORER */
+
+      .tfe-speaker-explorer {
+        max-width:
+          100%;
+
+        padding:
+          0 2px;
+      }
+
+      .tfe-featured-shell {
+        grid-template-columns:
+          1fr;
+
+        gap:
+          12px;
+
+        position:
+          relative;
+      }
+
+      .tfe-featured-card {
+        min-height:
+          0;
+
+        padding:
+          23px 18px 22px;
+
+        grid-template-columns:
+          1fr;
+
+        gap:
+          20px;
+
+        border-radius:
+          22px;
+      }
+
+      .tfe-featured-photo {
+        max-width:
+          190px;
+      }
+
+      .tfe-featured-content {
+        text-align:
+          center;
+      }
+
+      .tfe-featured-name {
+        font-size:
+          clamp(1.72rem, 8.5vw, 2.2rem);
+      }
+
+      .tfe-featured-title {
+        max-width:
+          290px;
+
+        margin:
+          8px auto 0;
+
+        font-size:
+          .8rem;
+      }
+
+      .tfe-featured-divider {
+        margin:
+          16px auto;
+      }
+
+      .tfe-featured-bio {
+        max-height:
+          210px;
+
+        padding:
+          0 4px;
+
+        text-align:
+          left;
+
+        font-size:
+          .77rem;
+
+        line-height:
+          1.58;
+      }
+
+      .tfe-featured-prev,
+      .tfe-featured-next {
+        position:
+          absolute;
+
+        top:
+          78px;
+
+        z-index:
+          5;
+
+        width:
+          38px;
+
+        height:
+          38px;
+      }
+
+      .tfe-featured-prev {
+        left:
+          8px;
+      }
+
+      .tfe-featured-next {
+        right:
+          8px;
+      }
+
+      .tfe-thumb-window {
+        grid-template-columns:
+          30px minmax(0,1fr) 30px;
+
+        gap:
+          5px;
+      }
+
+      .tfe-thumb-scroll {
+        width:
+          30px;
+
+        height:
+          30px;
+      }
+
+      .tfe-thumb-strip {
+        gap:
+          9px;
+      }
+
+      .tfe-thumb-item {
+        flex-basis:
+          66px;
+
+        width:
+          66px;
+      }
+
+      .tfe-thumb-photo {
+        width:
+          56px;
+
+        height:
+          56px;
+      }
+
+      /* MOBILE CTA */
+
+      .tfe-action-row {
+        width:
+          min(100%, 360px);
+
+        display:
+          grid;
+
+        grid-template-columns:
+          1fr;
+
+        justify-items:
+          center;
+
+        gap:
+          8px;
+
+        padding:
+          0 10px;
+      }
+
+      .tfe-action-btn.primary {
+        width:
+          100%;
+
+        max-width:
+          310px;
+      }
+
+      .tfe-know-more-btn {
+        position:
+          static;
+
+        justify-self:
+          end;
+
+        width:
+          auto;
+
+        min-height:
+          auto;
+
+        margin:
+          1px 2px 0 0;
+
+        padding:
+          5px 0;
+
+        transform:
+          none;
+
+        font-size:
+          .67rem;
+      }
+    }
+
+    /* ---------------------------------------------------------
+       REDUCED MOTION
+       --------------------------------------------------------- */
+
+    @media (
+      prefers-reduced-motion: reduce
+    ) {
+
+      .tfe-loader-ring {
+        animation:
+          none !important;
+      }
+
+      .tfe-fresh-section * {
+        scroll-behavior:
+          auto !important;
+      }
+    }
+
+  `;
+
+  root.appendChild(style);
+
+  /* =========================================================
+     ELEMENT REFERENCES
+     ========================================================= */
+
+  const section =
+    root.querySelector(
+      ".tfe-fresh-section"
+    );
+
+  const cards = [
+    ...root.querySelectorAll(
+      ".tfe-speaker-card:not(.tfe-hidden-speaker)"
+    )
+  ];
+
+  const explorer =
+    root.querySelector(
+      ".tfe-speaker-explorer"
+    );
+
+  const knowMoreBtn =
+    root.querySelector(
+      ".tfe-know-more-btn"
+    );
+
+  const backBtn =
+    root.querySelector(
+      ".tfe-explorer-back"
+    );
+
+  const prevBtn =
+    root.querySelector(
+      ".tfe-featured-prev"
+    );
+
+  const nextBtn =
+    root.querySelector(
+      ".tfe-featured-next"
+    );
+
+  const thumbLeft =
+    root.querySelector(
+      ".tfe-thumb-scroll-left"
+    );
+
+  const thumbRight =
+    root.querySelector(
+      ".tfe-thumb-scroll-right"
+    );
+
+  const thumbStrip =
+    root.querySelector(
+      ".tfe-thumb-strip"
+    );
+
+  const featuredImg =
+    root.querySelector(
+      ".tfe-featured-img"
+    );
+
+  const featuredName =
+    root.querySelector(
+      ".tfe-featured-name"
+    );
+
+  const featuredTitle =
+    root.querySelector(
+      ".tfe-featured-title"
+    );
+
+  const featuredBio =
+    root.querySelector(
+      ".tfe-featured-bio"
+    );
+
+  const counter =
+    root.querySelector(
+      ".tfe-explorer-counter"
+    );
+
+  let explorerIndex =
+    0;
+
+  let biosLoaded =
+    false;
+
+  let biosPromise =
+    null;
+
+  /* =========================================================
+     LOADING HELPERS
+     ========================================================= */
+
+  function wait(ms) {
+    return new Promise(
+      resolve =>
+        setTimeout(resolve, ms)
+    );
+  }
+
+  function imageReady(img) {
+    return new Promise(resolve => {
+
+      if (
+        !img ||
+        (
+          img.complete &&
+          img.naturalWidth
+        )
+      ) {
+        resolve();
+        return;
+      }
+
+      const done =
+        () => resolve();
+
+      img.addEventListener(
+        "load",
+        done,
+        { once: true }
+      );
+
+      img.addEventListener(
+        "error",
+        done,
+        { once: true }
+      );
+    });
+  }
+
+  function unlockSection() {
+
+    section.classList.remove(
+      "tfe-is-loading"
+    );
+
+    section.classList.add(
+      "tfe-is-ready"
+    );
+
+    section.setAttribute(
+      "aria-busy",
+      "false"
+    );
+
+    setTimeout(() => {
+
+      const loader =
+        root.querySelector(
+          ".tfe-section-loader"
+        );
+
+      if (loader) {
+        loader.style.display =
+          "none";
+      }
+
+    }, 700);
+  }
+
+  async function revealWhenReady() {
+
+    const criticalImages = [
+      ...root.querySelectorAll(
+        ".tfe-poster-logos img, .tfe-speaker-card:nth-child(-n+5) img"
+      )
+    ];
+
+    await Promise.all([
+
+      wait(450),
+
+      Promise.race([
+
+        Promise.all(
+          criticalImages.map(
+            imageReady
+          )
+        ),
+
+        wait(1400)
+
+      ])
+
+    ]);
+
+    unlockSection();
+
+    scheduleBioHydration();
+  }
+
+  /* =========================================================
+     BIOGRAPHY DATA
+     ========================================================= */
+
+  function isPlaceholder(text) {
+
+    const value =
+      String(
+        text || ""
+      ).trim();
+
+    return (
+      !value ||
+      value ===
+        "Profile details loading…" ||
+      value ===
+        "Loading profile…" ||
+      value ===
+        "Visit Speaker Page for more details."
+    );
+  }
+
+  function applyBioToCards() {
+
+    cards.forEach(card => {
+
+      const id =
+        card.dataset.speakerId;
+
+      const bioNode =
+        card.querySelector(
+          ".tfe-speaker-bio"
+        );
+
+      const bio =
+        bioMap[id];
+
+      if (!bioNode) {
+        return;
+      }
+
+      if (bio) {
+
+        bioNode.textContent =
+          bio;
+
+      } else if (
+        isPlaceholder(
+          bioNode.textContent
+        )
+      ) {
+
+        bioNode.textContent =
+          "Visit Speaker Page for more details.";
+      }
+    });
+
+    if (
+      section.classList.contains(
+        "tfe-explorer-open"
+      )
+    ) {
+      renderExplorer();
+    }
+  }
+
+  function loadBios(
+    forceFresh = false
+  ) {
+
+    if (forceFresh) {
+
+      biosLoaded =
+        false;
+
+      biosPromise =
+        null;
+    }
+
+    if (biosLoaded) {
+      return Promise.resolve(
+        bioMap
+      );
+    }
+
+    if (biosPromise) {
+      return biosPromise;
+    }
+
+    const url =
+      `${BIO_URL}?v=${Date.now()}`;
+
+    biosPromise =
+      fetch(
+        url,
+        {
+          cache:
+            "no-store",
+
+          credentials:
+            "omit"
+        }
+      )
+
+      .then(response => {
+
+        if (!response.ok) {
+          throw new Error(
+            `HTTP ${response.status}`
+          );
+        }
+
+        return response.json();
+      })
+
+      .then(data => {
+
+        (
+          data.speakers || []
+        ).forEach(item => {
+
+          if (
+            item &&
+            item.id
+          ) {
+
+            bioMap[item.id] =
+              item.bio || "";
+          }
+
+        });
+
+        biosLoaded =
+          true;
+
+        biosPromise =
+          null;
+
+        applyBioToCards();
+
+        return bioMap;
+      })
+
+      .catch(error => {
+
+        biosPromise =
+          null;
+
+        console.warn(
+          "Speaker bios could not be loaded:",
+          error
+        );
+
+        applyBioToCards();
+
+        return bioMap;
+      });
+
+    return biosPromise;
+  }
+
+  function ensureBio(id) {
+
+    if (
+      bioMap[id]
+    ) {
+
+      return Promise.resolve(
+        bioMap[id]
+      );
+    }
+
+    return loadBios()
+      .then(
+        () =>
+          bioMap[id] || ""
+      );
+  }
+
+  function scheduleBioHydration() {
+
+    if (
+      "requestIdleCallback"
+      in window
+    ) {
+
+      requestIdleCallback(
+        () =>
+          loadBios(),
+        {
+          timeout:
+            4500
+        }
+      );
+
+    } else {
+
+      setTimeout(
+        () =>
+          loadBios(),
+        2500
+      );
+    }
+  }
+
+  /* =========================================================
+     STANDARD GRID CARD INTERACTION
+     ========================================================= */
+
+  function closeCards(
+    except = null
+  ) {
+
+    cards.forEach(card => {
+
+      if (
+        card !== except
+      ) {
+        card.classList.remove(
+          "is-open"
+        );
+      }
+
+    });
+  }
+
+  function keepPopoverInsideViewport(
+    card
+  ) {
+
+    if (
+      window.innerWidth <= 767
+    ) {
+      return;
+    }
+
+    const details =
+      card.querySelector(
+        ".speaker-details"
+      );
+
+    if (!details) {
+      return;
+    }
+
+    details.style.setProperty(
+      "--shift",
+      "0px"
+    );
+
+    requestAnimationFrame(() => {
+
+      const rect =
+        details.getBoundingClientRect();
+
+      const gap =
+        16;
+
+      let shift =
+        0;
+
+      if (
+        rect.left < gap
+      ) {
+
+        shift +=
+          gap -
+          rect.left;
+      }
+
+      if (
+        rect.right >
+        window.innerWidth -
+        gap
+      ) {
+
+        shift -=
+          rect.right -
+          (
+            window.innerWidth -
+            gap
+          );
+      }
+
+      details.style.setProperty(
+        "--shift",
+        `${Math.round(shift)}px`
+      );
+    });
+  }
+
+  cards.forEach(card => {
+
+    card.addEventListener(
+      "mouseenter",
+      () => {
+
+        ensureBio(
+          card.dataset.speakerId
+        );
+
+        keepPopoverInsideViewport(
+          card
+        );
+      }
+    );
+
+    card.addEventListener(
+      "click",
+      event => {
+
+        event.stopPropagation();
+
+        const opening =
+          !card.classList.contains(
+            "is-open"
+          );
+
+        closeCards(card);
+
+        card.classList.toggle(
+          "is-open",
+          opening
+        );
+
+        if (opening) {
+
+          ensureBio(
+            card.dataset.speakerId
+          );
+
+          keepPopoverInsideViewport(
+            card
+          );
+        }
+      }
+    );
+  });
+
+  document.addEventListener(
+    "click",
+    event => {
+
+      if (
+        !event.target.closest(
+          ".tfe-speaker-card"
+        )
+      ) {
+
+        closeCards();
+      }
+    }
+  );
+
+  /* =========================================================
+     BUILD EXPLORER THUMBNAILS
+     ========================================================= */
+
+  function buildThumbs() {
+
+    if (
+      thumbStrip.children.length
+    ) {
+      return;
+    }
+
+    activeSpeakers.forEach(
+      (speaker, index) => {
+
+        const button =
+          document.createElement(
+            "button"
+          );
+
+        button.type =
+          "button";
+
+        button.className =
+          "tfe-thumb-item";
+
+        button.setAttribute(
+          "role",
+          "option"
+        );
+
+        button.setAttribute(
+          "aria-label",
+          `View ${speaker.name}`
+        );
+
+        button.innerHTML = `
+          <div class="tfe-thumb-photo">
+
+            <img
+              src="${speaker.image}"
+              alt=""
+              width="64"
+              height="64"
+              loading="lazy"
+            >
+
+          </div>
+
+          <span>
+            ${escapeHTML(
+              speaker.name
+            )}
+          </span>
+        `;
+
+        button.addEventListener(
+          "click",
+          () =>
+            showSpeaker(
+              index,
+              true
+            )
+        );
+
+        thumbStrip.appendChild(
+          button
+        );
+      }
+    );
+  }
+
+  /* =========================================================
+     RENDER FEATURED SPEAKER
+     ========================================================= */
+
+  function renderExplorer() {
+
+    const speaker =
+      activeSpeakers[
+        explorerIndex
+      ];
+
+    if (!speaker) {
+      return;
+    }
+
+    featuredImg.src =
+      speaker.image;
+
+    featuredImg.alt =
+      speaker.name;
+
+    featuredName.textContent =
+      speaker.name;
+
+    featuredTitle.textContent =
+      speaker.title;
+
+    featuredBio.textContent =
+      bioMap[speaker.id] ||
+      "Profile details loading…";
+
+    featuredBio.scrollTop =
+      0;
+
+    counter.textContent =
+      `${String(
+        explorerIndex + 1
+      ).padStart(
+        2,
+        "0"
+      )} / ${String(
+        activeSpeakers.length
+      ).padStart(
+        2,
+        "0"
+      )}`;
+
+    const thumbs = [
+      ...thumbStrip.querySelectorAll(
+        ".tfe-thumb-item"
+      )
+    ];
+
+    thumbs.forEach(
+      (button, index) => {
+
+        const active =
+          index ===
+          explorerIndex;
+
+        button.classList.toggle(
+          "is-active",
+          active
+        );
+
+        button.setAttribute(
+          "aria-selected",
+          active
+            ? "true"
+            : "false"
+        );
+
+        if (active) {
+
+          button.scrollIntoView({
+            behavior:
+              "smooth",
+
+            block:
+              "nearest",
+
+            inline:
+              "center"
+          });
+        }
+      }
+    );
+  }
+
+  /* =========================================================
+     CHANGE SPEAKER
+     ========================================================= */
+
+  function showSpeaker(
+    index,
+    focusName = false
+  ) {
+
+    if (
+      index < 0
+    ) {
+
+      index =
+        activeSpeakers.length -
+        1;
+    }
+
+    if (
+      index >=
+      activeSpeakers.length
+    ) {
+
+      index =
+        0;
+    }
+
+    explorerIndex =
+      index;
+
+    renderExplorer();
+
+    const speaker =
+      activeSpeakers[
+        explorerIndex
+      ];
+
+    ensureBio(
+      speaker.id
+    )
+      .then(() => {
+
+        if (
+          section.classList.contains(
+            "tfe-explorer-open"
+          )
+        ) {
+
+          renderExplorer();
+        }
+      });
+
+    if (
+      focusName
+    ) {
+
+      featuredName.setAttribute(
+        "tabindex",
+        "-1"
+      );
+
+      featuredName.focus({
+        preventScroll:
+          true
+      });
+    }
+  }
+
+  /* =========================================================
+     OPEN EXPLORER
+     ========================================================= */
+
+  function openExplorer() {
+
+    buildThumbs();
+
+    closeCards();
+
+    section.classList.add(
+      "tfe-explorer-open"
+    );
+
+    explorer.setAttribute(
+      "aria-hidden",
+      "false"
+    );
+
+    showSpeaker(
+      explorerIndex
+    );
+
+    requestAnimationFrame(
+      () => {
+
+        explorer.scrollIntoView({
+          behavior:
+            "smooth",
+
+          block:
+            "nearest"
+        });
+      }
+    );
+  }
+
+  /* =========================================================
+     CLOSE EXPLORER
+     ========================================================= */
+
+  function closeExplorer() {
+
+    section.classList.remove(
+      "tfe-explorer-open"
+    );
+
+    explorer.setAttribute(
+      "aria-hidden",
+      "true"
+    );
+
+    requestAnimationFrame(
+      () => {
+
+        knowMoreBtn.focus({
+          preventScroll:
+            true
+        });
+      }
+    );
+  }
+
+  /* =========================================================
+     EXPLORER BUTTONS
+     ========================================================= */
+
+  knowMoreBtn.addEventListener(
+    "click",
+    openExplorer
+  );
+
+  backBtn.addEventListener(
+    "click",
+    closeExplorer
+  );
+
+  prevBtn.addEventListener(
+    "click",
+    () =>
+      showSpeaker(
+        explorerIndex - 1
+      )
+  );
+
+  nextBtn.addEventListener(
+    "click",
+    () =>
+      showSpeaker(
+        explorerIndex + 1
+      )
+  );
+
+  thumbLeft.addEventListener(
+    "click",
+    () => {
+
+      thumbStrip.scrollBy({
+
+        left:
+          -Math.max(
+            260,
+            thumbStrip.clientWidth *
+            .72
+          ),
+
+        behavior:
+          "smooth"
+      });
+    }
+  );
+
+  thumbRight.addEventListener(
+    "click",
+    () => {
+
+      thumbStrip.scrollBy({
+
+        left:
+          Math.max(
+            260,
+            thumbStrip.clientWidth *
+            .72
+          ),
+
+        behavior:
+          "smooth"
+      });
+    }
+  );
+
+  /* =========================================================
+     KEYBOARD CONTROLS
+     ========================================================= */
+
+  section.addEventListener(
+    "keydown",
+    event => {
+
+      if (
+        !section.classList.contains(
+          "tfe-explorer-open"
+        )
+      ) {
+        return;
+      }
+
+      if (
+        event.key ===
+        "ArrowLeft"
+      ) {
+
+        event.preventDefault();
+
+        showSpeaker(
+          explorerIndex - 1
+        );
+      }
+
+      if (
+        event.key ===
+        "ArrowRight"
+      ) {
+
+        event.preventDefault();
+
+        showSpeaker(
+          explorerIndex + 1
+        );
+      }
+
+      if (
+        event.key ===
+        "Escape"
+      ) {
+
+        event.preventDefault();
+
+        closeExplorer();
+      }
+    }
+  );
+
+  /* =========================================================
+     RESIZE
+     ========================================================= */
+
+  window.addEventListener(
+    "resize",
+    () => {
+
+      const openCard =
+        root.querySelector(
+          ".tfe-speaker-card.is-open"
+        );
+
+      if (
+        openCard
+      ) {
+
+        keepPopoverInsideViewport(
+          openCard
+        );
+      }
+    }
+  );
+
+  /* =========================================================
+     BACK / FORWARD CACHE REFRESH
+     ========================================================= */
+
+  window.addEventListener(
+    "pageshow",
+    event => {
+
+      if (
+        event.persisted
+      ) {
+
+        loadBios(
+          true
+        );
+      }
+    }
+  );
+
+  /* =========================================================
+     START COMPONENT
+     ========================================================= */
+
+  revealWhenReady();
+
+})();
