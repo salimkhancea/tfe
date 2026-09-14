@@ -1,10 +1,10 @@
 /**
  * The Flex Executive Summit 2026 — Speaker Component
- * Readable GitHub version
+ * GitHub file: tfe-speakers-github.js
  *
  * GoDaddy embed:
  * <div id="tfe-speakers-root"></div>
- * <script src="https://cdn.jsdelivr.net/gh/salimkhancea/tfe@main/tfe-speakers.js?v=20260914" defer></script>
+ * <script src="https://cdn.jsdelivr.net/gh/salimkhancea/tfe@main/tfe-speakers-github.js?v=20260914-4" defer></script>
  */
 
 (() => {
@@ -15,10 +15,6 @@
 
   const BIO_URL =
     "https://raw.githubusercontent.com/salimkhancea/tfe/main/tfespeakers.json";
-
-  /* =========================================================
-     SPEAKER DATA
-     ========================================================= */
 
   const speakers = [
     {
@@ -178,8 +174,6 @@
       image:
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Sanjeev%20Jain.webp"
     },
-
-    /* Hidden for now. Change visible:false to visible:true to restore. */
     {
       id: "nancy-groesch",
       name: "Nancy Groesch",
@@ -188,7 +182,6 @@
         "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Nancy%20Groesch.webp",
       visible: false
     },
-
     {
       id: "priya-rao",
       name: "Priya Rao",
@@ -206,83 +199,100 @@
     }
   ];
 
-  const activeSpeakers = speakers.filter(
-    speaker => speaker.visible !== false
-  );
+  const activeSpeakers =
+    speakers.filter(
+      speaker =>
+        speaker.visible !== false
+    );
 
   const bioMap = {};
 
-  /* =========================================================
-     HELPERS
-     ========================================================= */
+  let biosLoaded = false;
+  let biosPromise = null;
+  let explorerIndex = 0;
+  let sectionHeightLocked = false;
 
-  function escapeHTML(value = "") {
-    return String(value)
+  const esc = (value = "") =>
+    String(value)
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
-  }
 
   /* =========================================================
-     CREATE SPEAKER GRID
+     CREATE SPEAKER CARDS
      ========================================================= */
 
-  const speakerCardsHTML = speakers
-    .map((speaker, index) => {
-      const loading =
-        speaker.eager || index < 5
-          ? "eager"
-          : "lazy";
+  const cardsHTML =
+    speakers
+      .map(
+        (speaker, index) => {
 
-      const priority =
-        speaker.eager || index < 5
-          ? "high"
-          : "low";
+          const hidden =
+            speaker.visible === false
+              ? " tfe-hidden-speaker"
+              : "";
 
-      const hidden =
-        speaker.visible === false
-          ? " tfe-hidden-speaker"
-          : "";
+          const load =
+            speaker.eager ||
+            index < 5
+              ? "eager"
+              : "lazy";
 
-      return `
-        <div
-          class="tfe-speaker-card${hidden}"
-          data-speaker-id="${speaker.id}"
-        >
-          <div class="tfe-photo">
-            <img
-              src="${speaker.image}"
-              alt="${escapeHTML(speaker.name)}"
-              width="138"
-              height="138"
-              decoding="async"
-              loading="${loading}"
-              fetchpriority="${priority}"
+          const priority =
+            speaker.eager ||
+            index < 5
+              ? "high"
+              : "low";
+
+          return `
+            <div
+              class="tfe-speaker-card${hidden}"
+              data-speaker-id="${speaker.id}"
             >
-          </div>
 
-          <h3>${escapeHTML(speaker.name)}</h3>
+              <div class="tfe-photo">
 
-          <p class="short-title">
-            ${escapeHTML(speaker.title)}
-          </p>
+                <img
+                  src="${speaker.image}"
+                  alt="${esc(speaker.name)}"
+                  width="138"
+                  height="138"
+                  decoding="async"
+                  loading="${load}"
+                  fetchpriority="${priority}"
+                >
 
-          <div class="speaker-details">
-            <p class="tfe-speaker-bio">
-              Profile details loading…
-            </p>
-          </div>
-        </div>
-      `;
-    })
-    .join("");
+              </div>
+
+              <h3>
+                ${esc(speaker.name)}
+              </h3>
+
+              <p class="short-title">
+                ${esc(speaker.title)}
+              </p>
+
+              <div class="speaker-details">
+
+                <p class="tfe-speaker-bio">
+                  Profile details loading…
+                </p>
+
+              </div>
+
+            </div>
+          `;
+        }
+      )
+      .join("");
 
   /* =========================================================
      MAIN HTML
      ========================================================= */
 
   root.innerHTML = `
+
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -301,11 +311,6 @@
     >
 
     <link
-      rel="dns-prefetch"
-      href="https://img1.wsimg.com"
-    >
-
-    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap"
     >
@@ -316,28 +321,31 @@
     >
 
       <!-- LOADER -->
+
       <div
         class="tfe-section-loader"
         aria-live="polite"
         aria-label="Loading speakers section"
       >
-        <div
-          class="tfe-loader-ring"
-          aria-hidden="true"
-        ></div>
 
-        <div
-          class="tfe-loader-dot"
-          aria-hidden="true"
-        ></div>
+        <div class="tfe-loader-ring"></div>
 
-        <span>Loading speakers</span>
+        <div class="tfe-loader-dot"></div>
+
+        <span>
+          Loading speakers
+        </span>
+
       </div>
 
+
       <!-- MAIN CONTENT -->
+
       <div class="tfe-fresh-main">
 
-        <!-- POSTER -->
+
+        <!-- SUMMIT POSTER -->
+
         <div class="tfe-poster-wrap">
 
           <div class="tfe-mini-poster">
@@ -347,6 +355,7 @@
               <div
                 class="tfe-logo-slot tfe-logo-slot-one"
               >
+
                 <img
                   src="https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/flex%20logo.png"
                   alt="The Flex Executive Logo"
@@ -354,11 +363,13 @@
                   height="110"
                   loading="eager"
                 >
+
               </div>
 
               <div
                 class="tfe-logo-slot tfe-logo-slot-two"
               >
+
                 <img
                   src="https://img1.wsimg.com/isteam/ip/f949858a-5410-4007-9066-936f82154009/Logo%20New%20BMU-Small-1.png"
                   alt="Board Match-Up Logo"
@@ -366,13 +377,16 @@
                   height="60"
                   loading="eager"
                 >
+
               </div>
 
             </div>
 
+
             <div class="tfe-poster-year">
               2026
             </div>
+
 
             <div class="tfe-poster-line">
               <span></span>
@@ -380,7 +394,9 @@
               <span></span>
             </div>
 
+
             <div class="tfe-poster-title">
+
               <div class="gold">
                 The Flex
               </div>
@@ -392,7 +408,9 @@
               <div class="gold">
                 Summit
               </div>
+
             </div>
+
 
             <div class="tfe-poster-line">
               <span></span>
@@ -400,26 +418,47 @@
               <span></span>
             </div>
 
-            <div
-              class="tfe-poster-events"
-              aria-label="Event schedule"
-            >
+
+            <div class="tfe-poster-events">
 
               <div class="tfe-event-row">
-                <span>1 Oct</span>
-                <b>|</b>
-                <span>Masterclass</span>
+
+                <span>
+                  1 Oct
+                </span>
+
+                <b>
+                  |
+                </b>
+
+                <span>
+                  Masterclass
+                </span>
+
               </div>
 
+
               <div class="tfe-event-row">
-                <span>2 Oct</span>
-                <b>|</b>
-                <span>Summit</span>
+
+                <span>
+                  2 Oct
+                </span>
+
+                <b>
+                  |
+                </b>
+
+                <span>
+                  Summit
+                </span>
+
               </div>
+
 
               <div class="tfe-event-single">
                 Networking Dinner
               </div>
+
 
               <div class="tfe-event-location">
 
@@ -434,6 +473,7 @@
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
+
                     <path
                       d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z"
                     ></path>
@@ -443,6 +483,7 @@
                       cy="10"
                       r="2.3"
                     ></circle>
+
                   </svg>
 
                   <span>
@@ -459,24 +500,33 @@
 
         </div>
 
-        <!-- SPEAKERS -->
+
+        <!-- SPEAKER AREA -->
+
         <div class="tfe-speakers-area">
 
+
           <div class="tfe-speaker-kicker">
-            Curated leadership voices shaping the
-            Flex Executive Economy
+            Curated leadership voices shaping the Flex Executive Economy
           </div>
 
-          <!-- STANDARD GRID -->
+
+          <!-- SPEAKER GRID -->
+
           <div class="tfe-speaker-grid">
-            ${speakerCardsHTML}
+
+            ${cardsHTML}
+
           </div>
 
-          <!-- KNOW MORE / EXPLORER -->
+
+          <!-- KNOW MORE EXPLORER -->
+
           <div
             class="tfe-speaker-explorer"
             aria-hidden="true"
           >
+
 
             <div class="tfe-explorer-topbar">
 
@@ -484,9 +534,15 @@
                 class="tfe-explorer-back"
                 type="button"
               >
-                <span aria-hidden="true">←</span>
+
+                <span>
+                  ←
+                </span>
+
                 All Speakers
+
               </button>
+
 
               <div
                 class="tfe-explorer-counter"
@@ -497,7 +553,9 @@
 
             </div>
 
+
             <div class="tfe-featured-shell">
+
 
               <button
                 class="tfe-featured-nav tfe-featured-prev"
@@ -507,11 +565,12 @@
                 ‹
               </button>
 
-              <!-- WHITE FEATURED CARD -->
+
               <article
                 class="tfe-featured-card"
                 aria-live="polite"
               >
+
 
                 <div class="tfe-featured-photo">
 
@@ -525,27 +584,33 @@
 
                 </div>
 
+
                 <div class="tfe-featured-content">
+
 
                   <h2 class="tfe-featured-name">
                     Speaker Name
                   </h2>
 
+
                   <p class="tfe-featured-title">
                     Speaker Title
                   </p>
 
-                  <div
-                    class="tfe-featured-divider"
-                  ></div>
+
+                  <div class="tfe-featured-divider"></div>
+
 
                   <p class="tfe-featured-bio">
                     Profile details loading…
                   </p>
 
+
                 </div>
 
+
               </article>
+
 
               <button
                 class="tfe-featured-nav tfe-featured-next"
@@ -555,10 +620,14 @@
                 ›
               </button>
 
+
             </div>
 
-            <!-- SMALL SPEAKER SCROLLER -->
+
+            <!-- THUMBNAIL RAIL -->
+
             <div class="tfe-thumb-window">
+
 
               <button
                 class="tfe-thumb-scroll tfe-thumb-scroll-left"
@@ -568,11 +637,13 @@
                 ‹
               </button>
 
+
               <div
                 class="tfe-thumb-strip"
                 role="listbox"
                 aria-label="Select a speaker"
               ></div>
+
 
               <button
                 class="tfe-thumb-scroll tfe-thumb-scroll-right"
@@ -582,18 +653,25 @@
                 ›
               </button>
 
+
             </div>
+
 
           </div>
 
+
         </div>
+
 
       </div>
 
-      <!-- CTA ROW -->
+
+      <!-- CTA -->
+
       <div class="tfe-agenda-section">
 
         <div class="tfe-action-row">
+
 
           <a
             class="tfe-action-btn primary"
@@ -604,6 +682,7 @@
             Get Your Executive Pass
           </a>
 
+
           <button
             class="tfe-action-btn secondary tfe-know-more-btn"
             type="button"
@@ -611,18 +690,23 @@
             Know More About Speakers
           </button>
 
+
         </div>
 
       </div>
 
+
     </section>
   `;
+
 
   /* =========================================================
      CSS
      ========================================================= */
 
-  const style = document.createElement("style");
+  const style =
+    document.createElement("style");
+
 
   style.textContent = `
 
@@ -635,31 +719,43 @@
       box-sizing: border-box;
     }
 
+
     .tfe-fresh-section {
+
       --gold: #c9a84c;
       --gold-light: #f1d36b;
       --poster-bg: #04101f;
       --poster-bg-2: #010812;
 
       width: 100%;
+
       margin: 0;
-      padding: 34px 0 8px;
 
-      position: relative;
-      overflow: visible;
+      padding:
+        34px 0 8px;
 
-      font-family: "DM Sans", Arial, sans-serif;
+      overflow:
+        visible;
 
-      background-color: #000;
+      position:
+        relative;
+
+      font-family:
+        "DM Sans",
+        Arial,
+        sans-serif;
+
+      background-color:
+        #000;
 
       background-image:
+
         radial-gradient(
           ellipse at 50% 44%,
-          rgba(162,122,32,.14) 0%,
-          rgba(128,92,24,.09) 20%,
-          rgba(61,42,11,.045) 38%,
+          rgba(162,122,32,.14),
           transparent 62%
         ),
+
         linear-gradient(
           90deg,
           #000 0%,
@@ -672,71 +768,111 @@
         );
     }
 
+
     /* ---------------------------------------------------------
-       LOADING
+       LOADER
        --------------------------------------------------------- */
 
     .tfe-fresh-section.tfe-is-loading {
-      height: 600px !important;
-      min-height: 600px !important;
-      max-height: 600px !important;
-      overflow: hidden !important;
-      background: #000 !important;
+
+      height:
+        600px !important;
+
+      min-height:
+        600px !important;
+
+      max-height:
+        600px !important;
+
+      overflow:
+        hidden !important;
     }
+
 
     .tfe-is-loading .tfe-fresh-main,
     .tfe-is-loading .tfe-agenda-section {
-      opacity: 0 !important;
-      visibility: hidden !important;
-      pointer-events: none;
+
+      opacity:
+        0 !important;
+
+      visibility:
+        hidden !important;
+
+      pointer-events:
+        none;
     }
 
+
     .tfe-section-loader {
-      position: absolute;
-      inset: 0;
-      z-index: 99999;
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
+      position:
+        absolute;
 
-      gap: 12px;
+      inset:
+        0;
+
+      z-index:
+        99999;
+
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      align-items:
+        center;
+
+      justify-content:
+        flex-start;
+
+      gap:
+        12px;
 
       padding-top:
-        clamp(58px, 11vh, 96px);
+        clamp(58px,11vh,96px);
 
       background:
+
         radial-gradient(
           ellipse 42% 30% at 50% 42%,
           rgba(201,168,76,.16),
           transparent 58%
         ),
+
         #000;
 
       color:
         rgba(241,211,107,.82);
 
-      font-size: 11px;
-      font-weight: 800;
+      font-size:
+        11px;
 
-      letter-spacing: .16em;
+      font-weight:
+        800;
 
-      text-transform: uppercase;
+      letter-spacing:
+        .16em;
 
-      opacity: 1;
-      visibility: visible;
+      text-transform:
+        uppercase;
 
       transition:
         opacity .45s ease,
         visibility .45s ease;
     }
 
-    .tfe-loader-ring {
-      width: 38px;
-      height: 38px;
 
-      border-radius: 50%;
+    .tfe-loader-ring {
+
+      width:
+        38px;
+
+      height:
+        38px;
+
+      border-radius:
+        50%;
 
       border:
         1px solid rgba(241,211,107,.18);
@@ -754,11 +890,17 @@
         tfe-spin 1s linear infinite;
     }
 
-    .tfe-loader-dot {
-      width: 5px;
-      height: 5px;
 
-      border-radius: 50%;
+    .tfe-loader-dot {
+
+      width:
+        5px;
+
+      height:
+        5px;
+
+      border-radius:
+        50%;
 
       background:
         rgba(241,211,107,.95);
@@ -767,33 +909,52 @@
         0 0 22px rgba(241,211,107,.42);
     }
 
+
     .tfe-is-ready .tfe-section-loader {
-      opacity: 0;
-      visibility: hidden;
+
+      opacity:
+        0;
+
+      visibility:
+        hidden;
     }
+
 
     .tfe-is-ready .tfe-fresh-main,
     .tfe-is-ready .tfe-agenda-section {
-      opacity: 1;
-      visibility: visible;
+
+      opacity:
+        1;
+
+      visibility:
+        visible;
 
       transition:
         opacity .55s ease;
     }
 
+
     @keyframes tfe-spin {
+
       to {
-        transform: rotate(360deg);
+        transform:
+          rotate(360deg);
       }
+
     }
 
+
     /* ---------------------------------------------------------
-       MAIN TWO-COLUMN AREA
+       MAIN LAYOUT
        --------------------------------------------------------- */
 
     .tfe-fresh-main {
+
       width:
-        min(1220px, calc(100% - 72px));
+        min(
+          1220px,
+          calc(100% - 72px)
+        );
 
       margin:
         0 auto;
@@ -802,7 +963,7 @@
         grid;
 
       grid-template-columns:
-        280px minmax(0, 1fr);
+        280px minmax(0,1fr);
 
       gap:
         48px;
@@ -817,11 +978,13 @@
         10;
     }
 
+
     /* ---------------------------------------------------------
        SUMMIT POSTER
        --------------------------------------------------------- */
 
     .tfe-poster-wrap {
+
       display:
         flex;
 
@@ -832,7 +995,9 @@
         center;
     }
 
+
     .tfe-mini-poster {
+
       width:
         280px;
 
@@ -861,11 +1026,13 @@
         hidden;
 
       background:
+
         radial-gradient(
           circle at 75% 12%,
           rgba(201,168,76,.10),
           transparent 26%
         ),
+
         linear-gradient(
           145deg,
           var(--poster-bg),
@@ -876,7 +1043,9 @@
         0 28px 70px rgba(0,0,0,.48);
     }
 
+
     .tfe-poster-logos {
+
       height:
         78px;
 
@@ -893,7 +1062,9 @@
         16px;
     }
 
+
     .tfe-logo-slot {
+
       display:
         flex;
 
@@ -907,7 +1078,9 @@
         hidden;
     }
 
+
     .tfe-logo-slot-one {
+
       width:
         78px;
 
@@ -915,7 +1088,9 @@
         78px;
     }
 
+
     .tfe-logo-slot-two {
+
       width:
         112px;
 
@@ -926,21 +1101,22 @@
         8px;
     }
 
+
     .tfe-logo-slot img {
+
       width:
         100%;
 
       height:
         100%;
 
-      display:
-        block;
-
       object-fit:
         contain;
     }
 
+
     .tfe-poster-year {
+
       color:
         #fff;
 
@@ -963,7 +1139,9 @@
         nowrap;
     }
 
+
     .tfe-poster-line {
+
       display:
         flex;
 
@@ -974,7 +1152,9 @@
         7px;
     }
 
+
     .tfe-poster-line span {
+
       flex:
         1;
 
@@ -985,7 +1165,9 @@
         rgba(201,168,76,.75);
     }
 
+
     .tfe-poster-line i {
+
       width:
         7px;
 
@@ -999,12 +1181,16 @@
         rotate(45deg);
     }
 
+
     .tfe-poster-title {
+
       color:
         #fff;
 
       font-family:
-        "Oswald", Arial, sans-serif;
+        "Oswald",
+        Arial,
+        sans-serif;
 
       font-size:
         42px;
@@ -1028,12 +1214,16 @@
         nowrap;
     }
 
+
     .tfe-poster-title .gold {
+
       color:
         var(--gold-light);
     }
 
+
     .tfe-poster-events {
+
       display:
         grid;
 
@@ -1050,7 +1240,9 @@
         uppercase;
     }
 
+
     .tfe-event-row {
+
       display:
         flex;
 
@@ -1066,9 +1258,6 @@
       font-size:
         14px;
 
-      line-height:
-        1.1;
-
       font-weight:
         700;
 
@@ -1079,7 +1268,9 @@
         nowrap;
     }
 
+
     .tfe-event-row b {
+
       color:
         rgba(255,255,255,.46);
 
@@ -1087,9 +1278,8 @@
         400;
     }
 
+
     .tfe-event-single {
-      color:
-        rgba(241,211,107,.92);
 
       font-size:
         12px;
@@ -1100,13 +1290,15 @@
       letter-spacing:
         .17em;
 
+      color:
+        rgba(241,211,107,.92);
+
       white-space:
         nowrap;
     }
 
+
     .tfe-event-location {
-      color:
-        rgba(255,255,255,.88);
 
       font-size:
         12.5px;
@@ -1121,7 +1313,9 @@
         none;
     }
 
+
     .tfe-event-location a {
+
       display:
         inline-flex;
 
@@ -1141,12 +1335,16 @@
         none;
     }
 
+
     .tfe-event-location a:hover {
+
       color:
         var(--gold-light);
     }
 
+
     .tfe-location-icon {
+
       width:
         14px;
 
@@ -1172,11 +1370,13 @@
         round;
     }
 
+
     /* ---------------------------------------------------------
-       SPEAKER AREA
+       SPEAKER GRID
        --------------------------------------------------------- */
 
     .tfe-speakers-area {
+
       min-width:
         0;
 
@@ -1185,9 +1385,14 @@
 
       z-index:
         20;
+
+      overflow:
+        visible;
     }
 
+
     .tfe-speaker-kicker {
+
       margin:
         0 auto 34px;
 
@@ -1213,11 +1418,9 @@
         uppercase;
     }
 
-    /* ---------------------------------------------------------
-       SPEAKER GRID
-       --------------------------------------------------------- */
 
     .tfe-speaker-grid {
+
       display:
         flex;
 
@@ -1235,14 +1438,21 @@
 
       z-index:
         30;
+
+      overflow:
+        visible;
     }
 
+
     .tfe-hidden-speaker {
+
       display:
         none !important;
     }
 
+
     .tfe-speaker-card {
+
       position:
         relative;
 
@@ -1268,8 +1478,10 @@
         transform .25s ease;
     }
 
+
     .tfe-speaker-card:hover,
     .tfe-speaker-card.is-open {
+
       transform:
         translateY(-6px);
 
@@ -1277,7 +1489,9 @@
         999;
     }
 
+
     .tfe-photo {
+
       width:
         132px;
 
@@ -1303,7 +1517,9 @@
         0 18px 36px rgba(0,0,0,.42);
     }
 
+
     .tfe-photo img {
+
       width:
         100%;
 
@@ -1323,7 +1539,9 @@
         center top;
     }
 
-    .tfe-photo::after {
+
+    .tfe-photo:after {
+
       content:
         "";
 
@@ -1343,6 +1561,7 @@
         38%;
 
       background:
+
         linear-gradient(
           to bottom,
           transparent,
@@ -1354,7 +1573,9 @@
         none;
     }
 
+
     .tfe-speaker-card h3 {
+
       margin:
         -14px 0 0;
 
@@ -1368,7 +1589,9 @@
         #fff;
 
       font-family:
-        "Oswald", Arial, sans-serif;
+        "Oswald",
+        Arial,
+        sans-serif;
 
       font-size:
         1.06rem;
@@ -1386,7 +1609,9 @@
         0 2px 9px rgba(0,0,0,.88);
     }
 
+
     .short-title {
+
       max-width:
         165px;
 
@@ -1415,12 +1640,14 @@
         0 2px 8px rgba(0,0,0,.88);
     }
 
-    /* ---------------------------------------------------------
-       SMALL BIO POPOVER
-       --------------------------------------------------------- */
+
+    /* =========================================================
+       ORIGINAL SPEAKER POPUP BEHAVIOUR
+       ========================================================= */
 
     .speaker-details {
-      --shift:
+
+      --tfe-popover-shift:
         0px;
 
       position:
@@ -1467,7 +1694,7 @@
 
       transform:
         translate(
-          calc(-50% + var(--shift)),
+          calc(-50% + var(--tfe-popover-shift)),
           14px
         );
 
@@ -1477,7 +1704,9 @@
         transform .22s ease;
     }
 
-    .speaker-details::before {
+
+    .speaker-details:before {
+
       content:
         "";
 
@@ -1488,7 +1717,11 @@
         -7px;
 
       left:
-        50%;
+        clamp(
+          18px,
+          calc(50% - var(--tfe-popover-shift)),
+          calc(100% - 18px)
+        );
 
       width:
         14px;
@@ -1506,10 +1739,13 @@
         1px solid rgba(0,0,0,.06);
 
       transform:
-        translateX(-50%) rotate(45deg);
+        translateX(-50%)
+        rotate(45deg);
     }
 
+
     .speaker-details p {
+
       margin:
         0;
 
@@ -1526,8 +1762,10 @@
         500;
     }
 
+
     .tfe-speaker-card:hover .speaker-details,
     .tfe-speaker-card.is-open .speaker-details {
+
       opacity:
         1;
 
@@ -1539,16 +1777,154 @@
 
       transform:
         translate(
-          calc(-50% + var(--shift)),
+          calc(-50% + var(--tfe-popover-shift)),
           8px
         );
     }
 
-    /* ---------------------------------------------------------
+
+    /* Desktop bottom row opens upward */
+
+    @media (min-width:768px) {
+
+      .tfe-speaker-card.tfe-popover-up .speaker-details {
+
+        top:
+          auto;
+
+        bottom:
+          100%;
+
+        transform:
+          translate(
+            calc(-50% + var(--tfe-popover-shift)),
+            -14px
+          );
+      }
+
+
+      .tfe-speaker-card.tfe-popover-up:hover .speaker-details,
+      .tfe-speaker-card.tfe-popover-up.is-open .speaker-details {
+
+        transform:
+          translate(
+            calc(-50% + var(--tfe-popover-shift)),
+            -8px
+          );
+      }
+
+
+      .tfe-speaker-card.tfe-popover-up .speaker-details:before {
+
+        top:
+          auto;
+
+        bottom:
+          -7px;
+
+        border-left:
+          0;
+
+        border-top:
+          0;
+
+        border-right:
+          1px solid rgba(0,0,0,.06);
+
+        border-bottom:
+          1px solid rgba(0,0,0,.06);
+      }
+
+
+      /* Right-most card aligns popup inward */
+
+      .tfe-speaker-card.tfe-popover-right .speaker-details {
+
+        left:
+          auto;
+
+        right:
+          0;
+
+        transform:
+          translate(0,14px);
+      }
+
+
+      .tfe-speaker-card.tfe-popover-right:hover .speaker-details,
+      .tfe-speaker-card.tfe-popover-right.is-open .speaker-details {
+
+        transform:
+          translate(0,8px);
+      }
+
+
+      .tfe-speaker-card.tfe-popover-right .speaker-details:before {
+
+        left:
+          auto;
+
+        right:
+          calc(
+            var(--tfe-card-half,82px) - 7px
+          );
+
+        transform:
+          rotate(45deg);
+      }
+
+
+      .tfe-speaker-card.tfe-popover-up.tfe-popover-right .speaker-details {
+
+        top:
+          auto;
+
+        bottom:
+          100%;
+
+        transform:
+          translate(0,-14px);
+      }
+
+
+      .tfe-speaker-card.tfe-popover-up.tfe-popover-right:hover .speaker-details,
+      .tfe-speaker-card.tfe-popover-up.tfe-popover-right.is-open .speaker-details {
+
+        transform:
+          translate(0,-8px);
+      }
+
+
+      .tfe-speaker-card.tfe-popover-up.tfe-popover-right .speaker-details:before {
+
+        top:
+          auto;
+
+        bottom:
+          -7px;
+
+        border-left:
+          0;
+
+        border-top:
+          0;
+
+        border-right:
+          1px solid rgba(0,0,0,.06);
+
+        border-bottom:
+          1px solid rgba(0,0,0,.06);
+      }
+
+    }
+
+
+    /* =========================================================
        SPEAKER EXPLORER
-       --------------------------------------------------------- */
+       ========================================================= */
 
     .tfe-speaker-explorer {
+
       display:
         none;
 
@@ -1565,18 +1941,24 @@
         #fff;
     }
 
+
     .tfe-explorer-open .tfe-speaker-kicker,
     .tfe-explorer-open .tfe-speaker-grid {
+
       display:
         none !important;
     }
 
+
     .tfe-explorer-open .tfe-speaker-explorer {
+
       display:
         block;
     }
 
+
     .tfe-explorer-topbar {
+
       display:
         flex;
 
@@ -1593,7 +1975,9 @@
         0 0 18px;
     }
 
+
     .tfe-explorer-back {
+
       border:
         0;
 
@@ -1634,7 +2018,9 @@
         pointer;
     }
 
+
     .tfe-explorer-counter {
+
       color:
         rgba(255,255,255,.52);
 
@@ -1648,11 +2034,13 @@
         .15em;
     }
 
+
     /* ---------------------------------------------------------
-       WHITE FEATURED SPEAKER CARD
+       WHITE SPEAKER CARD
        --------------------------------------------------------- */
 
     .tfe-featured-shell {
+
       display:
         grid;
 
@@ -1666,7 +2054,9 @@
         12px;
     }
 
+
     .tfe-featured-card {
+
       min-height:
         420px;
 
@@ -1702,23 +2092,23 @@
         #fff;
 
       background-image:
+
         radial-gradient(
           ellipse at 96% 8%,
-          rgba(222,235,252,.70) 0%,
-          rgba(238,246,255,.42) 22%,
+          rgba(222,235,252,.70),
           transparent 45%
         ),
+
         linear-gradient(
           164deg,
-          transparent 0%,
           transparent 53%,
           rgba(225,238,254,.42) 57%,
           rgba(246,250,255,.86) 61%,
           transparent 67%
         ),
+
         linear-gradient(
           170deg,
-          transparent 0%,
           transparent 64%,
           rgba(218,234,253,.42) 68%,
           rgba(248,251,255,.90) 72%,
@@ -1726,11 +2116,17 @@
         );
 
       box-shadow:
+
         0 28px 72px rgba(0,0,0,.34),
-        0 0 0 1px rgba(255,255,255,.7) inset;
+
+        0 0 0 1px
+        rgba(255,255,255,.7)
+        inset;
     }
 
+
     .tfe-featured-photo {
+
       width:
         100%;
 
@@ -1738,7 +2134,7 @@
         250px;
 
       aspect-ratio:
-        1 / 1;
+        1;
 
       margin:
         0 auto;
@@ -1756,11 +2152,17 @@
         #eef2f7;
 
       box-shadow:
-        0 22px 48px rgba(12,24,42,.18),
-        0 0 0 5px rgba(255,255,255,.92);
+
+        0 22px 48px
+        rgba(12,24,42,.18),
+
+        0 0 0 5px
+        rgba(255,255,255,.92);
     }
 
+
     .tfe-featured-img {
+
       width:
         100%;
 
@@ -1777,7 +2179,9 @@
         center top;
     }
 
+
     .tfe-featured-content {
+
       min-width:
         0;
 
@@ -1785,7 +2189,9 @@
         left;
     }
 
+
     .tfe-featured-name {
+
       margin:
         0;
 
@@ -1793,10 +2199,12 @@
         #07111f;
 
       font-family:
-        "Oswald", Arial, sans-serif;
+        "Oswald",
+        Arial,
+        sans-serif;
 
       font-size:
-        clamp(2rem, 3vw, 2.7rem);
+        clamp(2rem,3vw,2.7rem);
 
       line-height:
         1.03;
@@ -1811,7 +2219,9 @@
         uppercase;
     }
 
+
     .tfe-featured-title {
+
       margin:
         10px 0 0;
 
@@ -1828,7 +2238,9 @@
         650;
     }
 
+
     .tfe-featured-divider {
+
       width:
         76px;
 
@@ -1839,6 +2251,7 @@
         19px 0 17px;
 
       background:
+
         linear-gradient(
           90deg,
           #d3ab39,
@@ -1846,7 +2259,9 @@
         );
     }
 
+
     .tfe-featured-bio {
+
       margin:
         0;
 
@@ -1870,14 +2285,26 @@
 
       font-weight:
         500;
+
+      scrollbar-width:
+        none;
     }
 
+
+    .tfe-featured-bio::-webkit-scrollbar {
+
+      display:
+        none;
+    }
+
+
     /* ---------------------------------------------------------
-       EXPLORER NAVIGATION ARROWS
+       EXPLORER ARROWS
        --------------------------------------------------------- */
 
     .tfe-featured-nav,
     .tfe-thumb-scroll {
+
       border:
         1px solid rgba(241,211,107,.26);
 
@@ -1895,14 +2322,11 @@
 
       cursor:
         pointer;
-
-      transition:
-        transform .2s ease,
-        border-color .2s ease,
-        background .2s ease;
     }
 
+
     .tfe-featured-nav {
+
       width:
         42px;
 
@@ -1914,28 +2338,15 @@
 
       font-size:
         2rem;
-
-      line-height:
-        1;
     }
 
-    .tfe-featured-nav:hover,
-    .tfe-thumb-scroll:hover {
-      transform:
-        translateY(-1px);
-
-      border-color:
-        rgba(241,211,107,.72);
-
-      background:
-        rgba(21,28,39,.98);
-    }
 
     /* ---------------------------------------------------------
-       THUMBNAIL SCROLLER
+       SPEAKER THUMBNAILS
        --------------------------------------------------------- */
 
     .tfe-thumb-window {
+
       display:
         grid;
 
@@ -1949,7 +2360,9 @@
         center;
     }
 
+
     .tfe-thumb-scroll {
+
       width:
         34px;
 
@@ -1963,7 +2376,9 @@
         1.45rem;
     }
 
+
     .tfe-thumb-strip {
+
       display:
         flex;
 
@@ -1986,12 +2401,16 @@
         none;
     }
 
+
     .tfe-thumb-strip::-webkit-scrollbar {
+
       display:
         none;
     }
 
+
     .tfe-thumb-item {
+
       flex:
         0 0 76px;
 
@@ -2017,7 +2436,9 @@
         pointer;
     }
 
+
     .tfe-thumb-photo {
+
       width:
         64px;
 
@@ -2038,22 +2459,16 @@
 
       background:
         #111;
-
-      transition:
-        border-color .22s ease,
-        transform .22s ease,
-        box-shadow .22s ease;
     }
 
+
     .tfe-thumb-photo img {
+
       width:
         100%;
 
       height:
         100%;
-
-      display:
-        block;
 
       object-fit:
         cover;
@@ -2062,7 +2477,9 @@
         center top;
     }
 
+
     .tfe-thumb-item span {
+
       display:
         block;
 
@@ -2088,29 +2505,32 @@
         700;
     }
 
-    .tfe-thumb-item:hover .tfe-thumb-photo,
-    .tfe-thumb-item.is-active .tfe-thumb-photo {
+
+    .tfe-thumb-item.is-active .tfe-thumb-photo,
+    .tfe-thumb-item:hover .tfe-thumb-photo {
+
       border-color:
         var(--gold-light);
 
-      transform:
-        translateY(-2px);
-
       box-shadow:
-        0 0 0 3px rgba(201,168,76,.09),
-        0 12px 24px rgba(0,0,0,.28);
+        0 0 0 3px
+        rgba(201,168,76,.09);
     }
 
+
     .tfe-thumb-item.is-active span {
+
       color:
         rgba(241,211,107,.96);
     }
 
-    /* ---------------------------------------------------------
-       CTA AREA
-       --------------------------------------------------------- */
+
+    /* =========================================================
+       CTA
+       ========================================================= */
 
     .tfe-agenda-section {
+
       width:
         100%;
 
@@ -2127,9 +2547,14 @@
         2;
     }
 
+
     .tfe-action-row {
+
       width:
-        min(1180px, calc(100% - 72px));
+        min(
+          1180px,
+          calc(100% - 72px)
+        );
 
       min-height:
         44px;
@@ -2150,7 +2575,9 @@
         relative;
     }
 
+
     .tfe-action-btn {
+
       min-height:
         44px;
 
@@ -2183,18 +2610,16 @@
 
       text-decoration:
         none;
-
-      transition:
-        transform .25s ease;
     }
 
-    /* MAIN CTA — REMAINS CENTERED AND PRIMARY */
 
     .tfe-action-btn.primary {
+
       color:
         #06101d;
 
       background:
+
         linear-gradient(
           135deg,
           #f1d36b,
@@ -2202,14 +2627,9 @@
         );
     }
 
-    .tfe-action-btn.primary:hover {
-      transform:
-        translateY(-1px);
-    }
-
-    /* KNOW MORE — QUIET SECONDARY LINK */
 
     .tfe-action-btn.secondary {
+
       border:
         0;
 
@@ -2223,7 +2643,9 @@
         pointer;
     }
 
+
     .tfe-know-more-btn {
+
       position:
         absolute;
 
@@ -2267,15 +2689,16 @@
         .88;
     }
 
-    .tfe-know-more-btn::after {
+
+    .tfe-know-more-btn:after {
+
       content:
         " →";
-
-      font-size:
-        .92rem;
     }
 
+
     .tfe-know-more-btn:hover {
+
       color:
         #fff;
 
@@ -2283,29 +2706,115 @@
         1;
     }
 
+
     .tfe-explorer-open .tfe-know-more-btn {
+
       display:
         none;
     }
+
+
+    /* =========================================================
+       DESKTOP
+       ========================================================= */
+
+    @media (min-width:1025px) {
+
+      .tfe-fresh-section {
+
+        height:
+          1060px;
+
+        max-height:
+          1060px;
+
+        overflow:
+          hidden;
+      }
+
+    }
+
+
+    @media
+      (min-width:1025px)
+      and
+      (max-width:1240px) {
+
+      .tfe-fresh-main {
+
+        width:
+          min(
+            1160px,
+            calc(100% - 54px)
+          );
+
+        gap:
+          34px;
+      }
+
+
+      .tfe-mini-poster {
+
+        width:
+          270px;
+
+        height:
+          480px;
+      }
+
+
+      .tfe-speaker-grid {
+
+        gap:
+          30px 16px;
+      }
+
+
+      .tfe-photo {
+
+        width:
+          124px;
+
+        height:
+          124px;
+      }
+
+
+      .tfe-speaker-card h3 {
+
+        font-size:
+          1rem;
+      }
+
+
+      .short-title {
+
+        max-width:
+          150px;
+
+        font-size:
+          .7rem;
+      }
+
+    }
+
 
     /* =========================================================
        TABLET
        ========================================================= */
 
-    @media (
-      min-width: 768px
-    ) and (
-      max-width: 1024px
-    ) {
-
-      .tfe-fresh-section {
-        padding:
-          30px 0 24px;
-      }
+    @media
+      (min-width:768px)
+      and
+      (max-width:1024px) {
 
       .tfe-fresh-main {
+
         width:
-          min(920px, calc(100% - 28px));
+          min(
+            920px,
+            calc(100% - 28px)
+          );
 
         grid-template-columns:
           1fr;
@@ -2314,9 +2823,11 @@
           42px;
       }
 
+
       .tfe-mini-poster {
+
         width:
-          min(292px, 88vw);
+          min(292px,88vw);
 
         height:
           auto;
@@ -2325,7 +2836,9 @@
           9 / 16;
       }
 
+
       .tfe-speaker-grid {
+
         max-width:
           820px;
 
@@ -2336,38 +2849,45 @@
           32px 22px;
       }
 
+
       .tfe-speaker-card {
+
         flex:
           0 1 calc((100% - 44px) / 3);
       }
+
     }
 
-    @media (
-      max-width: 860px
-    ) and (
-      min-width: 768px
-    ) {
+
+    @media
+      (min-width:768px)
+      and
+      (max-width:860px) {
 
       .tfe-speaker-card {
+
         flex-basis:
           calc((100% - 24px) / 2);
       }
+
     }
+
 
     /* =========================================================
        MOBILE
        ========================================================= */
 
-    @media (
-      max-width: 767px
-    ) {
+    @media (max-width:767px) {
 
       .tfe-fresh-section {
+
         padding:
           0 0 20px;
       }
 
+
       .tfe-fresh-main {
+
         width:
           100%;
 
@@ -2381,9 +2901,11 @@
           0 14px;
       }
 
+
       .tfe-mini-poster {
+
         width:
-          min(72vw, 276px);
+          min(72vw,276px);
 
         height:
           auto;
@@ -2395,12 +2917,16 @@
           24px 20px;
       }
 
+
       .tfe-poster-logos {
+
         height:
           76px;
       }
 
+
       .tfe-logo-slot-one {
+
         width:
           92px;
 
@@ -2408,7 +2934,9 @@
           92px;
       }
 
+
       .tfe-logo-slot-two {
+
         width:
           118px;
 
@@ -2419,14 +2947,18 @@
           34px;
       }
 
+
       .tfe-poster-year {
+
         font-size:
-          clamp(82px, 23vw, 94px);
+          clamp(82px,23vw,94px);
       }
 
+
       .tfe-poster-title {
+
         font-size:
-          clamp(37px, 10.6vw, 44px);
+          clamp(37px,10.6vw,44px);
 
         line-height:
           1.08;
@@ -2435,7 +2967,9 @@
           .105em;
       }
 
+
       .tfe-speaker-kicker {
+
         margin-bottom:
           28px;
 
@@ -2444,47 +2978,81 @@
 
         font-size:
           .68rem;
-
-        letter-spacing:
-          .12em;
       }
 
+
       .tfe-speaker-grid {
+
         gap:
           28px 14px;
       }
 
+
       .tfe-speaker-card {
+
         flex:
           0 1 calc(50% - 8px);
       }
 
+
       .tfe-speaker-card:hover,
       .tfe-speaker-card.is-open {
+
         transform:
+          none;
+
+        z-index:
+          10000;
+      }
+
+
+      .tfe-speaker-card.is-open:before {
+
+        content:
+          "";
+
+        position:
+          fixed;
+
+        inset:
+          0;
+
+        background:
+          rgba(0,0,0,.46);
+
+        z-index:
+          9998;
+
+        pointer-events:
           none;
       }
 
+
       .tfe-photo {
+
         width:
-          min(122px, 76%);
+          min(122px,76%);
 
         height:
           auto;
 
         aspect-ratio:
-          1 / 1;
+          1;
 
         margin-bottom:
           12px;
       }
 
+
       .tfe-speaker-card h3 {
+
         font-size:
           1rem;
       }
 
+
       .short-title {
+
         max-width:
           145px;
 
@@ -2492,9 +3060,13 @@
           .7rem;
       }
 
-      /* MOBILE BIO POPUP */
+
+      /* -------------------------------------------------------
+         ORIGINAL MOBILE POPUP POSITIONING
+         ------------------------------------------------------- */
 
       .speaker-details {
+
         position:
           fixed !important;
 
@@ -2502,43 +3074,86 @@
           50vw !important;
 
         top:
-          50% !important;
+          var(
+            --tfe-speaker-card-top,
+            50vh
+          ) !important;
 
         width:
-          min(340px, calc(100vw - 32px));
+          min(
+            340px,
+            calc(100vw - 32px)
+          );
 
         max-height:
-          min(58vh, 360px);
+          min(
+            58vh,
+            360px
+          );
 
         overflow-y:
           auto;
 
+        -webkit-overflow-scrolling:
+          touch;
+
+        padding:
+          18px;
+
         z-index:
           9999;
+
+        border-radius:
+          18px;
 
         text-align:
           left;
 
         transform:
-          translate(-50%, -50%)
+          translateX(-50%)
           scale(.98) !important;
+
+        scrollbar-width:
+          none;
       }
 
-      .speaker-details::before {
+
+      .speaker-details::-webkit-scrollbar {
+
         display:
           none;
       }
 
+
+      .speaker-details:before {
+
+        display:
+          none;
+      }
+
+
+      .speaker-details p {
+
+        font-size:
+          .76rem;
+      }
+
+
       .tfe-speaker-card:hover .speaker-details,
       .tfe-speaker-card.is-open .speaker-details {
+
         transform:
-          translate(-50%, -50%)
+          translateX(-50%)
           scale(1) !important;
       }
 
-      /* MOBILE EXPLORER */
+
+      /* -------------------------------------------------------
+         MOBILE EXPLORER
+         ------------------------------------------------------- */
 
       .tfe-speaker-explorer {
+
         max-width:
           100%;
 
@@ -2546,7 +3161,9 @@
           0 2px;
       }
 
+
       .tfe-featured-shell {
+
         grid-template-columns:
           1fr;
 
@@ -2557,7 +3174,9 @@
           relative;
       }
 
+
       .tfe-featured-card {
+
         min-height:
           0;
 
@@ -2574,22 +3193,34 @@
           22px;
       }
 
+
       .tfe-featured-photo {
+
         max-width:
           190px;
       }
 
+
       .tfe-featured-content {
+
         text-align:
           center;
       }
 
+
       .tfe-featured-name {
+
         font-size:
-          clamp(1.72rem, 8.5vw, 2.2rem);
+          clamp(
+            1.72rem,
+            8.5vw,
+            2.2rem
+          );
       }
 
+
       .tfe-featured-title {
+
         max-width:
           290px;
 
@@ -2600,12 +3231,16 @@
           .8rem;
       }
 
+
       .tfe-featured-divider {
+
         margin:
           16px auto;
       }
 
+
       .tfe-featured-bio {
+
         max-height:
           210px;
 
@@ -2622,8 +3257,10 @@
           1.58;
       }
 
+
       .tfe-featured-prev,
       .tfe-featured-next {
+
         position:
           absolute;
 
@@ -2640,17 +3277,23 @@
           38px;
       }
 
+
       .tfe-featured-prev {
+
         left:
           8px;
       }
 
+
       .tfe-featured-next {
+
         right:
           8px;
       }
 
+
       .tfe-thumb-window {
+
         grid-template-columns:
           30px minmax(0,1fr) 30px;
 
@@ -2658,7 +3301,9 @@
           5px;
       }
 
+
       .tfe-thumb-scroll {
+
         width:
           30px;
 
@@ -2666,12 +3311,16 @@
           30px;
       }
 
+
       .tfe-thumb-strip {
+
         gap:
           9px;
       }
 
+
       .tfe-thumb-item {
+
         flex-basis:
           66px;
 
@@ -2679,7 +3328,9 @@
           66px;
       }
 
+
       .tfe-thumb-photo {
+
         width:
           56px;
 
@@ -2687,11 +3338,15 @@
           56px;
       }
 
-      /* MOBILE CTA */
+
+      /* -------------------------------------------------------
+         MOBILE CTA
+         ------------------------------------------------------- */
 
       .tfe-action-row {
+
         width:
-          min(100%, 360px);
+          min(100%,360px);
 
         display:
           grid;
@@ -2709,7 +3364,9 @@
           0 10px;
       }
 
+
       .tfe-action-btn.primary {
+
         width:
           100%;
 
@@ -2717,7 +3374,9 @@
           310px;
       }
 
+
       .tfe-know-more-btn {
+
         position:
           static;
 
@@ -2742,30 +3401,32 @@
         font-size:
           .67rem;
       }
+
     }
 
-    /* ---------------------------------------------------------
-       REDUCED MOTION
-       --------------------------------------------------------- */
 
-    @media (
-      prefers-reduced-motion: reduce
-    ) {
+    @media (prefers-reduced-motion:reduce) {
 
       .tfe-loader-ring {
+
         animation:
           none !important;
       }
 
+
       .tfe-fresh-section * {
+
         scroll-behavior:
           auto !important;
       }
+
     }
 
   `;
 
+
   root.appendChild(style);
+
 
   /* =========================================================
      ELEMENT REFERENCES
@@ -2776,157 +3437,230 @@
       ".tfe-fresh-section"
     );
 
+
   const cards = [
     ...root.querySelectorAll(
       ".tfe-speaker-card:not(.tfe-hidden-speaker)"
     )
   ];
 
+
+  const mobile =
+    window.matchMedia(
+      "(max-width:767px)"
+    );
+
+
   const explorer =
     root.querySelector(
       ".tfe-speaker-explorer"
     );
+
 
   const knowMoreBtn =
     root.querySelector(
       ".tfe-know-more-btn"
     );
 
+
   const backBtn =
     root.querySelector(
       ".tfe-explorer-back"
     );
+
 
   const prevBtn =
     root.querySelector(
       ".tfe-featured-prev"
     );
 
+
   const nextBtn =
     root.querySelector(
       ".tfe-featured-next"
     );
+
 
   const thumbLeft =
     root.querySelector(
       ".tfe-thumb-scroll-left"
     );
 
+
   const thumbRight =
     root.querySelector(
       ".tfe-thumb-scroll-right"
     );
+
 
   const thumbStrip =
     root.querySelector(
       ".tfe-thumb-strip"
     );
 
+
   const featuredImg =
     root.querySelector(
       ".tfe-featured-img"
     );
+
 
   const featuredName =
     root.querySelector(
       ".tfe-featured-name"
     );
 
+
   const featuredTitle =
     root.querySelector(
       ".tfe-featured-title"
     );
+
 
   const featuredBio =
     root.querySelector(
       ".tfe-featured-bio"
     );
 
+
   const counter =
     root.querySelector(
       ".tfe-explorer-counter"
     );
 
-  let explorerIndex =
-    0;
-
-  let biosLoaded =
-    false;
-
-  let biosPromise =
-    null;
 
   /* =========================================================
-     LOADING HELPERS
+     LOADING
      ========================================================= */
 
-  function wait(ms) {
-    return new Promise(
-      resolve =>
-        setTimeout(resolve, ms)
-    );
-  }
+  const wait =
+    ms =>
+      new Promise(
+        resolve =>
+          setTimeout(
+            resolve,
+            ms
+          )
+      );
+
 
   function imageReady(img) {
-    return new Promise(resolve => {
 
-      if (
-        !img ||
-        (
-          img.complete &&
-          img.naturalWidth
-        )
-      ) {
-        resolve();
-        return;
-      }
+    return new Promise(
+      resolve => {
 
-      const done =
-        () => resolve();
+        if (
+          !img ||
+          (
+            img.complete &&
+            img.naturalWidth
+          )
+        ) {
 
-      img.addEventListener(
-        "load",
-        done,
-        { once: true }
-      );
+          resolve();
 
-      img.addEventListener(
-        "error",
-        done,
-        { once: true }
-      );
-    });
-  }
+          return;
+        }
 
-  function unlockSection() {
 
-    section.classList.remove(
-      "tfe-is-loading"
-    );
+        const done =
+          () =>
+            resolve();
 
-    section.classList.add(
-      "tfe-is-ready"
-    );
 
-    section.setAttribute(
-      "aria-busy",
-      "false"
-    );
-
-    setTimeout(() => {
-
-      const loader =
-        root.querySelector(
-          ".tfe-section-loader"
+        img.addEventListener(
+          "load",
+          done,
+          {
+            once: true
+          }
         );
 
-      if (loader) {
-        loader.style.display =
-          "none";
-      }
 
-    }, 700);
+        img.addEventListener(
+          "error",
+          done,
+          {
+            once: true
+          }
+        );
+
+      }
+    );
+
   }
+
+
+  function measureAndLockSectionHeight() {
+
+    if (
+      !section.classList.contains(
+        "tfe-is-ready"
+      )
+    ) {
+
+      return;
+    }
+
+
+    section.style.height =
+      "auto";
+
+
+    section.style.minHeight =
+      "0";
+
+
+    section.style.maxHeight =
+      "none";
+
+
+    section.style.overflow =
+      "visible";
+
+
+    requestAnimationFrame(
+      () => {
+
+        let height =
+          Math.ceil(
+            section.scrollHeight
+          );
+
+
+        if (
+          height < 600
+        ) {
+
+          height =
+            600;
+        }
+
+
+        section.style.height =
+          "auto";
+
+
+        section.style.minHeight =
+          `${height}px`;
+
+
+        section.style.maxHeight =
+          "none";
+
+
+        section.style.overflow =
+          "visible";
+
+
+        sectionHeightLocked =
+          true;
+
+      }
+    );
+
+  }
+
 
   async function revealWhenReady() {
 
@@ -2935,6 +3669,7 @@
         ".tfe-poster-logos img, .tfe-speaker-card:nth-child(-n+5) img"
       )
     ];
+
 
     await Promise.all([
 
@@ -2954,13 +3689,673 @@
 
     ]);
 
-    unlockSection();
+
+    section.classList.remove(
+      "tfe-is-loading"
+    );
+
+
+    section.classList.add(
+      "tfe-is-ready"
+    );
+
+
+    section.setAttribute(
+      "aria-busy",
+      "false"
+    );
+
+
+    measureAndLockSectionHeight();
+
+
+    setTimeout(
+      measureAndLockSectionHeight,
+      650
+    );
+
+
+    setTimeout(
+      () => {
+
+        const loader =
+          root.querySelector(
+            ".tfe-section-loader"
+          );
+
+
+        if (
+          loader
+        ) {
+
+          loader.style.display =
+            "none";
+        }
+
+      },
+      700
+    );
+
 
     scheduleBioHydration();
+
   }
 
+
   /* =========================================================
-     BIOGRAPHY DATA
+     ORIGINAL SPEAKER POPUP LOGIC
+     ========================================================= */
+
+  function reset(card) {
+
+    card.classList.remove(
+      "is-open"
+    );
+
+
+    card.style.removeProperty(
+      "--tfe-speaker-card-top"
+    );
+
+
+    const details =
+      card.querySelector(
+        ".speaker-details"
+      );
+
+
+    if (
+      details
+    ) {
+
+      details.style.setProperty(
+        "--tfe-popover-shift",
+        "0px"
+      );
+    }
+
+  }
+
+
+  function closeOthers(active) {
+
+    cards.forEach(
+      card => {
+
+        if (
+          card !== active
+        ) {
+
+          reset(card);
+        }
+
+      }
+    );
+
+  }
+
+
+  /* ---------------------------------------------------------
+     MOBILE POPUP POSITION
+     --------------------------------------------------------- */
+
+  function setMobileTop(card) {
+
+    if (
+      !mobile.matches
+    ) {
+
+      return;
+    }
+
+
+    const details =
+      card.querySelector(
+        ".speaker-details"
+      );
+
+
+    const rect =
+      card.getBoundingClientRect();
+
+
+    const height =
+      details
+
+        ? Math.min(
+            details.scrollHeight || 260,
+            Math.round(
+              window.innerHeight * .58
+            )
+          )
+
+        : 260;
+
+
+    const top =
+      Math.min(
+
+        rect.bottom + 12,
+
+        window.innerHeight -
+        height -
+        16
+      );
+
+
+    card.style.setProperty(
+
+      "--tfe-speaker-card-top",
+
+      `${Math.max(
+        16,
+        top
+      )}px`
+    );
+
+  }
+
+
+  /* ---------------------------------------------------------
+     KEEP DESKTOP POPOVER INSIDE SCREEN
+     --------------------------------------------------------- */
+
+  function keepInside(card) {
+
+    if (
+      mobile.matches
+    ) {
+
+      return;
+    }
+
+
+    const details =
+      card.querySelector(
+        ".speaker-details"
+      );
+
+
+    if (
+      !details
+    ) {
+
+      return;
+    }
+
+
+    details.style.setProperty(
+      "--tfe-popover-shift",
+      "0px"
+    );
+
+
+    /*
+     * Right-most cards already use dedicated
+     * right alignment.
+     */
+
+    if (
+      card.classList.contains(
+        "tfe-popover-right"
+      )
+    ) {
+
+      return;
+    }
+
+
+    requestAnimationFrame(
+      () => {
+
+        const rect =
+          details.getBoundingClientRect();
+
+
+        const gap =
+          16;
+
+
+        let shift =
+          0;
+
+
+        if (
+          rect.left < gap
+        ) {
+
+          shift +=
+            gap -
+            rect.left;
+        }
+
+
+        if (
+          rect.right >
+          window.innerWidth -
+          gap
+        ) {
+
+          shift -=
+            rect.right -
+            (
+              window.innerWidth -
+              gap
+            );
+        }
+
+
+        details.style.setProperty(
+
+          "--tfe-popover-shift",
+
+          `${Math.round(
+            shift
+          )}px`
+        );
+
+      }
+    );
+
+  }
+
+
+  /* ---------------------------------------------------------
+     DETECT BOTTOM ROW + RIGHT EDGE
+     --------------------------------------------------------- */
+
+  function markBottomRow() {
+
+    if (
+      mobile.matches
+    ) {
+
+      cards.forEach(
+        card => {
+
+          card.classList.remove(
+            "tfe-popover-up",
+            "tfe-popover-right"
+          );
+
+
+          card.style.removeProperty(
+            "--tfe-card-half"
+          );
+
+        }
+      );
+
+
+      return;
+    }
+
+
+    const rowGap =
+      14;
+
+
+    const rows =
+      [];
+
+
+    cards.forEach(
+      card => {
+
+        const rect =
+          card.getBoundingClientRect();
+
+
+        if (
+          rect.width <= 0 ||
+          rect.height <= 0
+        ) {
+
+          return;
+        }
+
+
+        card.style.setProperty(
+
+          "--tfe-card-half",
+
+          `${Math.round(
+            rect.width / 2
+          )}px`
+        );
+
+
+        const top =
+          Math.round(
+            rect.top
+          );
+
+
+        let row =
+          rows.find(
+            current =>
+              Math.abs(
+                current.top -
+                top
+              ) <= rowGap
+          );
+
+
+        if (
+          !row
+        ) {
+
+          row = {
+            top,
+            items: []
+          };
+
+
+          rows.push(
+            row
+          );
+        }
+
+
+        row.items.push({
+          card,
+          rect
+        });
+
+
+        row.top =
+          Math.min(
+            row.top,
+            top
+          );
+
+      }
+    );
+
+
+    if (
+      !rows.length
+    ) {
+
+      return;
+    }
+
+
+    const lastRowTop =
+      Math.max(
+        ...rows.map(
+          row =>
+            row.top
+        )
+      );
+
+
+    rows.forEach(
+      row => {
+
+        const rightMost =
+          row.items.reduce(
+            (best,item) =>
+
+              !best ||
+              item.rect.right >
+              best.rect.right
+
+                ? item
+
+                : best,
+
+            null
+          );
+
+
+        row.items.forEach(
+          item => {
+
+            item.card.classList.toggle(
+
+              "tfe-popover-up",
+
+              row.top >=
+              lastRowTop -
+              rowGap
+            );
+
+
+            item.card.classList.toggle(
+
+              "tfe-popover-right",
+
+              Boolean(
+                rightMost
+              ) &&
+              item.card ===
+              rightMost.card
+            );
+
+          }
+        );
+
+      }
+    );
+
+  }
+
+
+  /* ---------------------------------------------------------
+     CARD EVENTS
+     --------------------------------------------------------- */
+
+  cards.forEach(
+    card => {
+
+
+      card.addEventListener(
+        "mouseenter",
+        () => {
+
+          markBottomRow();
+
+          keepInside(
+            card
+          );
+
+          ensureBio(
+            card.dataset.speakerId
+          );
+
+        }
+      );
+
+
+      card.addEventListener(
+        "mouseleave",
+        () => {
+
+          if (
+            !card.classList.contains(
+              "is-open"
+            )
+          ) {
+
+            keepInside(
+              card
+            );
+          }
+
+        }
+      );
+
+
+      card.addEventListener(
+        "click",
+        event => {
+
+          event.stopPropagation();
+
+
+          const open =
+            !card.classList.contains(
+              "is-open"
+            );
+
+
+          closeOthers(
+            card
+          );
+
+
+          card.classList.toggle(
+            "is-open",
+            open
+          );
+
+
+          if (
+            open
+          ) {
+
+            markBottomRow();
+
+
+            setMobileTop(
+              card
+            );
+
+
+            keepInside(
+              card
+            );
+
+
+            ensureBio(
+              card.dataset.speakerId
+            );
+          }
+
+        }
+      );
+
+    }
+  );
+
+
+  /* ---------------------------------------------------------
+     CLOSE POPUP WHEN CLICKING OUTSIDE
+     --------------------------------------------------------- */
+
+  document.addEventListener(
+    "click",
+    event => {
+
+      if (
+        !event.target.closest(
+          ".tfe-speaker-card"
+        )
+      ) {
+
+        cards.forEach(
+          reset
+        );
+      }
+
+    }
+  );
+
+
+  /* ---------------------------------------------------------
+     MOBILE: CLOSE POPUP ON PAGE SCROLL
+     --------------------------------------------------------- */
+
+  window.addEventListener(
+    "scroll",
+    () => {
+
+      const open =
+        section.querySelector(
+          ".tfe-speaker-card.is-open"
+        );
+
+
+      if (
+        open &&
+        mobile.matches
+      ) {
+
+        reset(
+          open
+        );
+      }
+
+    },
+    {
+      passive: true
+    }
+  );
+
+
+  /* ---------------------------------------------------------
+     RESIZE
+     --------------------------------------------------------- */
+
+  let resizeTimer =
+    null;
+
+
+  window.addEventListener(
+    "resize",
+    () => {
+
+      clearTimeout(
+        resizeTimer
+      );
+
+
+      resizeTimer =
+        setTimeout(
+          () => {
+
+            markBottomRow();
+
+
+            const open =
+              section.querySelector(
+                ".tfe-speaker-card.is-open"
+              );
+
+
+            if (
+              open
+            ) {
+
+              setMobileTop(
+                open
+              );
+
+
+              keepInside(
+                open
+              );
+            }
+
+
+            if (
+              sectionHeightLocked
+            ) {
+
+              measureAndLockSectionHeight();
+            }
+
+          },
+          120
+        );
+
+    }
+  );
+
+
+  /* =========================================================
+     SPEAKER BIOGRAPHIES
      ========================================================= */
 
   function isPlaceholder(text) {
@@ -2970,90 +4365,124 @@
         text || ""
       ).trim();
 
+
     return (
+
       !value ||
+
       value ===
         "Profile details loading…" ||
+
       value ===
         "Loading profile…" ||
+
       value ===
         "Visit Speaker Page for more details."
+
     );
+
   }
 
-  function applyBioToCards() {
 
-    cards.forEach(card => {
+  function applyBios() {
 
-      const id =
-        card.dataset.speakerId;
+    cards.forEach(
+      card => {
 
-      const bioNode =
-        card.querySelector(
-          ".tfe-speaker-bio"
-        );
+        const id =
+          card.dataset.speakerId;
 
-      const bio =
-        bioMap[id];
 
-      if (!bioNode) {
-        return;
+        const node =
+          card.querySelector(
+            ".tfe-speaker-bio"
+          );
+
+
+        if (
+          !node
+        ) {
+
+          return;
+        }
+
+
+        if (
+          bioMap[id]
+        ) {
+
+          node.textContent =
+            bioMap[id];
+
+        } else if (
+          isPlaceholder(
+            node.textContent
+          )
+        ) {
+
+          node.textContent =
+            "Visit Speaker Page for more details.";
+        }
+
       }
+    );
 
-      if (bio) {
-
-        bioNode.textContent =
-          bio;
-
-      } else if (
-        isPlaceholder(
-          bioNode.textContent
-        )
-      ) {
-
-        bioNode.textContent =
-          "Visit Speaker Page for more details.";
-      }
-    });
 
     if (
       section.classList.contains(
         "tfe-explorer-open"
       )
     ) {
+
       renderExplorer();
     }
+
+
+    measureAndLockSectionHeight();
+
   }
+
 
   function loadBios(
     forceFresh = false
   ) {
 
-    if (forceFresh) {
+    if (
+      forceFresh
+    ) {
 
       biosLoaded =
         false;
+
 
       biosPromise =
         null;
     }
 
-    if (biosLoaded) {
+
+    if (
+      biosLoaded
+    ) {
+
       return Promise.resolve(
         bioMap
       );
     }
 
-    if (biosPromise) {
+
+    if (
+      biosPromise
+    ) {
+
       return biosPromise;
     }
 
-    const url =
-      `${BIO_URL}?v=${Date.now()}`;
 
     biosPromise =
       fetch(
-        url,
+
+        `${BIO_URL}?v=${Date.now()}`,
+
         {
           cache:
             "no-store",
@@ -3063,62 +4492,89 @@
         }
       )
 
-      .then(response => {
-
-        if (!response.ok) {
-          throw new Error(
-            `HTTP ${response.status}`
-          );
-        }
-
-        return response.json();
-      })
-
-      .then(data => {
-
-        (
-          data.speakers || []
-        ).forEach(item => {
+      .then(
+        response => {
 
           if (
-            item &&
-            item.id
+            !response.ok
           ) {
 
-            bioMap[item.id] =
-              item.bio || "";
+            throw new Error(
+              `HTTP ${response.status}`
+            );
           }
 
-        });
 
-        biosLoaded =
-          true;
+          return response.json();
 
-        biosPromise =
-          null;
+        }
+      )
 
-        applyBioToCards();
+      .then(
+        data => {
 
-        return bioMap;
-      })
+          (
+            data.speakers || []
+          ).forEach(
+            speaker => {
 
-      .catch(error => {
+              if (
+                speaker &&
+                speaker.id
+              ) {
 
-        biosPromise =
-          null;
+                bioMap[
+                  speaker.id
+                ] =
+                  speaker.bio || "";
+              }
 
-        console.warn(
-          "Speaker bios could not be loaded:",
-          error
-        );
+            }
+          );
 
-        applyBioToCards();
 
-        return bioMap;
-      });
+          biosLoaded =
+            true;
+
+
+          biosPromise =
+            null;
+
+
+          applyBios();
+
+
+          return bioMap;
+
+        }
+      )
+
+      .catch(
+        error => {
+
+          biosPromise =
+            null;
+
+
+          console.warn(
+            "Speaker bios could not be loaded:",
+            error
+          );
+
+
+          applyBios();
+
+
+          return bioMap;
+
+        }
+      );
+
 
     return biosPromise;
+
   }
+
 
   function ensureBio(id) {
 
@@ -3131,12 +4587,59 @@
       );
     }
 
+
+    const card =
+      cards.find(
+        current =>
+          current.dataset.speakerId ===
+          id
+      );
+
+
+    const node =
+      card &&
+      card.querySelector(
+        ".tfe-speaker-bio"
+      );
+
+
+    if (
+      node &&
+      isPlaceholder(
+        node.textContent
+      )
+    ) {
+
+      node.textContent =
+        "Loading profile…";
+    }
+
+
     return loadBios()
       .then(
-        () =>
-          bioMap[id] || ""
+        () => {
+
+          if (
+            card &&
+            node
+          ) {
+
+            node.textContent =
+              bioMap[id] ||
+              "Visit Speaker Page for more details.";
+          }
+
+
+          return (
+            bioMap[id] ||
+            ""
+          );
+
+        }
       );
+
   }
+
 
   function scheduleBioHydration() {
 
@@ -3146,8 +4649,10 @@
     ) {
 
       requestIdleCallback(
+
         () =>
           loadBios(),
+
         {
           timeout:
             4500
@@ -3159,162 +4664,32 @@
       setTimeout(
         () =>
           loadBios(),
-        2500
+        3200
       );
     }
+
   }
 
-  /* =========================================================
-     STANDARD GRID CARD INTERACTION
-     ========================================================= */
 
-  function closeCards(
-    except = null
-  ) {
-
-    cards.forEach(card => {
-
-      if (
-        card !== except
-      ) {
-        card.classList.remove(
-          "is-open"
-        );
-      }
-
-    });
-  }
-
-  function keepPopoverInsideViewport(
-    card
-  ) {
-
-    if (
-      window.innerWidth <= 767
-    ) {
-      return;
-    }
-
-    const details =
-      card.querySelector(
-        ".speaker-details"
-      );
-
-    if (!details) {
-      return;
-    }
-
-    details.style.setProperty(
-      "--shift",
-      "0px"
-    );
-
-    requestAnimationFrame(() => {
-
-      const rect =
-        details.getBoundingClientRect();
-
-      const gap =
-        16;
-
-      let shift =
-        0;
-
-      if (
-        rect.left < gap
-      ) {
-
-        shift +=
-          gap -
-          rect.left;
-      }
-
-      if (
-        rect.right >
-        window.innerWidth -
-        gap
-      ) {
-
-        shift -=
-          rect.right -
-          (
-            window.innerWidth -
-            gap
-          );
-      }
-
-      details.style.setProperty(
-        "--shift",
-        `${Math.round(shift)}px`
-      );
-    });
-  }
-
-  cards.forEach(card => {
-
-    card.addEventListener(
-      "mouseenter",
-      () => {
-
-        ensureBio(
-          card.dataset.speakerId
-        );
-
-        keepPopoverInsideViewport(
-          card
-        );
-      }
-    );
-
-    card.addEventListener(
-      "click",
-      event => {
-
-        event.stopPropagation();
-
-        const opening =
-          !card.classList.contains(
-            "is-open"
-          );
-
-        closeCards(card);
-
-        card.classList.toggle(
-          "is-open",
-          opening
-        );
-
-        if (opening) {
-
-          ensureBio(
-            card.dataset.speakerId
-          );
-
-          keepPopoverInsideViewport(
-            card
-          );
-        }
-      }
-    );
-  });
-
-  document.addEventListener(
-    "click",
+  window.addEventListener(
+    "pageshow",
     event => {
 
       if (
-        !event.target.closest(
-          ".tfe-speaker-card"
-        )
+        event.persisted
       ) {
 
-        closeCards();
+        loadBios(
+          true
+        );
       }
+
     }
   );
 
+
   /* =========================================================
-     BUILD EXPLORER THUMBNAILS
+     SPEAKER EXPLORER
      ========================================================= */
 
   function buildThumbs() {
@@ -3322,34 +4697,45 @@
     if (
       thumbStrip.children.length
     ) {
+
       return;
     }
 
+
     activeSpeakers.forEach(
-      (speaker, index) => {
+      (
+        speaker,
+        index
+      ) => {
 
         const button =
           document.createElement(
             "button"
           );
 
+
         button.type =
           "button";
 
+
         button.className =
           "tfe-thumb-item";
+
 
         button.setAttribute(
           "role",
           "option"
         );
 
+
         button.setAttribute(
           "aria-label",
           `View ${speaker.name}`
         );
 
+
         button.innerHTML = `
+
           <div class="tfe-thumb-photo">
 
             <img
@@ -3363,31 +4749,34 @@
           </div>
 
           <span>
-            ${escapeHTML(
+            ${esc(
               speaker.name
             )}
           </span>
+
         `;
+
 
         button.addEventListener(
           "click",
           () =>
+
             showSpeaker(
               index,
               true
             )
         );
 
+
         thumbStrip.appendChild(
           button
         );
+
       }
     );
+
   }
 
-  /* =========================================================
-     RENDER FEATURED SPEAKER
-     ========================================================= */
 
   function renderExplorer() {
 
@@ -3396,30 +4785,44 @@
         explorerIndex
       ];
 
-    if (!speaker) {
+
+    if (
+      !speaker
+    ) {
+
       return;
     }
+
 
     featuredImg.src =
       speaker.image;
 
+
     featuredImg.alt =
       speaker.name;
+
 
     featuredName.textContent =
       speaker.name;
 
+
     featuredTitle.textContent =
       speaker.title;
 
+
     featuredBio.textContent =
-      bioMap[speaker.id] ||
+      bioMap[
+        speaker.id
+      ] ||
       "Profile details loading…";
+
 
     featuredBio.scrollTop =
       0;
 
+
     counter.textContent =
+
       `${String(
         explorerIndex + 1
       ).padStart(
@@ -3432,23 +4835,27 @@
         "0"
       )}`;
 
-    const thumbs = [
+
+    [
       ...thumbStrip.querySelectorAll(
         ".tfe-thumb-item"
       )
-    ];
-
-    thumbs.forEach(
-      (button, index) => {
+    ].forEach(
+      (
+        button,
+        index
+      ) => {
 
         const active =
           index ===
           explorerIndex;
 
+
         button.classList.toggle(
           "is-active",
           active
         );
+
 
         button.setAttribute(
           "aria-selected",
@@ -3457,9 +4864,14 @@
             : "false"
         );
 
-        if (active) {
+
+        if (
+          active &&
+          button.scrollIntoView
+        ) {
 
           button.scrollIntoView({
+
             behavior:
               "smooth",
 
@@ -3470,13 +4882,12 @@
               "center"
           });
         }
+
       }
     );
+
   }
 
-  /* =========================================================
-     CHANGE SPEAKER
-     ========================================================= */
 
   function showSpeaker(
     index,
@@ -3492,6 +4903,7 @@
         1;
     }
 
+
     if (
       index >=
       activeSpeakers.length
@@ -3501,30 +4913,35 @@
         0;
     }
 
+
     explorerIndex =
       index;
 
+
     renderExplorer();
 
-    const speaker =
-      activeSpeakers[
-        explorerIndex
-      ];
 
     ensureBio(
-      speaker.id
+      activeSpeakers[
+        index
+      ].id
     )
-      .then(() => {
 
-        if (
-          section.classList.contains(
-            "tfe-explorer-open"
-          )
-        ) {
+      .then(
+        () => {
 
-          renderExplorer();
+          if (
+            section.classList.contains(
+              "tfe-explorer-open"
+            )
+          ) {
+
+            renderExplorer();
+          }
+
         }
-      });
+      );
+
 
     if (
       focusName
@@ -3535,53 +4952,62 @@
         "-1"
       );
 
+
       featuredName.focus({
         preventScroll:
           true
       });
     }
+
   }
 
-  /* =========================================================
-     OPEN EXPLORER
-     ========================================================= */
 
   function openExplorer() {
 
     buildThumbs();
 
-    closeCards();
+
+    cards.forEach(
+      reset
+    );
+
 
     section.classList.add(
       "tfe-explorer-open"
     );
+
 
     explorer.setAttribute(
       "aria-hidden",
       "false"
     );
 
+
     showSpeaker(
       explorerIndex
     );
+
+
+    measureAndLockSectionHeight();
+
 
     requestAnimationFrame(
       () => {
 
         explorer.scrollIntoView({
+
           behavior:
             "smooth",
 
           block:
             "nearest"
         });
+
       }
     );
+
   }
 
-  /* =========================================================
-     CLOSE EXPLORER
-     ========================================================= */
 
   function closeExplorer() {
 
@@ -3589,10 +5015,15 @@
       "tfe-explorer-open"
     );
 
+
     explorer.setAttribute(
       "aria-hidden",
       "true"
     );
+
+
+    measureAndLockSectionHeight();
+
 
     requestAnimationFrame(
       () => {
@@ -3601,12 +5032,15 @@
           preventScroll:
             true
         });
+
       }
     );
+
   }
 
+
   /* =========================================================
-     EXPLORER BUTTONS
+     EXPLORER BUTTON EVENTS
      ========================================================= */
 
   knowMoreBtn.addEventListener(
@@ -3614,26 +5048,32 @@
     openExplorer
   );
 
+
   backBtn.addEventListener(
     "click",
     closeExplorer
   );
 
+
   prevBtn.addEventListener(
     "click",
     () =>
+
       showSpeaker(
         explorerIndex - 1
       )
   );
 
+
   nextBtn.addEventListener(
     "click",
     () =>
+
       showSpeaker(
         explorerIndex + 1
       )
   );
+
 
   thumbLeft.addEventListener(
     "click",
@@ -3651,8 +5091,10 @@
         behavior:
           "smooth"
       });
+
     }
   );
+
 
   thumbRight.addEventListener(
     "click",
@@ -3670,11 +5112,13 @@
         behavior:
           "smooth"
       });
+
     }
   );
 
+
   /* =========================================================
-     KEYBOARD CONTROLS
+     KEYBOARD NAVIGATION
      ========================================================= */
 
   section.addEventListener(
@@ -3686,8 +5130,10 @@
           "tfe-explorer-open"
         )
       ) {
+
         return;
       }
+
 
       if (
         event.key ===
@@ -3696,81 +5142,43 @@
 
         event.preventDefault();
 
+
         showSpeaker(
           explorerIndex - 1
         );
-      }
 
-      if (
+      } else if (
         event.key ===
         "ArrowRight"
       ) {
 
         event.preventDefault();
 
+
         showSpeaker(
           explorerIndex + 1
         );
-      }
 
-      if (
+      } else if (
         event.key ===
         "Escape"
       ) {
 
         event.preventDefault();
 
+
         closeExplorer();
       }
+
     }
   );
 
-  /* =========================================================
-     RESIZE
-     ========================================================= */
-
-  window.addEventListener(
-    "resize",
-    () => {
-
-      const openCard =
-        root.querySelector(
-          ".tfe-speaker-card.is-open"
-        );
-
-      if (
-        openCard
-      ) {
-
-        keepPopoverInsideViewport(
-          openCard
-        );
-      }
-    }
-  );
 
   /* =========================================================
-     BACK / FORWARD CACHE REFRESH
+     START
      ========================================================= */
 
-  window.addEventListener(
-    "pageshow",
-    event => {
-
-      if (
-        event.persisted
-      ) {
-
-        loadBios(
-          true
-        );
-      }
-    }
-  );
-
-  /* =========================================================
-     START COMPONENT
-     ========================================================= */
+  markBottomRow();
 
   revealWhenReady();
 
