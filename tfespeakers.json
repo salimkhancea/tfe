@@ -1,7 +1,12 @@
 {
   "version": "2026-06-25",
   "speakers": [
-
+{
+  "id": "shilpi-chowdhary",
+  "name": "Shilpi Chowdhary",
+  "title": "Group CEO, Lighthouse Canton",
+  "bio": "Shilpi Chowdhary is the Group CEO of Lighthouse Canton — a global investment institution headquartered in Singapore with offices across Dubai, India, and the United Kingdom. He co-founded the firm in 2014 with a conviction that the world's most discerning investors deserved a truly independent, institutional-grade platform that places each client's unique mandate at its centre. Today he drives its vision and strategy across Wealth Management, Asset Management, and Keenai, the firm's full-stack digital private banking and trading platform. With over 25 years of experience guiding UHNI, family offices, and institutions on cross-border wealth structuring and long-term capital stewardship, he brings deep expertise to every dimension of the business. An avid reader and keen student of AI, he closely tracks how artificial intelligence is reshaping investment decision-making and the future of wealth. He holds a Bachelor of Technology in Civil Engineering and a Post Graduate Diploma in Business Management from Symbiosis Centre for Management & HRD."
+},
     {
   "id": "david-clark",
   "name": "David Clark",
