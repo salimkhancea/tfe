@@ -1,12 +1,19 @@
 {
   "version": "2026-06-25",
   "speakers": [
-{
-  "id": "shilpi-chowdhary",
-  "name": "Shilpi Chowdhary",
-  "title": "Group CEO, Lighthouse Canton",
-  "bio": "Shilpi Chowdhary is Group CEO and Co-Founder of Lighthouse Canton, a Singapore-headquartered global investment institution with operations across Dubai, India, and the United Kingdom. He leads the firm's strategy across Wealth Management, Asset Management, and Keenai, its digital private banking and trading platform. With over 25 years of experience advising UHNI, family offices, and institutions, he brings deep expertise in cross-border wealth structuring and long-term capital stewardship. An avid reader and keen student of AI, he closely follows its impact on investment decision-making and the future of wealth."
+    {
+  "id": "visal-leng",
+  "name": "Visal Leng",
+  "title": "Senior Advisor, TPG Global South Initiative and Industrials",
+  "bio": "Visal has more than 28 years of experience in the industrial sector, spanning chemicals, plastics, infrastructure, water management, energy, oil & gas, and building & construction, including more than 15 years leading large P&L businesses. His most recent operating roles include President, Asia Pacific at Baker Hughes GE, a leading energy technology company, and President, Asia Pacific at Johnson Controls, a global leader in smart, sustainable and energy-efficient buildings. In these leadership roles, Visal was responsible for the financial, strategic and operational performance of businesses with more than $3 billion in P&L responsibility. Following his operating career, Visal transitioned to private equity, first with PrimeMovers Equity and more recently with TPG, where he serves as Senior Advisor focused on the Global South climate initiative and the industrial sector. Visal holds a master’s degree in civil engineering from École Spéciale des Travaux Publics (ESTP) in France. Visal is based in Singapore, where he lives with his family."
 },
+{
+  "id": "fiona-geddes",
+  "name": "Fiona Geddes",
+  "title": "Founder, Zenarist",
+  "bio": "Following a successful 30 year corporate career as a global HR leader for companies as diverse as British American Tobacco, Toll Group and TikTok, Fiona established her consultancy firm Zenarist ('balanced excellence'). She now enjoys a thriving portfolio career, bringing value to a range of clients through fractional CHRO roles, strategic advisory, AI solution building, executive coaching and leadership development."
+},
+
     {
   "id": "david-clark",
   "name": "David Clark",
