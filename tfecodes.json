@@ -1,13 +1,13 @@
 {
-  "version": "2026-08-31",
-  "updatedAt": "2026-08-31T10:33:00+05:30",
+  "version": "2026-09-22",
+  "updatedAt": "2026-09-22T20:01:00+05:30",
   "codes": {
     "FRACTBMU15": {
       "codeDisplay": "FractBMU15",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Exclusive Fractional Directory Member Executive Pass",
-      "description": "An exclusive Executive Pass offer available to registered members of the Fractional Directory. Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "An exclusive Executive Pass offer available to registered members of the Fractional Directory. Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive Fractional Directory Member Rate – SGD 599",
@@ -18,9 +18,9 @@
     "NHRDNBMU15": {
       "codeDisplay": "NHRDNBMU15",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Exclusive NHRDN Member Executive Pass",
-      "description": "An exclusive Executive Pass offer available to National HRD Network members. Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "An exclusive Executive Pass offer available to National HRD Network members. Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive NHRDN Member Offer – SGD 599",
@@ -31,9 +31,9 @@
     "ROUNDTABLE45": {
       "codeDisplay": "ROUNDTABLE45",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Exclusive Offer for Roundtable Attendees",
-      "description": "An exclusive Executive Pass offer for participants of the Board Match-Up Roundtable Events. Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "An exclusive Executive Pass offer for participants of the Board Match-Up Roundtable Events. Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive Roundtable Attendee Offer – SGD 599",
@@ -44,9 +44,9 @@
     "SPEAKERGUEST45": {
       "codeDisplay": "SPEAKERGUEST45",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Exclusive Speaker Guest Executive Pass",
-      "description": "For guests personally invited by our speakers. Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "For guests personally invited by our speakers. Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive Speaker Guest Rate – SGD 599",
@@ -77,9 +77,9 @@
     "BMULEADERS45": {
       "codeDisplay": "BMULEADERS45",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Exclusive Board Match-Up Leadership Pass",
-      "description": "An exclusive Executive Pass offer available to guests invited by Board Match-Up Think Tank members, Advisors, and Engagement Directors. Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "An exclusive Executive Pass offer available to guests invited by Board Match-Up Think Tank members, Advisors, and Engagement Directors. Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive Board Match-Up Leadership Rate – SGD 599",
@@ -102,9 +102,9 @@
     "BMUDELEGATE45": {
       "codeDisplay": "BMUDELEGATE45",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Exclusive Strategic Partner Executive Pass",
-      "description": "An exclusive Executive Pass offer available to approved strategic partners and their invited participants. Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "An exclusive Executive Pass offer available to approved strategic partners and their invited participants. Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive Strategic Partner Offer – SGD 599",
@@ -115,9 +115,9 @@
     "BConnected45": {
       "codeDisplay": "BConnected45",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Exclusive B Connected Executive Pass",
-      "description": "An exclusive Executive Pass offer available to members of the B Connecteds. Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "An exclusive Executive Pass offer available to members of the B Connecteds. Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive B Connected Rate – SGD 599",
@@ -128,9 +128,9 @@
     "BMURotary45": {
       "codeDisplay": "BMURotary45",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Exclusive B Connected Executive Pass",
-      "description": "An exclusive Executive Pass offer available to members of the Rotary Club. Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "An exclusive Executive Pass offer available to members of the Rotary Club. Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive Rotary Club Rate – SGD 599",
@@ -141,9 +141,9 @@
     "SIDBMU45": {
       "codeDisplay": "SIDBMU45",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Exclusive SID Member Executive Pass",
-      "description": "An exclusive Executive Pass offer available to members of the Singapore Institute of Directors. Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "An exclusive Executive Pass offer available to members of the Singapore Institute of Directors. Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive SID Member Rate – SGD 599",
@@ -154,9 +154,9 @@
     "SHRMBMU45": {
       "codeDisplay": "SHRMBMU45",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Exclusive SHRM Member Executive Pass",
-      "description": "An exclusive Executive Pass offer available to members of the Society for Human Resource Management (SHRM). Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "An exclusive Executive Pass offer available to members of the Society for Human Resource Management (SHRM). Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive SHRM Member Rate – SGD 599",
@@ -167,9 +167,9 @@
     "VLOOKUP45": {
       "codeDisplay": "VLOOKUP45",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Exclusive vLookUp Member Executive Pass",
-      "description": "An exclusive Executive Pass offer available to members of the vLookUp. Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "An exclusive Executive Pass offer available to members of the vLookUp. Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive vLookUp Member Rate – SGD 599",
@@ -180,9 +180,9 @@
     "NUSBMU45": {
       "codeDisplay": "NUSBMU45",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Exclusive NUS Member Executive Pass",
-      "description": "An exclusive Executive Pass offer available to members of the National University of Singapore (NUS). Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "An exclusive Executive Pass offer available to members of the National University of Singapore (NUS). Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive NUS Member Rate – SGD 599",
@@ -193,9 +193,9 @@
     "BMUREGMEM15": {
       "codeDisplay": "BMUREGMEM15",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Exclusive Board Match-Up Community Executive Pass",
-      "description": "An exclusive Executive Pass offer available to registered members of the Board Match-Up Community. Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "An exclusive Executive Pass offer available to registered members of the Board Match-Up Community. Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive Board Match-Up Community Rate – SGD 599",
@@ -206,9 +206,9 @@
     "IMAABMU45": {
       "codeDisplay": "IMAABMU45",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Exclusive IMAA Member Executive Pass",
-      "description": "An exclusive Executive Pass offer available to IMAA members. Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "An exclusive Executive Pass offer available to IMAA members. Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Exclusive IMAA Member Offer – SGD 599",
@@ -219,9 +219,9 @@
     "FLEXSPECIAL08": {
       "codeDisplay": "FLEXSPECIAL08",
       "active": true,
-      "validUntil": "2026-09-24T23:59:59+08:00",
+      "validUntil": "2026-10-02T23:59:59+08:00",
       "title": "Special Executive Pass Offer",
-      "description": "A special Executive Pass offer available to selected participants and invited members of our extended community. Valid until 24 September 2026 or until the allocated seats are fully booked, whichever occurs first.",
+      "description": "A special Executive Pass offer available to selected participants and invited members of our extended community. Valid until the allocated seats are fully booked.",
       "discountPercent": 45.5,
       "FinalValue": 599,
       "discountLabel": "Special Executive Pass Rate – SGD 599",
@@ -261,7 +261,8 @@
         "BMUGUESTPS": "Priyanka",
         "CARRIEGUEST": "Carrie",
         "PRIYAGUEST": "Priya"
-      }
+      },
+      "validUntil": "2026-10-02T23:59:59+08:00"
     }
   }
 }
