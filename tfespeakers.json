@@ -1,6 +1,21 @@
 {
   "version": "2026-06-25",
   "speakers": [
+
+    {
+  "id": "drummond-anderson",
+  "name": "Drummond Anderson",
+  "title": "Partner, ZRG Partners",
+  "image": "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Drummond_Anderson_Web.webp",
+  "bio": "Drummond Anderson is a Partner at ZRG Partners with over 20 years of executive search experience, focused on the Industrial and Consumer sectors, with broader expertise across finance and supply chain leadership. Based in Singapore since 2013, he works across Asia with multinational, Asian-headquartered and private equity-backed businesses."
+},
+{
+  "id": "somya-sugandha",
+  "name": "Somya Sugandha",
+  "title": "HR Leader",
+  "image": "https://img1.wsimg.com/isteam/ip/69f464fa-0f03-4140-9b35-09ebe8220179/Somya_Sugandha_web.webp",
+  "bio": "Somya Sugandha is an experienced HR leader focused on building organisations that enable growth and performance. With experience across India, Singapore and France, she has led talent, HR partnering and transformation initiatives in complex global environments. Her expertise spans organisation transformation, culture, change management, post-merger integration, leadership coaching and strategic HR, with a strong focus on building high-performing leadership and HR teams."
+},
     {
   "id": "apurv-amanesh",
   "name": "Apurv Amanesh",
