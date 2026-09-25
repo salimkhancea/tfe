@@ -1,6 +1,18 @@
 {
   "version": "2026-06-25",
   "speakers": [
+    {
+  "id": "anish-lalchandani",
+  "name": "Anish Lalchandani",
+  "title": "Global HR Leader | Author – The Skills Advantage | Speaker",
+  "bio": "Anish Lalchandani is an award-winning global HR leader, best-selling author of The Skills Advantage, and international speaker on future skills, leadership and the future of work. With 25 years of global experience across Maersk, Standard Chartered, GE and JLL, he specialises in talent, leadership and workforce transformation. He is recognised for his work on reskilling in the age of AI and helps organisations build the skills and culture needed for sustainable performance."
+},
+{
+  "id": "fengru-lin",
+  "name": "Fengru Lin",
+  "title": "Founder & CEO @ TurtleTree | Biotech Innovator",
+  "bio": "Fengru Lin is Founder and CEO of TurtleTree, a biotechnology company focused on a new generation of sustainable nutrition. Before founding TurtleTree in 2019, she built her career in sales and business development at Salesforce, Google and UL. Under her leadership, TurtleTree has won global competitions including The Liveability Challenge and The Entrepreneurship World Cup and has raised over US$40 million. In 2022, Fengru was named to 50 Next, recognising young people shaping the future of food."
+},
 
     {
   "id": "drummond-anderson",
